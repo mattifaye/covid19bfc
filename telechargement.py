@@ -5,3 +5,11 @@ urlsEtfichiers = {'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs_XIZk2vyde
 for url, fichier in urlsEtfichiers.items(): 
     r = requests.get(url, allow_redirects=True)
     open(fichier, 'wb').write(r.content)
+    
+    with open(fichier) as file:
+    contents = file.read()
+    if 'Lignes' in contents:
+        print ('On retélécharge')
+        open(fichier, 'wb').write(r.content)
+    else:
+        print (fichier 'Tout est OK')
