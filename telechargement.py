@@ -1,4 +1,4 @@
-import urllib3
+import urllib3 as urllib
 
 url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs_XIZk2vydeg_0cw6hn9_YTNAJ9679Uw03aa7PogpQqL6G7a838mrNjZInh_pgthpYBLEa9R7iJcF/pub?gid=1095809811&single=true&output=csv'
 urllib.urlretrieve(url, 'retourdom.csv')
