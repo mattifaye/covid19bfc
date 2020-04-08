@@ -10,7 +10,7 @@ for url, fichier in urlsEtfichiers.items():
     with open(fichier, 'r') as file:
         contents = file.read()
         while 'Lignes' in contents:
-            print ('On retélécharge')
+            print ('On redownload')
             time.sleep(10)
             r = requests.get(url, allow_redirects=True)
             open(fichier, 'wb').write(r.content)
