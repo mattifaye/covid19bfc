@@ -1,3 +1,4 @@
+# -*-coding:Latin-1 -*
 import pandas as pd
 
 url = "https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7"
