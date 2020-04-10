@@ -35,6 +35,6 @@ carte.to_csv("carte.csv", index= False)
 
 # On créé un fichier pour chaque département et on les enregistre
 for dpt in dptBFC:
-    filtre = source[(source["sexe"] == 0) & (source["dep"] == dpt)].filter(["jour","dep","dc","rea","hosp"])
+    filtre = source[(source["sexe"] == 0) & (source["dep"] == dpt)].filter(["jour","dc","rea","hosp"])
     donneesOK = filtre.rename(index=str, columns={"jour":"Date","dep":"Code","hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
     donneesOK.to_csv(dpt+".csv", index = False)
