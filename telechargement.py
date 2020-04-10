@@ -5,7 +5,7 @@ url = "https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cab
 dptBFC = ["21", "25", "39", "58", "70", "71", "89", "90"]
 
 # On importe les données depuis l'url
-source = pd.read_csv(url,sep=";")
+source = pd.read_csv(url,sep=";",parse_dates=["jour"])
 
 # On filtre ce qui nous intéresse
 filtre = source[(source["sexe"] == 0) & (source["dep"].isin(dptBFC))].filter(["jour","dep","dc","rea","hosp","rad"])
@@ -29,7 +29,11 @@ f.close()
 
 # On récupère les décès pour la carte et on les enregistre
 sourcecarte = pd.read_csv("sourcecarte.csv",sep=",",dtype={"Code": object})
-decespardpt = pd.pivot_table(donneesOK, values=["Personnes décédées (cumul)"], index=["Code"], aggfunc="last")
+decespardpt = pd.pivot_table(donneesOK, values=["Personnes décédées (cumul)","Date"], index=["Code"], aggfunc="last")
+pd.DatetimeIndex(decespardpt["Date"]).year
+decespardpt["jour"] = decespardpt["Date"].dt.day
+decespardpt["mois"] = decespardpt["Date"].dt.month_name(locale = "fr_FR").str.lower()
+
 carte = pd.merge(sourcecarte, decespardpt, left_on="Code", right_index= True, how="outer")
 carte.to_csv("carte.csv", index= False)
 
@@ -38,3 +42,4 @@ for dpt in dptBFC:
     filtre = source[(source["sexe"] == 0) & (source["dep"] == dpt)].filter(["jour","dc","rea","hosp"])
     donneesOK = filtre.rename(index=str, columns={"jour":"Date","dep":"Code","hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
     donneesOK.to_csv(dpt+".csv", index = False)
+
