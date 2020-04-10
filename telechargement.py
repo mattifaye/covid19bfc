@@ -1,4 +1,4 @@
-# -*-coding:Latin-1 -*
+# coding: utf-8
 import pandas as pd
 
 url = "https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7"
@@ -35,6 +35,6 @@ carte.to_csv("carte.csv", index= False)
 
 # On créé un fichier pour chaque département et on les enregistre
 for dpt in dptBFC:
-    filtre = source[(source["sexe"] == 0) & (source["dep"] == dpt)].filter(["jour","dep","dep","dc","rea","hosp"])
+    filtre = source[(source["sexe"] == 0) & (source["dep"] == dpt)].filter(["jour","dep","dc","rea","hosp"])
     donneesOK = filtre.rename(index=str, columns={"jour":"Date","dep":"Code","hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
     donneesOK.to_csv(dpt+".csv", index = False)
