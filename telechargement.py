@@ -32,7 +32,7 @@ sourcecarte = pd.read_csv("sourcecarte.csv",sep=",",dtype={"Code": object})
 decespardpt = pd.pivot_table(donneesOK, values=["Personnes décédées (cumul)","Date"], index=["Code"], aggfunc="last")
 pd.DatetimeIndex(decespardpt["Date"]).year
 decespardpt["jour"] = decespardpt["Date"].dt.day
-decespardpt["mois"] = decespardpt["Date"].dt.month_name(locale = "fr_FR").str.lower()
+decespardpt["mois"] = decespardpt["Date"].dt.month
 
 carte = pd.merge(sourcecarte, decespardpt, left_on="Code", right_index= True, how="outer")
 carte.to_csv("carte.csv", index= False)
