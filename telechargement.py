@@ -17,6 +17,14 @@ donneesOK = filtre.rename(index=str, columns={"jour":"Date","dep":"Code","hosp":
 bfc = pd.pivot_table(donneesOK, values=["Personnes décédées (cumul)","Personnes en réanimation","Personnes hospitalisées"], index=["Date"], aggfunc="sum")
 bfc.to_csv("bfc.csv")
 
+# On créé le fichier bfc quotidien et on l'enregistre
+urlQuotidien = "https://www.data.gouv.fr/fr/datasets/r/6fadff46-9efd-4c53-942a-54aca783c30c"
+sourceQuotidien = pd.read_csv(urlQuotidien,sep=";",parse_dates=["jour"])
+filtreQuotidien = sourceQuotidien[sourceQuotidien["dep"].isin(dptBFC)].filter(["jour","dep","incid_dc"])
+donneesOKQuotidien = filtreQuotidien.rename(index=str, columns={"jour":"Date","incid_dc":"Nombre quotidien de personnes nouvellement décédées"})
+bfcQuotidien = pd.pivot_table(donneesOKQuotidien, values=["Nombre quotidien de personnes nouvellement décédées"], index=["Date"], aggfunc="sum")
+bfcQuotidien.to_csv("bfcQuotidien.csv")
+
 # On créé le fichier retourdom et on l'enregistre
 retourdom = pd.pivot_table(donneesOK, values=["Personnes de retour à domicile (cumul)","Personnes décédées (cumul)"], index=["Date"], aggfunc="sum")
 retourdom.to_csv("retourdom.csv")
