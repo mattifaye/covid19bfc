@@ -21,3 +21,16 @@ for dep in depBFC:
     df4["positif_7j"] = df4["P"].rolling(7).sum()
     df4["taux_incid_7j"] = df4["positif_7j"]/df4["pop"]*100000
     df4.to_csv(dep+"_incidence7j.csv", index = False)
+
+df_21 = pd.read_csv("21_incidence7j.csv")
+df_25 = pd.read_csv("25_incidence7j.csv")
+df_39 = pd.read_csv("39_incidence7j.csv")
+df_58 = pd.read_csv("58_incidence7j.csv")
+df_70 = pd.read_csv("70_incidence7j.csv")
+df_71 = pd.read_csv("71_incidence7j.csv")
+df_89 = pd.read_csv("89_incidence7j.csv")
+df_90 = pd.read_csv("90_incidence7j.csv")
+
+df_bfc = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
+df_bfc["dep_ok"] = df_bfc["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
+df_bfc.to_csv("bfc_incidence7j.csv",index=False)
