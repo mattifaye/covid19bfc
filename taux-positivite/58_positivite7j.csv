@@ -1,4 +1,4 @@
-dep,jour,P,T,cl_age90,taux_positivite_quotidien,positif_7j,tests_7j,taux_incid_7j
+dep,jour,P,T,cl_age90,taux_positivite_quotidien,positifs_7j,tests_7j,taux_positivite_7j
 58,2020-05-13,0,177,0,0.0,,,
 58,2020-05-14,0,93,0,0.0,,,
 58,2020-05-15,29,258,0,11.24031007751938,,,

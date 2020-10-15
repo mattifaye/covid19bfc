@@ -15,9 +15,9 @@ df["taux_positivite_quotidien"] = df["P"]/df["T"]*100
 # Calcul taux de positivité sur sept jours glissants par département
 for dep in depBFC:
     df2 = df[df["dep"] == dep]
-    df2["positif_7j"] = df2["P"].rolling(7).sum()
+    df2["positifs_7j"] = df2["P"].rolling(7).sum()
     df2["tests_7j"] = df2["T"].rolling(7).sum()
-    df2["taux_incid_7j"] = df2["positif_7j"]/df2["tests_7j"]*100
+    df2["taux_positivite_7j"] = df2["positifs_7j"]/df2["tests_7j"]*100
     df2.to_csv(dep+"_positivite7j.csv", index = False)
     
 df_21 = pd.read_csv("21_positivite7j.csv")
