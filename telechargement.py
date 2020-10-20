@@ -35,7 +35,7 @@ df_89 = pd.read_csv("89_incidence7j.csv")
 df_90 = pd.read_csv("90_incidence7j.csv")
 
 df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
+df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
 df_dep.to_csv("dep_incidence7j.csv",index=False,quoting=1)
 
 # Calcul taux d'incidence régional sur sept jours glissants
@@ -78,7 +78,7 @@ df_90 = pd.read_csv("90_positivite7j.csv")
 
 # Regroupement dans un seul fichier et export
 df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
+df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
 df_dep.to_csv("dep_positivite7j.csv",index=False)
 
 # Calcul taux d'incidence régional sur 7 jours glissants
