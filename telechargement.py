@@ -100,7 +100,7 @@ pos_ok = pos.last("1D")[["taux_incid_7j"]]
 df2 = df_ok.join(pos_ok).T
 df2["categorie"] = df2.index
 df3 = df2.replace({"tests_7j":"Tests réalisés","positifs_7j":"Tests positifs","taux_positivite_7j":"Pourcentage de tests positifs","taux_incid_7j":"Taux d'incidence"})
-df3.to_csv("bfc_tests_jour.csv")
+df3.round(1).to_csv("bfc_tests_jour.csv")
 
 ############################
 ##### HOSPITALISATIONS #####
