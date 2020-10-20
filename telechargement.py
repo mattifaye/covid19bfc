@@ -89,6 +89,19 @@ tcd["taux_positivite_7j"] = tcd["positifs_7j"]/tcd["tests_7j"]*100
 tcd.to_csv("bfc_positivite7j.csv")
 
 
+# Chiffres derniers jours taux d'incidence et taux de positivité
+df = pd.read_csv("bfc_positivite7j.csv",parse_dates=["jour"],index_col="jour")
+df2 = df[["tests_7j","positifs_7j","taux_positivite_7j"]]
+df_ok = df2.last("1D")
+
+pos = pd.read_csv("bfc_incidence7j.csv",parse_dates=["jour"],index_col="jour")
+pos_ok = pos.last("1D")[["taux_incid_7j"]]
+
+df2 = df_ok.join(pos_ok).T
+df2["categorie"] = df2.index
+df3 = df2.replace({"tests_7j":"Tests réalisés","positifs_7j":"Tests positifs","taux_positivite_7j":"Pourcentage de tests positifs","taux_incid_7j":"Taux d'incidence"})
+df3.to_csv("bfc_tests_jour.csv")
+
 ############################
 ##### HOSPITALISATIONS #####
 ############################
