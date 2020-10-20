@@ -140,7 +140,7 @@ df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"],aggfunc=sum)
 tcd2 = tcd[['hosp', 'rea', 'dc', 'rad']].last("1D").T
 tcd2["categorie"] = tcd2.index
-tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumuml)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","rad":"Personnes de retour à domicile (cumul)"})
+tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumul)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","rad":"Personnes de retour à domicile (cumul)"})
 tcd3.to_csv("bfc_hospitalisations_jour.csv")
 
 
