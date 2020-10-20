@@ -1,2 +1,8 @@
-jour,dc,hosp,rad,rea,jour,date_mois,date_jour
-2020-10-19,1126,339,4509,56,2020-10-19,10,19
+,2020-10-19
+dc,1126
+hosp,339
+rad,4509
+rea,56
+jour,2020-10-19 00:00:00
+date_mois,10
+date_jour,19
