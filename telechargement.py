@@ -128,7 +128,7 @@ df = df[df["dep"].isin(depBFC)]
 tcd = df.pivot_table(index="jour",values=["incid_hosp","incid_rea","incid_dc","incid_rad"],aggfunc=sum)
 tcd2 = tcd[['incid_hosp', 'incid_rea', 'incid_dc', 'incid_rad']].last("1D").T
 tcd2["categorie"] = tcd2.index
-tcd3 = tcd2.replace({"incid_dc":"Nouveaux décès en 24h","incid_hosp":"Nouvelles hospitalisations en 24h", "incid_rea":"Nouvelles admissions en réanimation en 24h","incid_rad":"Nouveaux retours à domicile en 24h"})
+tcd3 = tcd2.replace({"incid_dc":"Nouveaux décès","incid_hosp":"Nouvelles hospitalisations", "incid_rea":"Nouvelles admissions en réanimation","incid_rad":"Nouveaux retours à domicile"})
 tcd3.to_csv("bfc_nouvelles_hospitalisations.csv")
 
 # Total hospitalisations
