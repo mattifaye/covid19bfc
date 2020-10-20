@@ -138,11 +138,11 @@ df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1
 df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 
 tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"],aggfunc=sum)
-tcd["jour"] = tcd.index
-tcd["date_mois"] = tcd["jour"].dt.month
-tcd["date_jour"] = tcd["jour"].dt.day
+tcd2 = tcd[['hosp', 'rea', 'dc', 'rad']].last("1D").T
+tcd2["categorie"] = tcd2.index
+tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumuml)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","incid_rad":"Personnes de retour à domicile (cumul)"})
+tcd3.to_csv("bfc_hospitalisations_jour.csv")
 
-tcd.last("1D").T.to_csv("bfc_hospitalisations_jour.csv")
 
 ######################
 ##### METROPOLES #####
