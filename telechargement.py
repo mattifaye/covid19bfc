@@ -130,7 +130,7 @@ tcd["jour"] = tcd.index
 tcd["date_mois"] = tcd["jour"].dt.month
 tcd["date_jour"] = tcd["jour"].dt.day
 
-tcd.last("1D").to_csv("bfc_nouvelles_hospitalisations.csv")
+tcd.last("1D").T.to_csv("bfc_nouvelles_hospitalisations.csv")
 
 
 # Total hospitalisations
@@ -144,7 +144,7 @@ tcd["jour"] = tcd.index
 tcd["date_mois"] = tcd["jour"].dt.month
 tcd["date_jour"] = tcd["jour"].dt.day
 
-tcd.last("1D").to_csv("bfc_hospitalisations_jour.csv")
+tcd.last("1D").T.to_csv("bfc_hospitalisations_jour.csv")
 
 ######################
 ##### METROPOLES #####
