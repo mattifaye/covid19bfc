@@ -1,5 +1,5 @@
-,2020-10-21 00:00:00,categorie
-incid_hosp,65,Nouvelles hospitalisations
+,2020-10-22 00:00:00,categorie
+incid_hosp,74,Nouvelles hospitalisations
 incid_rea,8,Nouvelles admissions en réanimation
-incid_dc,5,Nouveaux décès
-incid_rad,29,Nouveaux retours à domicile
+incid_dc,8,Nouveaux décès
+incid_rad,43,Nouveaux retours à domicile
