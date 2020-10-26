@@ -231,7 +231,7 @@ df["fin_periode"] = df["date"].str[-2:] + "/" + df["date"].str[:2]
 age = ["0"]
 age = df[df["dep"].isin(depBFC) & df["clage_65"].isin(age)]
 tcd = age.pivot_table(index="com2020",aggfunc='last')
-carte = pd.read_csv("OneDrive - Francetelevisions/base_carte.csv",dtype=object)
+carte = pd.read_csv("base_carte.csv",dtype=object)
 carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
 df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
 
