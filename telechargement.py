@@ -212,3 +212,47 @@ df_ok.to_csv("epci_incidence7j.csv",index=False)
 #########################
 
 # A faire
+
+##################
+##### CARTES #####
+##################
+# Import données
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object)
+
+# Filtre départements
+depBFC = ["21","25","39","58","70","71","89","90"]
+
+# Calcul nouvelles colonnes
+df["dep"] = df["com2020"].str[:2]
+df["date"] = df["semaine_glissante"].str[-5:]
+df["fin_periode"] = df["date"].str[-2:] + "/" + df["date"].str[:2]
+
+# Données les plus récentes pour la population générale
+age = ["0"]
+age = df[df["dep"].isin(depBFC) & df["clage_65"].isin(age)]
+tcd = age.pivot_table(index="com2020",aggfunc='last')
+carte = pd.read_csv("OneDrive - Francetelevisions/base_carte.csv",dtype=object)
+carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
+df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
+
+df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+
+df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
+df3.to_csv("carte_0.csv",index=False)
+
+# Données les plus récentes pour les plus de 65 ans
+age = ["65"]
+age = df[df["dep"].isin(depBFC) & df["clage_65"].isin(age)]
+tcd = age.pivot_table(index="com2020",aggfunc='last')
+carte = pd.read_csv("base_carte.csv",dtype=object)
+carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
+df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
+
+df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+
+df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
+df3.to_csv("carte_65.csv",index=False)
