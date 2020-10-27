@@ -235,9 +235,9 @@ carte = pd.read_csv("base_carte.csv",dtype=object)
 carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
 df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
 
-df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
-df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
-df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
+df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
+df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
 
 df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
 df3.to_csv("carte_0.csv",index=False)
@@ -250,9 +250,9 @@ carte = pd.read_csv("base_carte.csv",dtype=object)
 carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
 df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
 
-df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
-df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
-df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","")
+df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
+df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
+df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
 
 df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
 df3.to_csv("carte_65.csv",index=False)
