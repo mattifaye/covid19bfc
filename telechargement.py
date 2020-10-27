@@ -283,5 +283,5 @@ df3.to_csv("carte_65.csv",index=False)
 ############################
 df = pd.read_csv("bfc_hospitalisations_total.csv", parse_dates=["jour"],index_col="jour")
 df = df.last("1D")
-df["Dernière mise à jour"] = df["jour_ok"].str[-2:] + "/" + df["jour_ok"].str[:2]
+df["Dernière mise à jour"] = df["jour_ok"].str[-2:] + "/" + df["jour_ok"].str[-5:].str[:2]
 df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
