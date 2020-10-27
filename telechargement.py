@@ -278,6 +278,17 @@ df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").
 df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
 df3.to_csv("carte_65.csv",index=False)
 
+# Tableaux récap
+df = pd.read_csv("carte_0.csv")
+df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
+df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
+df2.to_csv("tableau_0.csv",index=False)
+
+df = pd.read_csv("carte_65.csv")
+df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
+df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
+df2.to_csv("tableau_65.csv",index=False)
+
 ############################
 ##### DATE MISE À JOUR #####
 ############################
