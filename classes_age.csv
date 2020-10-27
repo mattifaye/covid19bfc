@@ -1,14 +1,14 @@
-,cl_age90,2020-10-23,2020-10-27
-Tests positifs,de 0 à 9 ans,21.0,
-Tests positifs,de 10 à 19 ans,156.0,
-Tests positifs,de 20 à 29 ans,226.0,
-Tests positifs,de 30 à 39 ans,183.0,
-Tests positifs,de 40 à 49 ans,224.0,
-Tests positifs,de 50 à 59 ans,232.0,
-Tests positifs,de 60 à 69 ans,190.0,
-Tests positifs,de 70 à 79 ans,117.0,
-Tests positifs,de 80 à 89 ans,102.0,
-Tests positifs,90 ans et plus,42.0,
+,cl_age90,2020-10-24,2020-10-27
+Tests positifs,de 0 à 9 ans,16.0,
+Tests positifs,de 10 à 19 ans,85.0,
+Tests positifs,de 20 à 29 ans,105.0,
+Tests positifs,de 30 à 39 ans,107.0,
+Tests positifs,de 40 à 49 ans,116.0,
+Tests positifs,de 50 à 59 ans,107.0,
+Tests positifs,de 60 à 69 ans,100.0,
+Tests positifs,de 70 à 79 ans,75.0,
+Tests positifs,de 80 à 89 ans,60.0,
+Tests positifs,90 ans et plus,25.0,
 Hospitalisations,de 0 à 9 ans,,1.0
 Hospitalisations,de 10 à 19 ans,,2.0
 Hospitalisations,de 20 à 29 ans,,7.0
