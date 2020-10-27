@@ -277,3 +277,11 @@ df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").
 
 df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
 df3.to_csv("carte_65.csv",index=False)
+
+############################
+##### DATE MISE À JOUR #####
+############################
+df = pd.read_csv("bfc_hospitalisations_total.csv", parse_dates=["jour"],index_col="jour")
+df = df.last("1D")
+df["Dernière mise à jour"] = df["jour_ok"].str[-2:] + "/" + df["jour_ok"].str[:2]
+df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
