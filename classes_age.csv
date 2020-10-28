@@ -1,41 +1,41 @@
 ,cl_age90,2020-10-24,2020-10-27
-Tests positifs,de 0 à 9 ans,16.0,
-Tests positifs,de 10 à 19 ans,85.0,
-Tests positifs,de 20 à 29 ans,105.0,
-Tests positifs,de 30 à 39 ans,107.0,
-Tests positifs,de 40 à 49 ans,116.0,
-Tests positifs,de 50 à 59 ans,107.0,
-Tests positifs,de 60 à 69 ans,100.0,
-Tests positifs,de 70 à 79 ans,75.0,
-Tests positifs,de 80 à 89 ans,60.0,
-Tests positifs,90 ans et plus,25.0,
-Hospitalisations,de 0 à 9 ans,,1.0
-Hospitalisations,de 10 à 19 ans,,2.0
-Hospitalisations,de 20 à 29 ans,,7.0
-Hospitalisations,de 30 à 39 ans,,9.0
-Hospitalisations,de 40 à 49 ans,,15.0
-Hospitalisations,de 50 à 59 ans,,45.0
-Hospitalisations,de 60 à 69 ans,,89.0
-Hospitalisations,de 70 à 79 ans,,170.0
-Hospitalisations,de 80 à 89 ans,,223.0
-Hospitalisations,90 ans et plus,,120.0
-Réanimations,de 0 à 9 ans,,0.0
-Réanimations,de 10 à 19 ans,,0.0
-Réanimations,de 20 à 29 ans,,1.0
-Réanimations,de 30 à 39 ans,,1.0
-Réanimations,de 40 à 49 ans,,4.0
-Réanimations,de 50 à 59 ans,,6.0
-Réanimations,de 60 à 69 ans,,33.0
-Réanimations,de 70 à 79 ans,,38.0
-Réanimations,de 80 à 89 ans,,14.0
-Réanimations,90 ans et plus,,0.0
-Décès (cumul),de 0 à 9 ans,,0.0
-Décès (cumul),de 10 à 19 ans,,0.0
-Décès (cumul),de 20 à 29 ans,,0.0
-Décès (cumul),de 30 à 39 ans,,5.0
-Décès (cumul),de 40 à 49 ans,,5.0
-Décès (cumul),de 50 à 59 ans,,31.0
-Décès (cumul),de 60 à 69 ans,,95.0
-Décès (cumul),de 70 à 79 ans,,244.0
-Décès (cumul),de 80 à 89 ans,,524.0
-Décès (cumul),90 ans et plus,,284.0
+Tests positifs les 7 derniers jours,de 0 à 9 ans,16.0,
+Tests positifs les 7 derniers jours,de 10 à 19 ans,85.0,
+Tests positifs les 7 derniers jours,de 20 à 29 ans,105.0,
+Tests positifs les 7 derniers jours,de 30 à 39 ans,107.0,
+Tests positifs les 7 derniers jours,de 40 à 49 ans,116.0,
+Tests positifs les 7 derniers jours,de 50 à 59 ans,107.0,
+Tests positifs les 7 derniers jours,de 60 à 69 ans,100.0,
+Tests positifs les 7 derniers jours,de 70 à 79 ans,75.0,
+Tests positifs les 7 derniers jours,de 80 à 89 ans,60.0,
+Tests positifs les 7 derniers jours,90 ans et plus,25.0,
+Hospitalisations en cours,de 0 à 9 ans,,1.0
+Hospitalisations en cours,de 10 à 19 ans,,2.0
+Hospitalisations en cours,de 20 à 29 ans,,7.0
+Hospitalisations en cours,de 30 à 39 ans,,9.0
+Hospitalisations en cours,de 40 à 49 ans,,15.0
+Hospitalisations en cours,de 50 à 59 ans,,45.0
+Hospitalisations en cours,de 60 à 69 ans,,89.0
+Hospitalisations en cours,de 70 à 79 ans,,170.0
+Hospitalisations en cours,de 80 à 89 ans,,223.0
+Hospitalisations en cours,90 ans et plus,,120.0
+Réanimations en cours,de 0 à 9 ans,,0.0
+Réanimations en cours,de 10 à 19 ans,,0.0
+Réanimations en cours,de 20 à 29 ans,,1.0
+Réanimations en cours,de 30 à 39 ans,,1.0
+Réanimations en cours,de 40 à 49 ans,,4.0
+Réanimations en cours,de 50 à 59 ans,,6.0
+Réanimations en cours,de 60 à 69 ans,,33.0
+Réanimations en cours,de 70 à 79 ans,,38.0
+Réanimations en cours,de 80 à 89 ans,,14.0
+Réanimations en cours,90 ans et plus,,0.0
+Décès depuis mars,de 0 à 9 ans,,0.0
+Décès depuis mars,de 10 à 19 ans,,0.0
+Décès depuis mars,de 20 à 29 ans,,0.0
+Décès depuis mars,de 30 à 39 ans,,5.0
+Décès depuis mars,de 40 à 49 ans,,5.0
+Décès depuis mars,de 50 à 59 ans,,31.0
+Décès depuis mars,de 60 à 69 ans,,95.0
+Décès depuis mars,de 70 à 79 ans,,244.0
+Décès depuis mars,de 80 à 89 ans,,524.0
+Décès depuis mars,90 ans et plus,,284.0
