@@ -217,9 +217,9 @@ df = df[df["reg"] == 27]
 df = df[df["cl_age90"] != 0]
 
 df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["dc","hosp","rea"]).last("1D")
-df3 = df2.rename(columns={"hosp":"Hospitalisations","rea":"Réanimations","dc":"Décès (cumul)"})
+df3 = df2.rename(columns={"hosp":"Hospitalisations en cours","rea":"Réanimations en cours","dc":"Décès depuis mars"})
 hosp = df3.rename(columns={0:"tous",9:"de 0 à 9 ans",19:"de 10 à 19 ans",29:"de 20 à 29 ans",39:"de 30 à 39 ans",49:"de 40 à 49 ans",59:"de 50 à 59 ans",69:"de 60 à 69 ans",79:"de 70 à 79 ans",89:"de 80 à 89 ans",90:"90 ans et plus"})
-hosp = hosp[["Hospitalisations","Réanimations","Décès (cumul)"]]
+hosp = hosp[["Hospitalisations en cours","Réanimations en cours","Décès depuis mars"]]
 
 # Import données tests de dépistage
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/001aca18-df6a-45c8-89e6-f82d689e6c01",sep=";",parse_dates=["jour"])
@@ -228,7 +228,7 @@ df = df[df["reg"].isin(reg)]
 df = df[df["cl_age90"] != 0]
 
 df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["P"]).last("1D")
-df3 = df2.rename(columns={"P":"Tests positifs"})
+df3 = df2.rename(columns={"P":"Tests positifs les 7 derniers jours"})
 tests = df3.rename(columns={0:"tous",9:"de 0 à 9 ans",19:"de 10 à 19 ans",29:"de 20 à 29 ans",39:"de 30 à 39 ans",49:"de 40 à 49 ans",59:"de 50 à 59 ans",69:"de 60 à 69 ans",79:"de 70 à 79 ans",89:"de 80 à 89 ans",90:"90 ans et plus"})
 
 # Regroupement dans un seul fichier et export
