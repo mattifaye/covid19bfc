@@ -210,10 +210,10 @@ df_ok.to_csv("epci_incidence7j.csv",index=False)
 #########################
 ##### CLASSES D'AGE #####
 #########################
-
+reg = ["27"]
 # Import données hospitalières
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/08c18e08-6780-452d-9b8c-ae244ad529b3",sep=";",parse_dates=["jour"])
-df = df[df["reg"] == 27]
+df = df[df["reg"].isin(reg)]
 df = df[df["cl_age90"] != 0]
 
 df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["dc","hosp","rea"]).last("1D")
