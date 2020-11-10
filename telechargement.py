@@ -179,6 +179,17 @@ tcd2["categorie"] = tcd2.index
 tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumul)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","rad":"Personnes de retour à domicile (cumul)"})
 tcd3.to_csv("bfc_hospitalisations_jour.csv")
 
+### Nombre de décès par jour à l'hôpital ###
+
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/6fadff46-9efd-4c53-942a-54aca783c30c", sep=";", parse_dates=["jour"])
+depBFC = ["21","25","39","58","70","71","89","90"]
+
+df = df[df["dep"].isin(depBFC)]
+
+df = df.replace({"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
+df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comté").iloc[:-1]
+
+df[["Bourgogne-Franche-Comté","Côte-d'Or","Doubs","Jura","Nièvre","Haute-Saône","Saône-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
 
 ######################
 ##### METROPOLES #####
