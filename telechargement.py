@@ -142,8 +142,8 @@ df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 
 # Renommage colonnes et départements
 df["dep_ok"] = df["dep"].replace({"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
-df = df[["jour","hosp","rea","dc"]]
-df_ok = df.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
+df2 = df[["jour","hosp","rea","dc"]]
+df_ok = df2.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
 
 # Export fichier
 df_ok.to_csv("dep_hospitalisations.csv",index=False)
