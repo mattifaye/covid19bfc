@@ -141,7 +141,7 @@ sexe = ["0"]
 df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 
 # Renommage colonnes et départements
-df["dep_ok"] = df["dep"].replace({"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
+df["dep_ok"] = df["dep"].replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
 df2 = df[["dep","sexe","jour","hosp","rea","dc","dep_ok"]]
 df_ok = df2.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
 
