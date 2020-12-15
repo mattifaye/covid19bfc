@@ -1,5 +1,5 @@
-,2020-12-14 00:00:00,categorie
-hosp,1801,Personnes actuellement hospitalisées
+,2020-12-15 00:00:00,categorie
+hosp,1807,Personnes actuellement hospitalisées
 rea,186,Personnes actuellement en réanimation
-dc,2244,Décès à l'hôpital (cumul)
-rad,8551,Personnes de retour à domicile (cumul)
+dc,2267,Décès à l'hôpital (cumul)
+rad,8667,Personnes de retour à domicile (cumul)
