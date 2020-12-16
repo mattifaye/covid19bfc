@@ -1,41 +1,41 @@
-,cl_age90,2020-12-12,2020-12-15
-Tests positifs les 7 derniers jours,de 0 à 9 ans,22.0,
-Tests positifs les 7 derniers jours,de 10 à 19 ans,63.0,
-Tests positifs les 7 derniers jours,de 20 à 29 ans,81.0,
-Tests positifs les 7 derniers jours,de 30 à 39 ans,95.0,
-Tests positifs les 7 derniers jours,de 40 à 49 ans,99.0,
-Tests positifs les 7 derniers jours,de 50 à 59 ans,104.0,
-Tests positifs les 7 derniers jours,de 60 à 69 ans,72.0,
-Tests positifs les 7 derniers jours,de 70 à 79 ans,42.0,
-Tests positifs les 7 derniers jours,de 80 à 89 ans,44.0,
-Tests positifs les 7 derniers jours,90 ans et plus,27.0,
+,cl_age90,2020-12-13,2020-12-16
+Tests positifs les 7 derniers jours,de 0 à 9 ans,3.0,
+Tests positifs les 7 derniers jours,de 10 à 19 ans,12.0,
+Tests positifs les 7 derniers jours,de 20 à 29 ans,9.0,
+Tests positifs les 7 derniers jours,de 30 à 39 ans,13.0,
+Tests positifs les 7 derniers jours,de 40 à 49 ans,14.0,
+Tests positifs les 7 derniers jours,de 50 à 59 ans,14.0,
+Tests positifs les 7 derniers jours,de 60 à 69 ans,14.0,
+Tests positifs les 7 derniers jours,de 70 à 79 ans,18.0,
+Tests positifs les 7 derniers jours,de 80 à 89 ans,25.0,
+Tests positifs les 7 derniers jours,90 ans et plus,18.0,
 Hospitalisations en cours,de 0 à 9 ans,,3.0
 Hospitalisations en cours,de 10 à 19 ans,,4.0
-Hospitalisations en cours,de 20 à 29 ans,,13.0
-Hospitalisations en cours,de 30 à 39 ans,,16.0
+Hospitalisations en cours,de 20 à 29 ans,,10.0
+Hospitalisations en cours,de 30 à 39 ans,,20.0
 Hospitalisations en cours,de 40 à 49 ans,,55.0
-Hospitalisations en cours,de 50 à 59 ans,,89.0
-Hospitalisations en cours,de 60 à 69 ans,,228.0
-Hospitalisations en cours,de 70 à 79 ans,,453.0
-Hospitalisations en cours,de 80 à 89 ans,,612.0
-Hospitalisations en cours,90 ans et plus,,316.0
+Hospitalisations en cours,de 50 à 59 ans,,94.0
+Hospitalisations en cours,de 60 à 69 ans,,235.0
+Hospitalisations en cours,de 70 à 79 ans,,459.0
+Hospitalisations en cours,de 80 à 89 ans,,609.0
+Hospitalisations en cours,90 ans et plus,,328.0
 Réanimations en cours,de 0 à 9 ans,,1.0
 Réanimations en cours,de 10 à 19 ans,,1.0
-Réanimations en cours,de 20 à 29 ans,,3.0
+Réanimations en cours,de 20 à 29 ans,,2.0
 Réanimations en cours,de 30 à 39 ans,,3.0
-Réanimations en cours,de 40 à 49 ans,,9.0
-Réanimations en cours,de 50 à 59 ans,,16.0
-Réanimations en cours,de 60 à 69 ans,,50.0
-Réanimations en cours,de 70 à 79 ans,,78.0
-Réanimations en cours,de 80 à 89 ans,,22.0
-Réanimations en cours,90 ans et plus,,2.0
+Réanimations en cours,de 40 à 49 ans,,6.0
+Réanimations en cours,de 50 à 59 ans,,15.0
+Réanimations en cours,de 60 à 69 ans,,48.0
+Réanimations en cours,de 70 à 79 ans,,73.0
+Réanimations en cours,de 80 à 89 ans,,20.0
+Réanimations en cours,90 ans et plus,,3.0
 Décès depuis mars à l'hôpital,de 0 à 9 ans,,0.0
 Décès depuis mars à l'hôpital,de 10 à 19 ans,,0.0
 Décès depuis mars à l'hôpital,de 20 à 29 ans,,2.0
 Décès depuis mars à l'hôpital,de 30 à 39 ans,,8.0
 Décès depuis mars à l'hôpital,de 40 à 49 ans,,11.0
 Décès depuis mars à l'hôpital,de 50 à 59 ans,,47.0
-Décès depuis mars à l'hôpital,de 60 à 69 ans,,193.0
-Décès depuis mars à l'hôpital,de 70 à 79 ans,,460.0
-Décès depuis mars à l'hôpital,de 80 à 89 ans,,982.0
-Décès depuis mars à l'hôpital,90 ans et plus,,559.0
+Décès depuis mars à l'hôpital,de 60 à 69 ans,,195.0
+Décès depuis mars à l'hôpital,de 70 à 79 ans,,465.0
+Décès depuis mars à l'hôpital,de 80 à 89 ans,,996.0
+Décès depuis mars à l'hôpital,90 ans et plus,,567.0
