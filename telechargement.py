@@ -6,7 +6,7 @@ import pandas as pd
 ############################
 
 # Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/19a91d64-3cd3-42fc-9943-d635491a4d76", sep=";", dtype={"dep":object})
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/19a91d64-3cd3-42fc-9943-d635491a4d76", sep=";", dtype={"dep":object,"P":int,"cl_age90":object})
 
 # Filtres
 depBFC = ["21","25","39","58","70","71","89","90"]
@@ -14,6 +14,7 @@ age = ["0"]
 
 # Filtre données BFC et toutes classes d'âge
 df = df[df["dep"].isin(depBFC) & df["cl_age90"].isin(age)]
+
 
 # Calcul taux d'incidence quotidien
 df["taux_incidence_quot"] = df["P"]/df["pop"]*100000
@@ -62,6 +63,8 @@ df_dep.to_csv("dep_incidence7j_accents.csv",index=False)
 
 # Calcul taux d'incidence régional sur sept jours glissants
 tcd = df.pivot_table(index=["jour"],values=["P","pop"],aggfunc=sum)
+
+
 tcd["positif_7j"] = tcd["P"].rolling(7).sum()
 tcd["taux_incid_7j"] = tcd["positif_7j"]/tcd["pop"]*100000
 tcd.to_csv("bfc_incidence7j.csv")
@@ -71,7 +74,7 @@ tcd.to_csv("bfc_incidence7j.csv")
 ##############################
 
 # Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/406c6a23-e283-4300-9484-54e78c8ae675", sep=";", dtype={"dep":object})
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/406c6a23-e283-4300-9484-54e78c8ae675", sep=";",dtype={"dep":object,"P":int,"cl_age90":object})
 
 # Description filtre
 depBFC = ["21","25","39","58","70","71","89","90"]
@@ -131,7 +134,8 @@ df4.to_csv("bfc_tests_jour.csv",float_format='%.0f')
 
 #### Détails par départements ####
 # Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";", dtype={"dep":object},parse_dates=["jour"])
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";", dtype={"dep":object,"sexe":object},parse_dates=["jour"])
+
 
 # Description filtre
 depBFC = ["21","25","39","58","70","71","89","90"]
@@ -170,11 +174,14 @@ tcd3.to_csv("bfc_nouvelles_hospitalisations.csv")
 
 # Total hospitalisations
 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";",parse_dates=["jour"])
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";",parse_dates=["jour"],dtype={"dep":object,"sexe":object})
 
 df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 
+
 tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"],aggfunc=sum)
+
+
 tcd2 = tcd[['hosp', 'rea', 'dc', 'rad']].last("1D").T
 tcd2["categorie"] = tcd2.index
 tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumul)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","rad":"Personnes de retour à domicile (cumul)"})
@@ -224,12 +231,16 @@ df_ok.to_csv("epci_incidence7j.csv",index=False)
 #########################
 reg = ["27"]
 # Import données hospitalières
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/08c18e08-6780-452d-9b8c-ae244ad529b3",sep=";",parse_dates=["jour"])
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/08c18e08-6780-452d-9b8c-ae244ad529b3",sep=";",parse_dates=["jour"],dtype={"reg":object,"cl_age90":object})
+
+
 df = df[df["reg"].isin(reg)]
 df = df[df["cl_age90"] != 0]
 
 df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["dc","hosp","rea"]).last("1D")
 df3 = df2.rename(columns={"hosp":"Hospitalisations en cours","rea":"Réanimations en cours","dc":"Décès depuis mars à l'hôpital"})
+
+
 hosp = df3.rename(columns={0:"tous",9:"de 0 à 9 ans",19:"de 10 à 19 ans",29:"de 20 à 29 ans",39:"de 30 à 39 ans",49:"de 40 à 49 ans",59:"de 50 à 59 ans",69:"de 60 à 69 ans",79:"de 70 à 79 ans",89:"de 80 à 89 ans",90:"90 ans et plus"})
 hosp = hosp[["Hospitalisations en cours","Réanimations en cours","Décès depuis mars à l'hôpital"]]
 
