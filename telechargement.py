@@ -261,7 +261,7 @@ pd.concat([tests.T,hosp.T]).to_csv("classes_age.csv")
 ##### CARTES #####
 ##################
 # Import données
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object)
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object,sep=";")
 
 # Filtre départements
 depBFC = ["21","25","39","58","70","71","89","90"]
