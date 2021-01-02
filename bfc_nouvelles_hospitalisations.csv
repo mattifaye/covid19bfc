@@ -1,5 +1,5 @@
-,2020-12-22 00:00:00,categorie
-incid_hosp,132,Nouvelles hospitalisations
-incid_rea,16,Nouvelles admissions en réanimation
-incid_dc,31,Nouveaux décès
-incid_rad,108,Nouveaux retours à domicile
+,2021-01-01 00:00:00,categorie
+incid_hosp,35,Nouvelles hospitalisations
+incid_rea,11,Nouvelles admissions en réanimation
+incid_dc,6,Nouveaux décès
+incid_rad,60,Nouveaux retours à domicile

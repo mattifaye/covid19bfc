@@ -1,5 +1,5 @@
-,2020-12-22 00:00:00,categorie
-hosp,1780,Personnes actuellement hospitalisées
-rea,171,Personnes actuellement en réanimation
-dc,2426,Décès à l'hôpital (cumul)
-rad,9237,Personnes de retour à domicile (cumul)
+,2021-01-01 00:00:00,categorie
+hosp,1794,Personnes actuellement hospitalisées
+rea,182,Personnes actuellement en réanimation
+dc,2652,Décès à l'hôpital (cumul)
+rad,9854,Personnes de retour à domicile (cumul)
