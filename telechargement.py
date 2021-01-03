@@ -151,6 +151,9 @@ df_ok = df2.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"
 
 # Export fichier
 df_ok.to_csv("dep_hospitalisations.csv",index=False)
+for departement in depBFC:
+    df3 = df_ok[df_ok["dep"] == departement]
+    df3.to_csv(departement+"_hospitalisations.csv",index=False)
 
 # Tableau croisé total BFC
 tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"], aggfunc=sum)
