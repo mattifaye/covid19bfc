@@ -315,6 +315,79 @@ pd.concat([tests.T,hosp.T]).to_csv("classes_age.csv")
 # df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
 # df2.to_csv("tableau_65.csv",index=False)
 
+##############################################
+##### CARTES avec données séparées par ; #####
+##############################################
+
+# Import données
+import pandas as pd
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object, index_col=None,skiprows=1,sep=";",names=["com2020","semaine_glissante","clage_65","ti_classe_debut","ti_classe_fin","td_classe_debut","td_classe_fin","tp_classe_debut","tp_classe_fin"])
+df["dep"] = df["com2020"].str[:2]
+
+# Filtre départements
+depBFC = ["21","25","39","58","70","71","89","90"]
+age = ["0"]
+
+df = df[df["dep"].isin(depBFC)]
+
+# Calcul nouvelles colonnes
+
+df["date"] = df["semaine_glissante"].str[-10:]
+df["fin_periode"] = df["date"].str[-5:].str[-2:] + "/" + df["date"].str[-5:].str[:2]
+
+# Données les plus récentes pour la population générale
+cl_age = ["0"]
+age = df[df["clage_65"].isin(cl_age)]
+
+tcd = age.pivot_table(index="com2020",aggfunc='last')
+
+carte = pd.read_csv("base_carte.csv",dtype=object)
+carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
+df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
+
+df2["tp_classe"] = df2["tp_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["tp_classe_fin"].str.replace("[","").str.replace("]","")
+df2["ti_classe"] = df2["ti_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["ti_classe_fin"].str.replace("[","").str.replace("]","")
+df2["td_classe"] = df2["td_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["td_classe_fin"].str.replace("[","").str.replace("]","")
+
+df2["tp_classe"] = df2["tp_classe"].str.replace("à Max","et plus")
+df2["ti_classe"] = df2["ti_classe"].str.replace("à Max","et plus")
+df2["td_classe"] = df2["td_classe"].str.replace("à Max","et plus")
+
+df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
+df3.to_csv("carte_0.csv",index=False)
+
+# Données les plus récentes pour les 65 ans et plus
+cl_age = ["65"]
+age = df[df["clage_65"].isin(cl_age)]
+
+tcd = age.pivot_table(index="com2020",aggfunc='last')
+
+carte = pd.read_csv("base_carte.csv",dtype=object)
+carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
+df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
+
+df2["tp_classe"] = df2["tp_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["tp_classe_fin"].str.replace("[","").str.replace("]","")
+df2["ti_classe"] = df2["ti_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["ti_classe_fin"].str.replace("[","").str.replace("]","")
+df2["td_classe"] = df2["td_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["td_classe_fin"].str.replace("[","").str.replace("]","")
+
+df2["tp_classe"] = df2["tp_classe"].str.replace("à Max","et plus")
+df2["ti_classe"] = df2["ti_classe"].str.replace("à Max","et plus")
+df2["td_classe"] = df2["td_classe"].str.replace("à Max","et plus")
+
+df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
+df3.to_csv("carte_65.csv",index=False)
+
+# Tableaux récap
+df = pd.read_csv("carte_0.csv")
+df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
+df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
+df2.to_csv("tableau_0.csv",index=False)
+
+df = pd.read_csv("carte_65.csv")
+df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
+df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
+df2.to_csv("tableau_65.csv",index=False)
+
 ############################
 ##### DATE MISE À JOUR #####
 ############################
