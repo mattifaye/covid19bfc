@@ -6,8 +6,8 @@ Prégilbert (89),0 à 10,0 à 1
 Villapourçon (58),0 à 10,0 à 1
 Moussy (58),0 à 10,0 à 1
 Dracy-lès-Couches (71),20 à 50,0 à 1
-Les Nans (39),20 à 50,1 à 5
-Cérilly (89),50 à 150,25 à 30
+Les Nans (39),50 à 150,1 à 5
+Cérilly (89),50 à 150,10 à 15
 Saint-Père (89),50 à 150,1 à 5
 Saint-Andeux (21),0 à 10,0 à 1
 Menoncourt (90),1000 et plus,15 à 20
@@ -74,7 +74,7 @@ Villiers-en-Morvan (21),0 à 10,0 à 1
 Samerey (21),0 à 10,0 à 1
 Ouagne (58),20 à 50,1 à 5
 Nan-sous-Thil (21),0 à 10,0 à 1
-Morvillars (90),50 à 150,5 à 10
+Morvillars (90),150 à 250,10 à 15
 Talon (58),0 à 10,0 à 1
 Juif (71),50 à 150,1 à 5
 Autricourt (21),500 à 1000,5 à 10
@@ -110,7 +110,7 @@ Angeot (90),0 à 10,0 à 1
 Vitry-Laché (58),0 à 10,0 à 1
 Bellecombe (39),1000 et plus,15 à 20
 Saint-Mesmin (21),0 à 10,0 à 1
-Guillon-Terre-Plaine (89),500 à 1000,20 à 25
+Guillon-Terre-Plaine (89),500 à 1000,15 à 20
 Aubigny-la-Ronce (21),0 à 10,0 à 1
 Bazarnes (89),0 à 10,0 à 1
 Saint-Révérien (58),0 à 10,0 à 1
@@ -128,7 +128,7 @@ Nuits (89),50 à 150,5 à 10
 Chaumot (89),150 à 250,5 à 10
 Thoires (21),1000 et plus,30 et plus
 Belfahy (70),20 à 50,1 à 5
-La Petite-Verrière (71),0 à 10,5 à 10
+La Petite-Verrière (71),10 à 20,10 à 15
 Druyes-les-Belles-Fontaines (89),20 à 50,1 à 5
 Sépeaux-Saint Romain (89),150 à 250,15 à 20
 Buc (90),0 à 10,0 à 1
@@ -175,13 +175,13 @@ Boncourt-le-Bois (21),0 à 10,0 à 1
 Juillenay (21),0 à 10,0 à 1
 Fontenay-près-Vézelay (89),50 à 150,1 à 5
 Aubaine (21),0 à 10,0 à 1
-Lent (39),20 à 50,1 à 5
+Lent (39),20 à 50,5 à 10
 Saint-Hilaire-en-Morvan (58),50 à 150,1 à 5
 Planchez (58),20 à 50,1 à 5
 Mhère (58),50 à 150,15 à 20
 Vieilmoulin (21),500 à 1000,15 à 20
 Épagny (21),250 à 500,5 à 10
-Bondeval (25),500 à 1000,15 à 20
+Bondeval (25),500 à 1000,20 à 25
 Gergueil (21),0 à 10,0 à 1
 Sauvigny-le-Beuréal (89),50 à 150,1 à 5
 Billy-Chevannes (58),0 à 10,0 à 1
@@ -217,8 +217,8 @@ Fontenay (71),0 à 10,1 à 5
 Blaisy-Haut (21),0 à 10,0 à 1
 Châteauneuf (21),1000 et plus,30 et plus
 Missery (21),0 à 10,0 à 1
-Dompierre-les-Ormes (71),50 à 150,5 à 10
-Hauteville-lès-Dijon (21),250 à 500,10 à 15
+Dompierre-les-Ormes (71),150 à 250,15 à 20
+Hauteville-lès-Dijon (21),250 à 500,5 à 10
 Lesme (71),500 à 1000,30 et plus
 Lacour-d'Arcenay (21),0 à 10,0 à 1
 Charigny (21),10 à 20,0 à 1
@@ -233,7 +233,7 @@ Montreuillon (58),10 à 20,1 à 5
 Arcenant (21),250 à 500,5 à 10
 Chasnay (58),0 à 10,0 à 1
 Cézy (89),0 à 10,0 à 1
-Sermizelles (89),500 à 1000,30 et plus
+Sermizelles (89),500 à 1000,25 à 30
 Alligny-en-Morvan (58),150 à 250,5 à 10
 Grosbois-lès-Tichey (21),0 à 10,0 à 1
 Mont-Saint-Jean (21),0 à 10,0 à 1
@@ -261,10 +261,10 @@ Brinon-sur-Beuvron (58),0 à 10,0 à 1
 Saint-Martin-de-Commune (71),20 à 50,0 à 1
 Cruzy-le-Châtel (89),0 à 10,0 à 1
 Vermenton (89),500 à 1000,10 à 15
-Combertault (21),500 à 1000,10 à 15
+Combertault (21),250 à 500,5 à 10
 Bois-d'Arcy (89),0 à 10,1 à 5
 Bretagne (90),0 à 10,0 à 1
-Brebotte (90),250 à 500,5 à 10
+Brebotte (90),500 à 1000,15 à 20
 Sainte-Marie-la-Blanche (21),0 à 10,0 à 1
 Grenois (58),0 à 10,0 à 1
 Onlay (58),1000 et plus,20 à 25
@@ -324,7 +324,7 @@ Arcy-sur-Cure (89),150 à 250,5 à 10
 Sennevoy-le-Bas (89),20 à 50,1 à 5
 Chaignay (21),0 à 10,0 à 1
 Fontenois-lès-Montbozon (70),250 à 500,10 à 15
-Ternant (58),500 à 1000,25 à 30
+Ternant (58),500 à 1000,20 à 25
 Breuchotte (70),150 à 250,10 à 15
 Messanges (21),0 à 10,0 à 1
 Lain (89),1000 et plus,30 et plus
@@ -333,11 +333,11 @@ Labruyère (21),0 à 10,0 à 1
 Frais (90),250 à 500,15 à 20
 Sainte-Marie-sur-Ouche (21),0 à 10,0 à 1
 Saint-Gervais-sur-Couches (71),1000 et plus,10 à 15
-Avrée (58),1000 et plus,30 et plus
+Avrée (58),0 à 10,0 à 1
 Les Bordes (89),150 à 250,15 à 20
-Dracy-Saint-Loup (71),150 à 250,5 à 10
+Dracy-Saint-Loup (71),150 à 250,10 à 15
 Clomot (21),20 à 50,25 à 30
-Corcelles-lès-Cîteaux (21),50 à 150,5 à 10
+Corcelles-lès-Cîteaux (21),150 à 250,5 à 10
 Dracy (89),0 à 10,0 à 1
 Hautefond (71),0 à 10,0 à 1
 Corgoloin (21),0 à 10,0 à 1
@@ -453,13 +453,13 @@ Neuilly (58),0 à 10,1 à 5
 Échannay (21),0 à 10,0 à 1
 Vosne-Romanée (21),10 à 20,0 à 1
 Précy-sous-Thil (21),0 à 10,0 à 1
-Saint-Hélier (21),0 à 10,0 à 1
-Trouhans (21),250 à 500,15 à 20
+Saint-Hélier (21),0 à 10,1 à 5
+Trouhans (21),250 à 500,20 à 25
 Lys (58),0 à 10,0 à 1
 Fraignot-et-Vesvrotte (21),1000 et plus,30 et plus
 Charmois (90),0 à 10,0 à 1
 Teigny (58),1000 et plus,30 et plus
-Pommard (21),250 à 500,15 à 20
+Pommard (21),250 à 500,10 à 15
 Roilly (21),0 à 10,0 à 1
 La Chaume (21),0 à 10,0 à 1
 Arnay-le-Duc (21),10 à 20,0 à 1
@@ -467,7 +467,7 @@ Valforêt (21),250 à 500,5 à 10
 Cronat (71),0 à 10,0 à 1
 Lods (25),0 à 10,0 à 1
 Saint-Philibert (21),250 à 500,15 à 20
-Froidefontaine (90),250 à 500,25 à 30
+Froidefontaine (90),250 à 500,20 à 25
 Avelanges (21),0 à 10,0 à 1
 Rugny (89),0 à 10,0 à 1
 Bissey-la-Pierre (21),0 à 10,0 à 1
@@ -488,17 +488,17 @@ Vulvoz (39),50 à 150,30 et plus
 Savigny-en-Terre-Plaine (89),20 à 50,1 à 5
 La Grande-Verrière (71),250 à 500,20 à 25
 Corancy (58),50 à 150,1 à 5
-Tailly (21),10 à 20,0 à 1
+Tailly (21),1000 et plus,25 à 30
 Neuffontaines (58),0 à 10,0 à 1
 La Maison-Dieu (58),500 à 1000,30 et plus
 Saint-Aubin-sur-Loire (71),0 à 10,0 à 1
 Domecy-sur-Cure (89),250 à 500,10 à 15
-Passy (89),250 à 500,20 à 25
-Villiers-Louis (89),50 à 150,1 à 5
-Salmaise (21),0 à 10,0 à 1
+Passy (89),250 à 500,15 à 20
+Villiers-Louis (89),20 à 50,1 à 5
+Salmaise (21),0 à 10,1 à 5
 Glay (25),250 à 500,5 à 10
-Bard-le-Régulier (21),20 à 50,1 à 5
-Mimeure (21),250 à 500,15 à 20
+Bard-le-Régulier (21),20 à 50,15 à 20
+Mimeure (21),250 à 500,10 à 15
 Savilly (21),50 à 150,1 à 5
 Maconge (21),0 à 10,0 à 1
 Fontenay-sous-Fouronnes (89),0 à 10,0 à 1
@@ -548,7 +548,7 @@ Ville-Langy (58),0 à 10,0 à 1
 Chazilly (21),0 à 10,0 à 1
 Saint-Germain-des-Champs (89),500 à 1000,15 à 20
 Provency (89),0 à 10,0 à 1
-Villechétive (89),50 à 150,1 à 5
+Villechétive (89),20 à 50,1 à 5
 Cressy-sur-Somme (71),0 à 10,0 à 1
 Bussières (89),0 à 10,0 à 1
 Chitry-les-Mines (58),1000 et plus,20 à 25
@@ -602,7 +602,7 @@ Les Moussières (39),1000 et plus,20 à 25
 Cuncy-lès-Varzy (58),0 à 10,1 à 5
 Girolles (89),1000 et plus,30 et plus
 Blanot (21),20 à 50,25 à 30
-Lantenay (21),150 à 250,1 à 5
+Lantenay (21),250 à 500,5 à 10
 Brianny (21),0 à 10,0 à 1
 Tintry (71),10 à 20,0 à 1
 Barjon (21),0 à 10,1 à 5
@@ -664,7 +664,7 @@ Thorey (89),0 à 10,1 à 5
 Tharoiseau (89),0 à 10,0 à 1
 Villey-sur-Tille (21),0 à 10,0 à 1
 Corvol-d'Embernard (58),0 à 10,5 à 10
-Nailly (89),500 à 1000,15 à 20
+Nailly (89),250 à 500,10 à 15
 Puligny-Montrachet (21),10 à 20,0 à 1
 Chassey-lès-Montbozon (70),50 à 150,5 à 10
 Haut-du-Them-Château-Lambert (70),0 à 10,0 à 1
@@ -678,7 +678,7 @@ Issy-l'Évêque (71),0 à 10,0 à 1
 Poinçon-lès-Larrey (21),0 à 10,0 à 1
 Saint-Léger-de-Fougeret (58),20 à 50,1 à 5
 Pouques-Lormes (58),500 à 1000,15 à 20
-Saint-Bresson (70),150 à 250,10 à 15
+Saint-Bresson (70),150 à 250,5 à 10
 Corrombles (21),20 à 50,1 à 5
 Méziré (90),150 à 250,5 à 10
 Le Meix (21),0 à 10,1 à 5
@@ -717,10 +717,10 @@ Nesle-et-Massoult (21),0 à 10,0 à 1
 Meursault (21),150 à 250,5 à 10
 Montceau-et-Écharnant (21),0 à 10,0 à 1
 Vétrigne (90),150 à 250,1 à 5
-Dambelin (25),0 à 10,0 à 1
+Dambelin (25),150 à 250,25 à 30
 Montlay-en-Auxois (21),0 à 10,0 à 1
 Marigny-l'Église (58),250 à 500,10 à 15
-Dampierre-les-Bois (25),150 à 250,5 à 10
+Dampierre-les-Bois (25),250 à 500,5 à 10
 Chevroches (58),20 à 50,10 à 15
 Thaix (58),50 à 150,5 à 10
 Bourgvilain (71),250 à 500,5 à 10
@@ -734,7 +734,7 @@ Thury (21),0 à 10,0 à 1
 Bard-lès-Époisses (21),20 à 50,5 à 10
 Mesmont (21),0 à 10,0 à 1
 Cérilly (21),0 à 10,0 à 1
-Oisy (58),20 à 50,1 à 5
+Oisy (58),250 à 500,10 à 15
 Saint-Firmin (58),0 à 10,0 à 1
 Villotte-Saint-Seine (21),0 à 10,0 à 1
 Saint-Brisson (58),20 à 50,1 à 5
@@ -747,13 +747,13 @@ Prâlon (21),0 à 10,0 à 1
 Saint-Germain-le-Châtelet (90),0 à 10,0 à 1
 Normier (21),0 à 10,0 à 1
 Savouges (21),0 à 10,0 à 1
-Petitmagny (90),500 à 1000,20 à 25
+Petitmagny (90),250 à 500,10 à 15
 Foissy (21),10 à 20,1 à 5
 Saint-Germain-le-Rocheux (21),0 à 10,0 à 1
 Franxault (21),0 à 10,0 à 1
 Eguenigue (90),0 à 10,0 à 1
 Germenay (58),500 à 1000,30 et plus
-Magny-lès-Aubigny (21),500 à 1000,20 à 25
+Magny-lès-Aubigny (21),500 à 1000,25 à 30
 Vérissey (71),50 à 150,1 à 5
 Gland (89),0 à 10,1 à 5
 Coulours (89),50 à 150,5 à 10
@@ -808,8 +808,8 @@ Vandenesse-en-Auxois (21),0 à 10,0 à 1
 Perrigny-sur-Armançon (89),50 à 150,1 à 5
 Lalande (89),0 à 10,0 à 1
 Éloie (90),0 à 10,0 à 1
-Diancey (21),20 à 50,20 à 25
-Saint-Germain-en-Montagne (39),1000 et plus,30 et plus
+Diancey (21),20 à 50,1 à 5
+Saint-Germain-en-Montagne (39),1000 et plus,25 à 30
 Nanchez (39),250 à 500,10 à 15
 Villargent (70),50 à 150,5 à 10
 Bouzeron (71),0 à 10,0 à 1
@@ -820,11 +820,11 @@ Amanzé (71),0 à 10,0 à 1
 Courlon-sur-Yonne (89),0 à 10,0 à 1
 Pont-sur-l'Ognon (70),50 à 150,5 à 10
 Saint-Didier-en-Brionnais (71),1000 et plus,30 et plus
-Fontaines (71),50 à 150,1 à 5
+Fontaines (71),150 à 250,5 à 10
 Bois-Sainte-Marie (71),0 à 10,0 à 1
 Uxeau (71),150 à 250,15 à 20
 Chaumont-le-Bois (21),0 à 10,0 à 1
-Bourg-de-Sirod (39),20 à 50,20 à 25
+Bourg-de-Sirod (39),50 à 150,15 à 20
 Izier (21),250 à 500,5 à 10
 Saint-Mard-de-Vaux (71),0 à 10,0 à 1
 Lainsecq (89),0 à 10,0 à 1
@@ -836,11 +836,11 @@ Villeneuve-la-Dondagre (89),10 à 20,0 à 1
 Varenne-l'Arconce (71),0 à 10,0 à 1
 Beire-le-Fort (21),0 à 10,0 à 1
 Sarry (71),0 à 10,0 à 1
-Monnet-la-Ville (39),20 à 50,1 à 5
+Monnet-la-Ville (39),20 à 50,5 à 10
 La Belliole (89),1000 et plus,30 et plus
-Le Larderet (39),20 à 50,0 à 1
+Le Larderet (39),20 à 50,1 à 5
 Saint-Ferjeux (70),150 à 250,5 à 10
-Bissy-la-Mâconnaise (71),500 à 1000,15 à 20
+Bissy-la-Mâconnaise (71),500 à 1000,10 à 15
 Chemin-d'Aisey (21),0 à 10,0 à 1
 Dyo (71),0 à 10,0 à 1
 Bellechaume (89),0 à 10,0 à 1
@@ -856,20 +856,20 @@ Cruzille (71),500 à 1000,30 et plus
 Vescemont (90),500 à 1000,20 à 25
 Flavignerot (21),1000 et plus,30 et plus
 Bief (25),50 à 150,1 à 5
-Villeroy (89),250 à 500,1 à 5
+Villeroy (89),250 à 500,5 à 10
 Châtenay (71),0 à 10,0 à 1
 La Salle (71),250 à 500,10 à 15
 Paris-l'Hôpital (71),0 à 10,0 à 1
 Lixy (89),0 à 10,0 à 1
 Péronne (71),250 à 500,15 à 20
 Senargent-Mignafans (70),50 à 150,5 à 10
-Cize (39),250 à 500,10 à 15
+Cize (39),250 à 500,5 à 10
 Esprels (70),50 à 150,5 à 10
 Marliens (21),0 à 10,0 à 1
 Saint-Sérotin (89),0 à 10,0 à 1
-Molay (39),1000 et plus,25 à 30
+Molay (39),1000 et plus,30 et plus
 Chamesson (21),0 à 10,0 à 1
-Villafans (70),50 à 150,5 à 10
+Villafans (70),50 à 150,1 à 5
 Oppenans (70),50 à 150,5 à 10
 Châtelneuf (39),1000 et plus,30 et plus
 Saint-Racho (71),0 à 10,0 à 1
@@ -903,16 +903,16 @@ Girefontaine (70),50 à 150,15 à 20
 Tart-le-Bas (21),0 à 10,0 à 1
 Malay-le-Petit (89),0 à 10,0 à 1
 Ougny (58),0 à 10,1 à 5
-Fort-du-Plasne (39),250 à 500,15 à 20
+Fort-du-Plasne (39),500 à 1000,20 à 25
 Montjoie-le-Château (25),50 à 150,10 à 15
 Gouhenans (70),50 à 150,5 à 10
 Autrey-lès-Cerre (70),50 à 150,1 à 5
 Vaux-en-Pré (71),20 à 50,0 à 1
-Saint-Julien-lès-Montbéliard (25),500 à 1000,30 et plus
+Saint-Julien-lès-Montbéliard (25),500 à 1000,25 à 30
 Vinneuf (89),0 à 10,0 à 1
 Égleny (89),500 à 1000,5 à 10
 Jouy (89),150 à 250,10 à 15
-Saint-Germain-en-Brionnais (71),0 à 10,0 à 1
+Saint-Germain-en-Brionnais (71),0 à 10,1 à 5
 Corcelles-les-Monts (21),250 à 500,5 à 10
 Le Pasquier (39),1000 et plus,30 et plus
 Urzy (58),0 à 10,0 à 1
@@ -950,34 +950,34 @@ Les Magny (70),50 à 150,1 à 5
 Vaux d'Amognes (58),0 à 10,0 à 1
 Cheilly-lès-Maranges (71),150 à 250,1 à 5
 Bussy-le-Repos (89),20 à 50,1 à 5
-Bretenière (21),50 à 150,5 à 10
+Bretenière (21),50 à 150,1 à 5
 Dramelay (39),50 à 150,1 à 5
 Collonges-et-Premières (21),0 à 10,0 à 1
 Chambilly (71),150 à 250,15 à 20
 Villenavotte (89),500 à 1000,30 et plus
-Syam (39),500 à 1000,30 et plus
+Syam (39),500 à 1000,20 à 25
 Villers-la-Ville (70),150 à 250,5 à 10
 Lepuix-Neuf (90),0 à 10,0 à 1
 Biefmorin (39),50 à 150,1 à 5
-Saint-Martin-du-Lac (71),0 à 10,1 à 5
+Saint-Martin-du-Lac (71),0 à 10,0 à 1
 Diconne (71),50 à 150,5 à 10
-Saint-Aubin-les-Forges (58),250 à 500,20 à 25
+Saint-Aubin-les-Forges (58),250 à 500,15 à 20
 Autrey-le-Vay (70),50 à 150,5 à 10
 Fouchères (89),150 à 250,5 à 10
 Auxelles-Bas (90),20 à 50,1 à 5
-Loulle (39),500 à 1000,20 à 25
+Loulle (39),500 à 1000,15 à 20
 Brannay (89),250 à 500,15 à 20
 Stigny (89),20 à 50,1 à 5
 Obtrée (21),0 à 10,0 à 1
 Compigny (89),0 à 10,0 à 1
-Briant (71),0 à 10,1 à 5
+Briant (71),0 à 10,0 à 1
 Athesans-Étroitefontaine (70),50 à 150,1 à 5
 Lac-des-Rouges-Truites (39),10 à 20,0 à 1
 Brienon-sur-Armançon (89),50 à 150,1 à 5
 Courtois-sur-Yonne (89),250 à 500,15 à 20
 Saint-Julien-de-Jonzy (71),0 à 10,0 à 1
-Vers-en-Montagne (39),250 à 500,15 à 20
-Chapois (39),250 à 500,20 à 25
+Vers-en-Montagne (39),250 à 500,10 à 15
+Chapois (39),500 à 1000,20 à 25
 Pont-du-Navoy (39),20 à 50,1 à 5
 Nolay (58),500 à 1000,15 à 20
 Coulangeron (89),0 à 10,0 à 1
@@ -986,7 +986,7 @@ Marsangy (89),150 à 250,5 à 10
 Abergement-le-Petit (39),50 à 150,1 à 5
 Jambles (71),150 à 250,5 à 10
 Saint-Sulpice (70),50 à 150,5 à 10
-Le Vaudioux (39),20 à 50,1 à 5
+Le Vaudioux (39),50 à 150,1 à 5
 La Chapelle-sous-Dun (71),0 à 10,0 à 1
 Les Chalesmes (39),10 à 20,1 à 5
 Esnon (89),0 à 10,0 à 1
@@ -994,9 +994,9 @@ Plessis-Saint-Jean (89),0 à 10,0 à 1
 La Chapelle-au-Mans (71),0 à 10,0 à 1
 Vincelottes (89),250 à 500,15 à 20
 Poiseux (58),0 à 10,0 à 1
-Échigey (21),250 à 500,25 à 30
+Échigey (21),250 à 500,20 à 25
 Achun (58),0 à 10,0 à 1
-Villars-sous-Dampjoux (25),50 à 150,1 à 5
+Villars-sous-Dampjoux (25),50 à 150,5 à 10
 Croix (90),0 à 10,0 à 1
 Dampvalley-Saint-Pancras (70),150 à 250,15 à 20
 Le Latet (39),20 à 50,1 à 5
@@ -1010,8 +1010,8 @@ Montceaux-Ragny (71),10 à 20,10 à 15
 Auxelles-Haut (90),250 à 500,10 à 15
 Chavannes-les-Grands (90),0 à 10,0 à 1
 Les Terres-de-Chaux (25),50 à 150,20 à 25
-Crans (39),20 à 50,20 à 25
-Mont-sur-Monnet (39),20 à 50,0 à 1
+Crans (39),50 à 150,1 à 5
+Mont-sur-Monnet (39),20 à 50,1 à 5
 Courchaton (70),50 à 150,5 à 10
 Savigny-sur-Clairis (89),1000 et plus,5 à 10
 Belmont (70),150 à 250,5 à 10
@@ -1037,7 +1037,7 @@ Champrougier (39),1000 et plus,20 à 25
 Allériot (71),10 à 20,0 à 1
 Saint-Romain-sous-Gourdon (71),10 à 20,1 à 5
 Hyèvre-Magny (25),500 à 1000,10 à 15
-Fleurey-lès-Faverney (70),50 à 150,1 à 5
+Fleurey-lès-Faverney (70),20 à 50,1 à 5
 Fontaine-lès-Dijon (21),250 à 500,5 à 10
 Baume-les-Dames (25),1000 et plus,30 et plus
 Écleux (39),500 à 1000,15 à 20
@@ -1072,7 +1072,7 @@ Tramayes (71),50 à 150,5 à 10
 Doucier (39),50 à 150,5 à 10
 Bouclans (25),250 à 500,5 à 10
 Dannemarie-sur-Crète (25),500 à 1000,15 à 20
-Cresancey (70),250 à 500,5 à 10
+Cresancey (70),500 à 1000,20 à 25
 Chevrotaine (39),50 à 150,1 à 5
 Courcelles-lès-Montbéliard (25),500 à 1000,15 à 20
 Apremont (70),250 à 500,5 à 10
@@ -1081,10 +1081,10 @@ Tourmont (39),1000 et plus,30 et plus
 Arlay (39),50 à 150,1 à 5
 Chevannes (89),50 à 150,5 à 10
 La Chaux-en-Bresse (39),150 à 250,10 à 15
-Senoncourt (70),50 à 150,1 à 5
+Senoncourt (70),20 à 50,1 à 5
 Épenouse (25),250 à 500,15 à 20
 Poiseul-la-Ville-et-Laperrière (21),500 à 1000,30 et plus
-Faverney (70),50 à 150,1 à 5
+Faverney (70),20 à 50,1 à 5
 Saint-Loup-Nantouard (70),250 à 500,5 à 10
 Vellexon-Queutrey-et-Vaudey (70),50 à 150,5 à 10
 Domprel (25),20 à 50,1 à 5
@@ -1124,7 +1124,7 @@ Champtonnay (70),150 à 250,10 à 15
 Valay (70),150 à 250,5 à 10
 Pont (21),150 à 250,1 à 5
 Semondans (25),250 à 500,10 à 15
-Is-sur-Tille (21),150 à 250,5 à 10
+Is-sur-Tille (21),250 à 500,5 à 10
 Bremondans (25),250 à 500,20 à 25
 Saint-Denis-lès-Sens (89),250 à 500,5 à 10
 Saint-Maur (39),500 à 1000,30 et plus
@@ -1165,7 +1165,7 @@ Condamine (39),50 à 150,1 à 5
 Vers-sous-Sellières (39),150 à 250,1 à 5
 Charcenne (70),150 à 250,5 à 10
 Denezières (39),50 à 150,10 à 15
-La Genête (71),10 à 20,1 à 5
+La Genête (71),20 à 50,1 à 5
 Pouilley-les-Vignes (25),250 à 500,5 à 10
 Cesancey (39),50 à 150,5 à 10
 Chaux-lès-Passavant (25),150 à 250,10 à 15
@@ -1181,9 +1181,9 @@ Eysson (25),150 à 250,15 à 20
 Augy (89),0 à 10,0 à 1
 Trenal (39),50 à 150,1 à 5
 Velet (70),500 à 1000,20 à 25
-Le Val-Saint-Éloi (70),50 à 150,1 à 5
+Le Val-Saint-Éloi (70),20 à 50,0 à 1
 Domblans (39),50 à 150,1 à 5
-Adam-lès-Vercel (25),150 à 250,20 à 25
+Adam-lès-Vercel (25),150 à 250,15 à 20
 Pannessières (39),50 à 150,1 à 5
 Sellières (39),250 à 500,5 à 10
 Brochon (21),150 à 250,5 à 10
@@ -1199,12 +1199,12 @@ Uxelles (39),50 à 150,10 à 15
 Athée (21),150 à 250,1 à 5
 Billey (21),150 à 250,1 à 5
 Plottes (71),150 à 250,5 à 10
-Venère (70),250 à 500,5 à 10
+Venère (70),250 à 500,10 à 15
 Boissia (39),50 à 150,5 à 10
 Montboillon (70),150 à 250,5 à 10
 Igornay (71),50 à 150,1 à 5
 Lormes (58),500 à 1000,20 à 25
-Équevilley (70),50 à 150,5 à 10
+Équevilley (70),20 à 50,5 à 10
 Orgeux (21),150 à 250,15 à 20
 Frasne-les-Meulières (39),150 à 250,5 à 10
 Belleherbe (25),250 à 500,10 à 15
@@ -1253,18 +1253,18 @@ Arsans (70),1000 et plus,30 et plus
 Crenans (39),10 à 20,1 à 5
 Avanne-Aveney (25),50 à 150,1 à 5
 Semur-en-Brionnais (71),0 à 10,0 à 1
-La Villedieu-en-Fontenette (70),50 à 150,1 à 5
+La Villedieu-en-Fontenette (70),20 à 50,1 à 5
 Esnans (25),1000 et plus,20 à 25
 Saint-Julien-de-Civry (71),250 à 500,30 et plus
-Soing-Cubry-Charentenay (70),250 à 500,15 à 20
+Soing-Cubry-Charentenay (70),250 à 500,10 à 15
 Ouanne (89),150 à 250,10 à 15
 Chaucenne (25),250 à 500,5 à 10
 Évette-Salbert (90),250 à 500,10 à 15
 Les Repôts (39),50 à 150,1 à 5
 Thervay (39),250 à 500,20 à 25
-Autrey-lès-Gray (70),1000 et plus,30 et plus
+Autrey-lès-Gray (70),1000 et plus,25 à 30
 Peintre (39),150 à 250,5 à 10
-Marigny (39),50 à 150,10 à 15
+Marigny (39),50 à 150,5 à 10
 Pouilley-Français (25),250 à 500,5 à 10
 Le Pin (39),50 à 150,1 à 5
 Saint-Vit (25),250 à 500,10 à 15
@@ -1274,7 +1274,7 @@ Oigny (21),50 à 150,30 et plus
 Hyèvre-Paroisse (25),1000 et plus,20 à 25
 Épinac (71),50 à 150,5 à 10
 Abergement-le-Grand (39),250 à 500,5 à 10
-Purgerot (70),50 à 150,1 à 5
+Purgerot (70),20 à 50,1 à 5
 Hautecour (39),50 à 150,10 à 15
 Abergement-lès-Thésy (39),50 à 150,1 à 5
 Genlis (21),50 à 150,5 à 10
@@ -1289,7 +1289,7 @@ Citey (70),150 à 250,5 à 10
 Fahy-lès-Autrey (70),250 à 500,10 à 15
 Menesble (21),0 à 10,1 à 5
 Beaune (21),150 à 250,5 à 10
-Neurey-en-Vaux (70),50 à 150,1 à 5
+Neurey-en-Vaux (70),20 à 50,1 à 5
 Ferrières-lès-Ray (70),50 à 150,5 à 10
 Deux Rivières (89),250 à 500,10 à 15
 Vitteaux (21),50 à 150,1 à 5
@@ -1298,13 +1298,13 @@ Charmoille (25),20 à 50,1 à 5
 Choye (70),50 à 150,5 à 10
 Lombard (25),50 à 150,1 à 5
 Menétrux-en-Joux (39),1000 et plus,30 et plus
-Essertenne-et-Cecey (70),500 à 1000,15 à 20
+Essertenne-et-Cecey (70),500 à 1000,10 à 15
 Villevieux (39),250 à 500,10 à 15
 Vellefrey-et-Vellefrange (70),150 à 250,5 à 10
 Suilly-la-Tour (58),50 à 150,1 à 5
 Ladoix-Serrigny (21),250 à 500,10 à 15
 Savoyeux (70),50 à 150,5 à 10
-Foncine-le-Haut (39),250 à 500,20 à 25
+Foncine-le-Haut (39),250 à 500,15 à 20
 Soucia (39),50 à 150,5 à 10
 Tonnerre (89),20 à 50,1 à 5
 Treigny-Perreuse-Sainte-Colombe (89),0 à 10,0 à 1
@@ -1312,7 +1312,7 @@ Vallery (89),10 à 20,0 à 1
 Villars-Saint-Georges (25),150 à 250,5 à 10
 Meuilley (21),500 à 1000,30 et plus
 Villers-Rotin (21),50 à 150,5 à 10
-Bligny-lès-Beaune (21),150 à 250,10 à 15
+Bligny-lès-Beaune (21),150 à 250,5 à 10
 Til-Châtel (21),250 à 500,15 à 20
 Chagny (71),150 à 250,5 à 10
 Ancier (70),500 à 1000,15 à 20
@@ -1333,7 +1333,7 @@ Angirey (70),150 à 250,5 à 10
 Semond (21),150 à 250,30 et plus
 Saint-Lamain (39),150 à 250,5 à 10
 Montigny-lès-Arsures (39),250 à 500,5 à 10
-Baulay (70),50 à 150,1 à 5
+Baulay (70),20 à 50,1 à 5
 Montmirey-le-Château (39),150 à 250,5 à 10
 Nogna (39),50 à 150,1 à 5
 Aubigny-en-Plaine (21),150 à 250,5 à 10
@@ -1360,13 +1360,13 @@ Beaufort-Orbagna (39),250 à 500,15 à 20
 Pelousey (25),250 à 500,5 à 10
 Monéteau (89),250 à 500,5 à 10
 Menotey (39),1000 et plus,30 et plus
-Digoin (71),150 à 250,10 à 15
+Digoin (71),150 à 250,5 à 10
 Vantoux-et-Longevelle (70),1000 et plus,30 et plus
 Fontainebrux (39),1000 et plus,30 et plus
 Mantry (39),250 à 500,10 à 15
 Onay (70),250 à 500,15 à 20
 Ouvans (25),150 à 250,15 à 20
-Marcilly-lès-Buxy (71),500 à 1000,20 à 25
+Marcilly-lès-Buxy (71),150 à 250,5 à 10
 Commenailles (39),50 à 150,1 à 5
 Courbette (39),50 à 150,5 à 10
 Dampierre-en-Bresse (71),10 à 20,0 à 1
@@ -1392,7 +1392,7 @@ Franey (25),500 à 1000,10 à 15
 Cusance (25),500 à 1000,30 et plus
 Offlanges (39),150 à 250,5 à 10
 Montureux-et-Prantigny (70),250 à 500,1 à 5
-Crotenay (39),500 à 1000,25 à 30
+Crotenay (39),1000 et plus,30 et plus
 Voillans (25),500 à 1000,15 à 20
 Villers-Chemin-et-Mont-lès-Étrelles (70),50 à 150,5 à 10
 Gurgy (89),500 à 1000,15 à 20
@@ -1400,10 +1400,10 @@ Montivernage (25),1000 et plus,15 à 20
 Saint-Privé (89),250 à 500,5 à 10
 Villers-Chief (25),150 à 250,10 à 15
 Bretonvillers (25),20 à 50,1 à 5
-Varzy (58),150 à 250,10 à 15
+Varzy (58),150 à 250,5 à 10
 Vielmanay (58),50 à 150,1 à 5
 Auvet-et-la-Chapelotte (70),250 à 500,5 à 10
-Ney (39),150 à 250,10 à 15
+Ney (39),250 à 500,15 à 20
 Luxiol (25),1000 et plus,25 à 30
 Landresse (25),250 à 500,15 à 20
 Tavaux (39),250 à 500,10 à 15
@@ -1424,7 +1424,7 @@ Saint-Germain-du-Plain (71),150 à 250,5 à 10
 Flagey-lès-Auxonne (21),150 à 250,1 à 5
 Villers-Farlay (39),250 à 500,10 à 15
 Looze (89),150 à 250,15 à 20
-Tavernay (71),0 à 10,0 à 1
+Tavernay (71),10 à 20,1 à 5
 Ligny-le-Châtel (89),50 à 150,1 à 5
 Geraise (39),50 à 150,1 à 5
 Serrigny-en-Bresse (71),500 à 1000,15 à 20
@@ -1440,7 +1440,7 @@ Labergement-lès-Auxonne (21),150 à 250,1 à 5
 Chemaudin et Vaux (25),250 à 500,5 à 10
 Montgesoye (25),0 à 10,0 à 1
 Vézelois (90),50 à 150,1 à 5
-Contréglise (70),50 à 150,1 à 5
+Contréglise (70),20 à 50,1 à 5
 Magny-Montarlot (21),150 à 250,5 à 10
 Champvans (70),250 à 500,10 à 15
 Bouhans-et-Feurg (70),250 à 500,10 à 15
@@ -1455,7 +1455,7 @@ Chaudenay (71),50 à 150,1 à 5
 Myon (25),50 à 150,1 à 5
 Châteauneuf-Val-de-Bargis (58),0 à 10,0 à 1
 Pessans (25),50 à 150,1 à 5
-L'Étoile (39),250 à 500,5 à 10
+L'Étoile (39),250 à 500,10 à 15
 Chevigney-lès-Vercel (25),250 à 500,20 à 25
 Lachapelle-sous-Rougemont (90),0 à 10,0 à 1
 Verges (39),500 à 1000,10 à 15
@@ -1484,7 +1484,7 @@ Gy (70),250 à 500,10 à 15
 Saint-Seine-en-Bâche (21),150 à 250,5 à 10
 Villeferry (21),50 à 150,0 à 1
 Longvic (21),50 à 150,1 à 5
-Noidans-le-Ferroux (70),50 à 150,5 à 10
+Noidans-le-Ferroux (70),250 à 500,10 à 15
 Clairvaux-les-Lacs (39),250 à 500,10 à 15
 Dole (39),250 à 500,10 à 15
 Rosureux (25),20 à 50,1 à 5
@@ -1544,10 +1544,10 @@ Cortevaix (71),10 à 20,1 à 5
 Vandenesse (58),500 à 1000,10 à 15
 Saint-Huruge (71),20 à 50,5 à 10
 Hugier (70),1000 et plus,30 et plus
-Ronchamp (70),50 à 150,10 à 15
+Ronchamp (70),50 à 150,5 à 10
 Borey (70),50 à 150,5 à 10
 Dun-sur-Grandry (58),0 à 10,0 à 1
-Rancy (71),10 à 20,1 à 5
+Rancy (71),20 à 50,1 à 5
 Jailly-les-Moulins (21),1000 et plus,30 et plus
 Chenebier (70),250 à 500,25 à 30
 Ormoiche (70),50 à 150,1 à 5
@@ -1555,7 +1555,7 @@ Tanay (21),250 à 500,20 à 25
 Chérizet (71),0 à 10,0 à 1
 Arpenans (70),50 à 150,1 à 5
 Jully (89),20 à 50,15 à 20
-Clairegoutte (70),50 à 150,5 à 10
+Clairegoutte (70),50 à 150,1 à 5
 Châtenois (70),50 à 150,1 à 5
 La Guiche (71),20 à 50,0 à 1
 Esboz-Brest (70),50 à 150,1 à 5
@@ -1575,7 +1575,7 @@ Brevilliers (70),50 à 150,5 à 10
 Sancey (25),150 à 250,5 à 10
 Saint-Dizier-l'Évêque (90),500 à 1000,30 et plus
 Thil-sur-Arroux (71),0 à 10,0 à 1
-Coulanges-la-Vineuse (89),150 à 250,5 à 10
+Coulanges-la-Vineuse (89),50 à 150,1 à 5
 Talmay (21),50 à 150,1 à 5
 Thoirette-Coisia (39),250 à 500,20 à 25
 Anchenoncourt-et-Chazel (70),50 à 150,5 à 10
@@ -1628,7 +1628,7 @@ Granges (71),500 à 1000,10 à 15
 Monnetay (39),0 à 10,0 à 1
 Coisevaux (70),50 à 150,5 à 10
 Bergesserin (71),0 à 10,1 à 5
-Cuisery (71),10 à 20,0 à 1
+Cuisery (71),20 à 50,1 à 5
 Les Planches-en-Montagne (39),20 à 50,1 à 5
 Foissy-sur-Vanne (89),500 à 1000,30 et plus
 Velorcey (70),50 à 150,1 à 5
@@ -1697,9 +1697,9 @@ La Creuse (70),50 à 150,5 à 10
 Saint-Germain (70),150 à 250,5 à 10
 Argentenay (89),20 à 50,5 à 10
 Froidevaux (25),50 à 150,10 à 15
-Mollans (70),50 à 150,10 à 15
-Vernois-sur-Mance (70),250 à 500,10 à 15
-Saint-Usuge (71),150 à 250,15 à 20
+Mollans (70),50 à 150,5 à 10
+Vernois-sur-Mance (70),250 à 500,15 à 20
+Saint-Usuge (71),50 à 150,5 à 10
 Secenans (70),500 à 1000,25 à 30
 Traves (70),50 à 150,1 à 5
 Buvilly (39),1000 et plus,30 et plus
@@ -1716,7 +1716,7 @@ Mignavillers (70),50 à 150,5 à 10
 Quers (70),50 à 150,1 à 5
 Recey-sur-Ource (21),0 à 10,0 à 1
 Breuches (70),250 à 500,5 à 10
-Brienne (71),10 à 20,1 à 5
+Brienne (71),20 à 50,1 à 5
 Moutiers-en-Puisaye (89),0 à 10,0 à 1
 Pothières (21),0 à 10,0 à 1
 Brion (71),0 à 10,0 à 1
@@ -1732,9 +1732,9 @@ Germagny (71),10 à 20,0 à 1
 Lyoffans (70),50 à 150,5 à 10
 Montcourt (70),250 à 500,10 à 15
 Saligney (39),50 à 150,1 à 5
-Étevaux (21),250 à 500,10 à 15
+Étevaux (21),500 à 1000,15 à 20
 Ranzevelle (70),250 à 500,20 à 25
-Montessaux (70),150 à 250,15 à 20
+Montessaux (70),150 à 250,10 à 15
 Mailleroncourt-Charette (70),500 à 1000,25 à 30
 Miéry (39),50 à 150,1 à 5
 Bonnay (71),20 à 50,0 à 1
@@ -1755,8 +1755,8 @@ Faverolles-lès-Lucey (21),1000 et plus,30 et plus
 Vix (21),0 à 10,0 à 1
 Hauterive (89),20 à 50,0 à 1
 Corbenay (70),150 à 250,5 à 10
-Beaucourt (90),250 à 500,5 à 10
-Sainte-Colombe-sur-Seine (21),50 à 150,1 à 5
+Beaucourt (90),250 à 500,10 à 15
+Sainte-Colombe-sur-Seine (21),50 à 150,5 à 10
 Précy-le-Sec (89),20 à 50,1 à 5
 Gigny (89),20 à 50,1 à 5
 Thianges (58),50 à 150,1 à 5
@@ -1807,10 +1807,10 @@ Beaumont-sur-Vingeanne (21),0 à 10,0 à 1
 Devrouze (71),50 à 150,10 à 15
 Genevrey (70),50 à 150,10 à 15
 Billecul (39),50 à 150,1 à 5
-La Voivre (70),20 à 50,10 à 15
+La Voivre (70),50 à 150,10 à 15
 Le Villars (71),0 à 10,0 à 1
 Saints-en-Puisaye (89),150 à 250,10 à 15
-Blondefontaine (70),250 à 500,15 à 20
+Blondefontaine (70),250 à 500,20 à 25
 Betoncourt-lès-Brotte (70),50 à 150,1 à 5
 Chassey-lès-Scey (70),50 à 150,1 à 5
 Saint-Vincent-des-Prés (71),0 à 10,0 à 1
@@ -1832,7 +1832,7 @@ Villers-sur-Saulnot (70),50 à 150,10 à 15
 Laire (25),500 à 1000,30 et plus
 Courtoin (89),20 à 50,0 à 1
 Darcey (21),0 à 10,1 à 5
-Vallan (89),150 à 250,5 à 10
+Vallan (89),150 à 250,1 à 5
 Fougerolles-Saint-Valbert (70),250 à 500,5 à 10
 Solemont (25),50 à 150,1 à 5
 Cemboing (70),250 à 500,20 à 25
@@ -1870,18 +1870,18 @@ La Neuvelle-lès-Scey (70),50 à 150,1 à 5
 Bersaillin (39),50 à 150,1 à 5
 Vincelles (71),500 à 1000,20 à 25
 Vouhenans (70),250 à 500,10 à 15
-Supt (39),50 à 150,25 à 30
+Supt (39),50 à 150,20 à 25
 Échavanne (70),50 à 150,1 à 5
-Vitrey-sur-Mance (70),250 à 500,10 à 15
+Vitrey-sur-Mance (70),250 à 500,15 à 20
 Limanton (58),250 à 500,10 à 15
 Bussy-le-Grand (21),10 à 20,0 à 1
 Venouse (89),0 à 10,0 à 1
-Sainte-Colombe-des-Bois (58),250 à 500,5 à 10
+Sainte-Colombe-des-Bois (58),250 à 500,10 à 15
 Visoncourt (70),50 à 150,5 à 10
 Trois-Vèvres (58),50 à 150,5 à 10
 Brotte-lès-Luxeuil (70),50 à 150,5 à 10
 Froideterre (70),250 à 500,10 à 15
-Baudoncourt (70),50 à 150,1 à 5
+Baudoncourt (70),50 à 150,5 à 10
 Cornod (39),50 à 150,10 à 15
 Plénisette (39),150 à 250,25 à 30
 Montenoison (58),0 à 10,0 à 1
@@ -1891,7 +1891,7 @@ Noiron-sur-Seine (21),0 à 10,0 à 1
 Champagny-sous-Uxelles (71),0 à 10,0 à 1
 Meurcourt (70),50 à 150,1 à 5
 Cernon (39),50 à 150,5 à 10
-Mandrevillars (70),1000 et plus,30 et plus
+Mandrevillars (70),1000 et plus,25 à 30
 Montliot-et-Courcelles (21),0 à 10,0 à 1
 Magnivray (70),50 à 150,1 à 5
 Linexert (70),50 à 150,5 à 10
@@ -1906,8 +1906,8 @@ Saint-Martin-de-Salencey (71),10 à 20,0 à 1
 Palante (70),50 à 150,5 à 10
 Vellevans (25),20 à 50,1 à 5
 Saint-Privé (71),10 à 20,0 à 1
-Chissey-lès-Mâcon (71),500 à 1000,20 à 25
-Lavau (89),0 à 10,1 à 5
+Chissey-lès-Mâcon (71),500 à 1000,15 à 20
+Lavau (89),0 à 10,0 à 1
 Corcelle-Mieslot (25),150 à 250,10 à 15
 Saponcourt (70),50 à 150,1 à 5
 Grevilly (71),0 à 10,0 à 1
@@ -1920,14 +1920,14 @@ Sainpuits (89),250 à 500,10 à 15
 Colonne (39),1000 et plus,30 et plus
 La Tagnière (71),0 à 10,0 à 1
 Sailly (71),1000 et plus,30 et plus
-Ormes (71),10 à 20,0 à 1
+Ormes (71),20 à 50,0 à 1
 Blarians (25),150 à 250,10 à 15
 Magny-Danigon (70),50 à 150,5 à 10
 Saint-Boil (71),10 à 20,0 à 1
 Montapas (58),0 à 10,0 à 1
 Romain (39),50 à 150,1 à 5
 Servin (25),500 à 1000,30 et plus
-Chauvirey-le-Châtel (70),1000 et plus,30 et plus
+Chauvirey-le-Châtel (70),250 à 500,10 à 15
 Ameugny (71),0 à 10,0 à 1
 Genevreuille (70),50 à 150,1 à 5
 Bonnefontaine (39),50 à 150,5 à 10
@@ -1966,7 +1966,7 @@ Les Aynans (70),50 à 150,5 à 10
 Pagney (39),500 à 1000,15 à 20
 Saint-Hymetière-sur-Valouse (39),250 à 500,15 à 20
 Sigy-le-Châtel (71),1000 et plus,15 à 20
-La Truchère (71),10 à 20,0 à 1
+La Truchère (71),20 à 50,1 à 5
 Passy (71),10 à 20,0 à 1
 Pougues-les-Eaux (58),50 à 150,5 à 10
 Montigny-sur-Canne (58),50 à 150,10 à 15
@@ -2000,7 +2000,7 @@ Frangy-en-Bresse (71),50 à 150,5 à 10
 Levis (89),0 à 10,0 à 1
 La Neuvelle-lès-Lure (70),50 à 150,5 à 10
 Chassigny-sous-Dun (71),10 à 20,0 à 1
-Varogne (70),50 à 150,10 à 15
+Varogne (70),50 à 150,5 à 10
 Villers-les-Bois (39),50 à 150,5 à 10
 Saint-Fargeau (89),50 à 150,1 à 5
 Champagney (70),250 à 500,15 à 20
@@ -2009,7 +2009,7 @@ Prusly-sur-Ource (21),0 à 10,0 à 1
 Conte (39),50 à 150,1 à 5
 Verlans (70),50 à 150,5 à 10
 La Vaivre (70),1000 et plus,30 et plus
-Carisey (89),1000 et plus,25 à 30
+Carisey (89),500 à 1000,20 à 25
 Roye (70),50 à 150,5 à 10
 Bosjean (71),50 à 150,1 à 5
 Le Fied (39),50 à 150,5 à 10
@@ -2021,7 +2021,7 @@ Lugny-lès-Charolles (71),10 à 20,1 à 5
 Montmahoux (25),250 à 500,5 à 10
 Les Rousses (39),10 à 20,1 à 5
 Arcey (25),500 à 1000,20 à 25
-Échevronne (21),1000 et plus,20 à 25
+Échevronne (21),500 à 1000,15 à 20
 Vallerois-Lorioz (70),50 à 150,1 à 5
 Renaucourt (70),150 à 250,5 à 10
 Menou (58),0 à 10,0 à 1
@@ -2030,7 +2030,7 @@ Prizy (71),0 à 10,0 à 1
 Saincaize-Meauce (58),50 à 150,1 à 5
 Vaux-lès-Saint-Claude (39),500 à 1000,30 et plus
 Dennevy (71),0 à 10,0 à 1
-Thiébouhans (25),250 à 500,20 à 25
+Thiébouhans (25),250 à 500,15 à 20
 Plainoiseau (39),250 à 500,5 à 10
 Joncy (71),10 à 20,0 à 1
 Genouilly (71),250 à 500,15 à 20
@@ -2073,7 +2073,7 @@ Saint-Amour (39),50 à 150,1 à 5
 Bief-des-Maisons (39),10 à 20,5 à 10
 Préty (71),150 à 250,5 à 10
 Montbellet (71),10 à 20,0 à 1
-Courtefontaine (25),250 à 500,25 à 30
+Courtefontaine (25),250 à 500,30 et plus
 Montmelard (71),10 à 20,0 à 1
 Le Luhier (25),50 à 150,5 à 10
 Montjay (71),10 à 20,0 à 1
@@ -2086,7 +2086,7 @@ Trévillers (25),250 à 500,20 à 25
 Sanvignes-les-Mines (71),150 à 250,10 à 15
 Tréclun (21),150 à 250,5 à 10
 Oye-et-Pallet (25),50 à 150,1 à 5
-Pouilloux (71),50 à 150,1 à 5
+Pouilloux (71),50 à 150,5 à 10
 Vauban (71),0 à 10,0 à 1
 Jours-lès-Baigneux (21),50 à 150,1 à 5
 La Charité-sur-Loire (58),250 à 500,10 à 15
@@ -2094,9 +2094,9 @@ Lalheue (71),250 à 500,15 à 20
 Marcenay (21),0 à 10,0 à 1
 Charnay-lès-Chalon (71),0 à 10,0 à 1
 Berzé-le-Châtel (71),10 à 20,0 à 1
-Saint-Yan (71),50 à 150,5 à 10
+Saint-Yan (71),50 à 150,1 à 5
 Montigny-sur-Armançon (21),1000 et plus,30 et plus
-Génelard (71),250 à 500,15 à 20
+Génelard (71),150 à 250,10 à 15
 Serre-les-Sapins (25),250 à 500,5 à 10
 Saillenard (71),50 à 150,5 à 10
 Cortambert (71),0 à 10,0 à 1
@@ -2106,7 +2106,7 @@ Saint-Maurice-aux-Riches-Hommes (89),0 à 10,0 à 1
 Charnay-lès-Mâcon (71),250 à 500,5 à 10
 Massingy (21),0 à 10,0 à 1
 Lucy-le-Bois (89),500 à 1000,15 à 20
-Aiserey (21),50 à 150,1 à 5
+Aiserey (21),0 à 10,0 à 1
 Burnevillers (25),250 à 500,5 à 10
 Cosges (39),50 à 150,1 à 5
 La Chapelle-Saint-Sauveur (71),20 à 50,0 à 1
@@ -2115,7 +2115,7 @@ La Rochepot (21),0 à 10,0 à 1
 Ozenay (71),0 à 10,0 à 1
 Villiers-sur-Yonne (58),20 à 50,1 à 5
 Besain (39),500 à 1000,15 à 20
-Saint-Rémy-en-Comté (70),50 à 150,1 à 5
+Saint-Rémy-en-Comté (70),20 à 50,1 à 5
 Rochejean (25),150 à 250,5 à 10
 Hauterive-la-Fresse (25),50 à 150,5 à 10
 Uchizy (71),0 à 10,0 à 1
@@ -2131,7 +2131,7 @@ Montcenis (71),150 à 250,5 à 10
 Chemilly-sur-Serein (89),0 à 10,0 à 1
 Brey-et-Maison-du-Bois (25),20 à 50,1 à 5
 Reculfoz (25),20 à 50,5 à 10
-Avignon-lès-Saint-Claude (39),250 à 500,5 à 10
+Avignon-lès-Saint-Claude (39),250 à 500,10 à 15
 Dompierre-les-Tilleuls (25),150 à 250,1 à 5
 Gueugnon (71),250 à 500,10 à 15
 Luthenay-Uxeloup (58),0 à 10,0 à 1
@@ -2140,7 +2140,7 @@ La Châtelaine (39),250 à 500,15 à 20
 Saint-Gervais-en-Vallière (71),0 à 10,0 à 1
 Saint-Martin-en-Gâtinois (71),0 à 10,0 à 1
 Langeron (58),0 à 10,0 à 1
-Palinges (71),250 à 500,20 à 25
+Palinges (71),250 à 500,25 à 30
 Chamesol (25),50 à 150,1 à 5
 Héry (89),250 à 500,10 à 15
 Migé (89),0 à 10,0 à 1
@@ -2184,7 +2184,7 @@ Mantoche (70),250 à 500,10 à 15
 Thorey-en-Plaine (21),250 à 500,10 à 15
 Mirebeau-sur-Bèze (21),500 à 1000,15 à 20
 Grenant-lès-Sombernon (21),0 à 10,0 à 1
-Cogna (39),50 à 150,5 à 10
+Cogna (39),500 à 1000,30 et plus
 Flangebouche (25),250 à 500,10 à 15
 Combeaufontaine (70),500 à 1000,15 à 20
 Veuvey-sur-Ouche (21),0 à 10,0 à 1
@@ -2229,7 +2229,7 @@ Chapelle-d'Huin (25),150 à 250,5 à 10
 Santilly (71),10 à 20,0 à 1
 La Chapelle-Vaupelteigne (89),0 à 10,0 à 1
 Villers-Vaudey (70),150 à 250,20 à 25
-Savolles (21),1000 et plus,20 à 25
+Savolles (21),500 à 1000,10 à 15
 Biarne (39),150 à 250,5 à 10
 Sermesse (71),250 à 500,30 et plus
 Saint-Léger-lès-Paray (71),50 à 150,5 à 10
@@ -2254,7 +2254,7 @@ Hurigny (71),50 à 150,1 à 5
 Chapelle-des-Bois (25),20 à 50,1 à 5
 Essert (90),500 à 1000,10 à 15
 Ville-du-Pont (25),150 à 250,15 à 20
-Urtière (25),50 à 150,15 à 20
+Urtière (25),150 à 250,20 à 25
 Nanton (71),500 à 1000,15 à 20
 Ménetreuil (71),20 à 50,1 à 5
 Villargoix (21),0 à 10,0 à 1
@@ -2263,11 +2263,11 @@ Le Russey (25),250 à 500,15 à 20
 Laroche-Saint-Cydroine (89),10 à 20,0 à 1
 Mazille (71),250 à 500,15 à 20
 Fournet-Blancheroche (25),150 à 250,5 à 10
-Saint-Victor-sur-Ouche (21),500 à 1000,20 à 25
+Saint-Victor-sur-Ouche (21),500 à 1000,25 à 30
 Levier (25),250 à 500,5 à 10
 Vy-lès-Rupt (70),150 à 250,10 à 15
 Marnay (71),250 à 500,20 à 25
-Champforgeuil (71),150 à 250,5 à 10
+Champforgeuil (71),250 à 500,5 à 10
 Pluvet (21),150 à 250,10 à 15
 Damprichard (25),150 à 250,10 à 15
 Saint-Seine (58),50 à 150,1 à 5
@@ -2279,7 +2279,7 @@ Arceau (21),250 à 500,5 à 10
 Patornay (39),50 à 150,1 à 5
 Graye-et-Charnay (39),0 à 10,0 à 1
 Charquemont (25),50 à 150,5 à 10
-Igé (71),250 à 500,15 à 20
+Igé (71),150 à 250,10 à 15
 Entre-deux-Monts (39),20 à 50,0 à 1
 Blanzy (71),50 à 150,1 à 5
 Marly-sur-Arroux (71),500 à 1000,15 à 20
@@ -2308,7 +2308,7 @@ Le Bizot (25),250 à 500,15 à 20
 Brèves (58),1000 et plus,30 et plus
 Piffonds (89),20 à 50,1 à 5
 Villiers-le-Duc (21),0 à 10,0 à 1
-Fragnes-La Loyère (71),50 à 150,5 à 10
+Fragnes-La Loyère (71),150 à 250,5 à 10
 Saint-Jean-de-Losne (21),150 à 250,10 à 15
 Pouilly-sur-Loire (58),50 à 150,1 à 5
 Sainte-Hélène (71),10 à 20,0 à 1
@@ -2322,7 +2322,7 @@ Plaimbois-Vennes (25),250 à 500,15 à 20
 Fédry (70),150 à 250,20 à 25
 Saint-Vallier (71),150 à 250,5 à 10
 La Chapelle-Thècle (71),20 à 50,1 à 5
-Fessevillers (25),250 à 500,10 à 15
+Fessevillers (25),250 à 500,20 à 25
 Seveux-Motey (70),250 à 500,15 à 20
 Amathay-Vésigneux (25),500 à 1000,30 et plus
 Lect (39),20 à 50,1 à 5
@@ -2339,7 +2339,7 @@ Cintrey (70),150 à 250,20 à 25
 Germigney (70),250 à 500,10 à 15
 Sainte-Anne (25),250 à 500,5 à 10
 Pontaubert (89),250 à 500,10 à 15
-Charencey (21),0 à 10,0 à 1
+Charencey (21),0 à 10,1 à 5
 Asquins (89),500 à 1000,25 à 30
 Quintigny (39),50 à 150,5 à 10
 Petit-Noir (39),50 à 150,1 à 5
@@ -2369,7 +2369,7 @@ Grand'Combe-Châteleu (25),50 à 150,1 à 5
 Charmoy (71),20 à 50,10 à 15
 Dommartin (25),500 à 1000,15 à 20
 Viré (71),150 à 250,10 à 15
-Prissé (71),50 à 150,5 à 10
+Prissé (71),150 à 250,5 à 10
 La Rochelle (70),150 à 250,15 à 20
 Chasselas (71),0 à 10,0 à 1
 Saint-Gorgon-Main (25),150 à 250,15 à 20
@@ -2419,12 +2419,12 @@ Saint-Martin-sur-Nohain (58),50 à 150,1 à 5
 Montaigu (39),50 à 150,1 à 5
 Villard-Saint-Sauveur (39),0 à 10,1 à 5
 Palleau (71),0 à 10,0 à 1
-Vannoz (39),1000 et plus,30 et plus
+Vannoz (39),1000 et plus,25 à 30
 Pontarlier (25),250 à 500,10 à 15
 Bézouotte (21),250 à 500,5 à 10
 Botans (90),1000 et plus,30 et plus
-Colombier-en-Brionnais (71),500 à 1000,20 à 25
-Neuvy-Grandchamp (71),50 à 150,15 à 20
+Colombier-en-Brionnais (71),500 à 1000,25 à 30
+Neuvy-Grandchamp (71),50 à 150,10 à 15
 Nozeroy (39),500 à 1000,10 à 15
 Curbigny (71),0 à 10,0 à 1
 Vézelay (89),10 à 20,1 à 5
@@ -2455,17 +2455,17 @@ Aigremont (89),0 à 10,0 à 1
 Grandecourt (70),1000 et plus,30 et plus
 Mesnois (39),50 à 150,5 à 10
 Ampilly-les-Bordes (21),50 à 150,5 à 10
-Quincy-le-Vicomte (21),500 à 1000,10 à 15
+Quincy-le-Vicomte (21),20 à 50,1 à 5
 Bulle (25),150 à 250,5 à 10
 Bannans (25),500 à 1000,20 à 25
 Déservillers (25),250 à 500,10 à 15
 Mars-sur-Allier (58),500 à 1000,15 à 20
 Saint-Aubin-en-Charollais (71),250 à 500,15 à 20
-Chablis (89),150 à 250,1 à 5
+Chablis (89),50 à 150,1 à 5
 Dracy-le-Fort (71),150 à 250,1 à 5
 Rémondans-Vaivre (25),0 à 10,0 à 1
 Lavans-lès-Saint-Claude (39),250 à 500,10 à 15
-Jully-lès-Buxy (71),10 à 20,0 à 1
+Jully-lès-Buxy (71),250 à 500,5 à 10
 Choux (39),500 à 1000,10 à 15
 Perrecy-les-Forges (71),50 à 150,5 à 10
 Vuillecin (25),50 à 150,1 à 5
@@ -2474,7 +2474,7 @@ Les Premiers Sapins (25),250 à 500,15 à 20
 Gevingey (39),50 à 150,5 à 10
 Les Planches-près-Arbois (39),250 à 500,5 à 10
 Chânes (71),150 à 250,5 à 10
-Metz-le-Comte (58),0 à 10,0 à 1
+Metz-le-Comte (58),500 à 1000,15 à 20
 La Chaux (25),250 à 500,15 à 20
 Brainans (39),50 à 150,1 à 5
 Saint-Maurice-le-Vieil (89),500 à 1000,10 à 15
@@ -2489,20 +2489,20 @@ Gilley (25),500 à 1000,25 à 30
 Les Trois-Châteaux (39),50 à 150,1 à 5
 Ouroux-sur-Saône (71),150 à 250,10 à 15
 L'Étang-Vergy (21),250 à 500,30 et plus
-Balaiseaux (39),250 à 500,5 à 10
+Balaiseaux (39),250 à 500,10 à 15
 Châteauvieux-les-Fossés (25),0 à 10,0 à 1
 Tournus (71),50 à 150,5 à 10
-Saint-Forgeot (71),0 à 10,0 à 1
+Saint-Forgeot (71),10 à 20,1 à 5
 Champagne-sur-Loue (39),250 à 500,10 à 15
 Aubonne (25),1000 et plus,30 et plus
 La Quarte (70),150 à 250,5 à 10
 Lanthes (21),250 à 500,5 à 10
-Saint-Claude (39),250 à 500,10 à 15
+Saint-Claude (39),150 à 250,5 à 10
 Frambouhans (25),150 à 250,5 à 10
 Saint-Igny-de-Roche (71),250 à 500,10 à 15
 Laives (71),50 à 150,1 à 5
-Mâcon (71),50 à 150,5 à 10
-Lessard-le-National (71),0 à 10,0 à 1
+Mâcon (71),150 à 250,5 à 10
+Lessard-le-National (71),20 à 50,0 à 1
 Vitry-sur-Loire (71),0 à 10,0 à 1
 Villers-sous-Chalamont (25),250 à 500,5 à 10
 Malans (25),250 à 500,5 à 10
@@ -2544,7 +2544,7 @@ Baume-les-Messieurs (39),50 à 150,1 à 5
 Valempoulières (39),20 à 50,0 à 1
 Saunières (71),0 à 10,0 à 1
 Remoray-Boujeons (25),250 à 500,5 à 10
-Marcigny (71),250 à 500,10 à 15
+Marcigny (71),250 à 500,15 à 20
 Le Frasnois (39),1000 et plus,30 et plus
 Dun-les-Places (58),500 à 1000,30 et plus
 Perrigny (39),250 à 500,10 à 15
@@ -2562,7 +2562,7 @@ La Rivière-Drugeon (25),250 à 500,10 à 15
 Beaunotte (21),0 à 10,1 à 5
 Montceaux-l'Étoile (71),0 à 10,0 à 1
 Dommartin-lès-Cuiseaux (71),250 à 500,10 à 15
-Coyrière (39),10 à 20,1 à 5
+Coyrière (39),10 à 20,5 à 10
 Changy (71),10 à 20,0 à 1
 Saint-Pierre-le-Vieux (71),10 à 20,1 à 5
 Chalmoux (71),150 à 250,5 à 10
@@ -2573,10 +2573,10 @@ Orgeans-Blanchefontaine (25),50 à 150,1 à 5
 Crux-la-Ville (58),250 à 500,5 à 10
 La Longeville (25),50 à 150,5 à 10
 Montceau-les-Mines (71),50 à 150,5 à 10
-Durnes (25),150 à 250,15 à 20
+Durnes (25),150 à 250,10 à 15
 Thulay (25),250 à 500,10 à 15
 Baigneux-les-Juifs (21),50 à 150,1 à 5
-Goumois (25),150 à 250,10 à 15
+Goumois (25),250 à 500,10 à 15
 Onoz (39),1000 et plus,30 et plus
 Sainte-Cécile (71),0 à 10,0 à 1
 Ruffey-lès-Echirey (21),50 à 150,1 à 5
@@ -2587,7 +2587,7 @@ Villeneuve-sous-Pymont (39),50 à 150,1 à 5
 Hauts de Bienne (39),150 à 250,10 à 15
 Villers-la-Combe (25),50 à 150,1 à 5
 Escolives-Sainte-Camille (89),250 à 500,5 à 10
-Mervans (71),50 à 150,1 à 5
+Mervans (71),150 à 250,5 à 10
 Rouvres-en-Plaine (21),50 à 150,5 à 10
 Serrières (71),10 à 20,0 à 1
 Coulevon (70),150 à 250,5 à 10
@@ -2596,10 +2596,10 @@ Le Bélieu (25),250 à 500,10 à 15
 Torcy (71),250 à 500,5 à 10
 Villers-la-Faye (21),500 à 1000,15 à 20
 Theuley (70),150 à 250,5 à 10
-Neublans-Abergement (39),500 à 1000,25 à 30
+Neublans-Abergement (39),500 à 1000,20 à 25
 Bouverans (25),1000 et plus,30 et plus
 Romanèche-Thorins (71),50 à 150,5 à 10
-Ardon (39),50 à 150,25 à 30
+Ardon (39),50 à 150,20 à 25
 Fuans (25),500 à 1000,20 à 25
 Amancey (25),250 à 500,5 à 10
 Marigny-sur-Yonne (58),500 à 1000,5 à 10
@@ -2614,7 +2614,7 @@ Noël-Cerneux (25),50 à 150,1 à 5
 Mont-de-Laval (25),50 à 150,10 à 15
 Saint-Romain-sous-Versigny (71),20 à 50,10 à 15
 Saint-Martin-Belle-Roche (71),0 à 10,0 à 1
-Ratenelle (71),10 à 20,0 à 1
+Ratenelle (71),20 à 50,0 à 1
 Bressey-sur-Tille (21),50 à 150,1 à 5
 Saint-Julien-sur-Dheune (71),150 à 250,5 à 10
 Saint-Apollinaire (21),150 à 250,5 à 10
@@ -2633,13 +2633,13 @@ Braillans (25),150 à 250,10 à 15
 Chassagne-Montrachet (21),10 à 20,0 à 1
 Charny (21),0 à 10,0 à 1
 Marmagne (71),150 à 250,10 à 15
-La Celle-en-Morvan (71),0 à 10,0 à 1
+La Celle-en-Morvan (71),10 à 20,0 à 1
 Clamerey (21),0 à 10,0 à 1
 Fleys (89),0 à 10,0 à 1
 Alièze (39),50 à 150,1 à 5
 Chargey-lès-Port (70),50 à 150,1 à 5
 Arbois (39),500 à 1000,10 à 15
-Équevillon (39),20 à 50,1 à 5
+Équevillon (39),50 à 150,1 à 5
 Cuiserey (21),500 à 1000,30 et plus
 Allerey-sur-Saône (71),0 à 10,0 à 1
 Chille (39),50 à 150,1 à 5
@@ -2673,19 +2673,19 @@ Barizey (71),0 à 10,0 à 1
 Pleure (39),50 à 150,1 à 5
 La Marre (39),500 à 1000,15 à 20
 Pazy (58),10 à 20,0 à 1
-Crissey (71),50 à 150,1 à 5
+Crissey (71),50 à 150,5 à 10
 Arc-sous-Cicon (25),150 à 250,10 à 15
 Bourg-le-Comte (71),0 à 10,0 à 1
 Boujailles (25),150 à 250,15 à 20
 Urcy (21),0 à 10,0 à 1
 Fénay (21),150 à 250,10 à 15
-Saint-Symphorien-des-Bois (71),0 à 10,0 à 1
+Saint-Symphorien-des-Bois (71),150 à 250,15 à 20
 Les Bréseux (25),50 à 150,5 à 10
 Saint-Laurent-en-Brionnais (71),0 à 10,0 à 1
 Saint-Vallerin (71),10 à 20,0 à 1
-Leschères (39),10 à 20,1 à 5
+Leschères (39),10 à 20,20 à 25
 Val-d'Épy (39),500 à 1000,5 à 10
-Charbuy (89),250 à 500,10 à 15
+Charbuy (89),250 à 500,15 à 20
 Courvières (25),150 à 250,5 à 10
 Gray-la-Ville (70),500 à 1000,20 à 25
 Gibles (71),0 à 10,0 à 1
@@ -2707,12 +2707,12 @@ Vernierfontaine (25),150 à 250,15 à 20
 Vauchoux (70),20 à 50,1 à 5
 Marcilly-sur-Tille (21),150 à 250,5 à 10
 Courlans (39),50 à 150,1 à 5
-Jouvençon (71),0 à 10,0 à 1
+Jouvençon (71),10 à 20,1 à 5
 Foncine-le-Bas (39),500 à 1000,15 à 20
 Bians-les-Usiers (25),150 à 250,10 à 15
 Gâcogne (58),50 à 150,5 à 10
 Le Breuil (71),250 à 500,10 à 15
-Noé (89),50 à 150,1 à 5
+Noé (89),20 à 50,1 à 5
 Cramans (39),500 à 1000,10 à 15
 Noiron-sous-Gevrey (21),0 à 10,0 à 1
 Véronnes (21),0 à 10,0 à 1
@@ -2735,7 +2735,7 @@ Consolation-Maisonnettes (25),250 à 500,15 à 20
 Château (71),0 à 10,0 à 1
 Auxonne (21),250 à 500,5 à 10
 Nitry (89),20 à 50,1 à 5
-Loisy (71),10 à 20,0 à 1
+Loisy (71),20 à 50,1 à 5
 Baudemont (71),150 à 250,15 à 20
 Courbouzon (39),50 à 150,1 à 5
 Confracourt (70),150 à 250,10 à 15
@@ -2788,7 +2788,7 @@ Nans-sous-Sainte-Anne (25),250 à 500,10 à 15
 Vernot (21),10 à 20,0 à 1
 Saint-Agnan (89),150 à 250,15 à 20
 Saint-Sernin-du-Plain (71),0 à 10,0 à 1
-Fournaudin (89),50 à 150,1 à 5
+Fournaudin (89),20 à 50,0 à 1
 Saint-Cyr (71),500 à 1000,15 à 20
 Beffia (39),50 à 150,10 à 15
 Fauverney (21),500 à 1000,20 à 25
@@ -2796,7 +2796,7 @@ Ciry-le-Noble (71),250 à 500,15 à 20
 Barges (21),250 à 500,10 à 15
 Renédale (25),150 à 250,20 à 25
 Saint-Valérien (89),50 à 150,5 à 10
-Vitry-en-Charollais (71),250 à 500,15 à 20
+Vitry-en-Charollais (71),250 à 500,10 à 15
 Châlonvillars (70),250 à 500,5 à 10
 Ampilly-le-Sec (21),0 à 10,0 à 1
 Magny-Lambert (21),50 à 150,30 et plus
@@ -2809,7 +2809,7 @@ Franois (25),50 à 150,1 à 5
 Allerey (21),20 à 50,10 à 15
 Orgelet (39),250 à 500,10 à 15
 Saint-Bris-le-Vineux (89),50 à 150,1 à 5
-Gevrey-Chambertin (21),0 à 10,0 à 1
+Gevrey-Chambertin (21),20 à 50,1 à 5
 Arbecey (70),150 à 250,5 à 10
 Guyans-Durnes (25),150 à 250,10 à 15
 Maligny (89),0 à 10,0 à 1
@@ -2852,7 +2852,7 @@ Glamondans (25),50 à 150,1 à 5
 Sornay (71),150 à 250,10 à 15
 Ollans (25),150 à 250,10 à 15
 Fretterans (71),50 à 150,1 à 5
-Rosey (70),50 à 150,1 à 5
+Rosey (70),50 à 150,5 à 10
 Rignosot (25),150 à 250,10 à 15
 Sorans-lès-Breurey (70),50 à 150,5 à 10
 Fraroz (39),50 à 150,20 à 25
@@ -2876,9 +2876,9 @@ Germigny (89),50 à 150,1 à 5
 Rouhe (25),50 à 150,1 à 5
 Meroux-Moval (90),150 à 250,5 à 10
 Myennes (58),0 à 10,0 à 1
-Sauvigny-le-Bois (89),500 à 1000,20 à 25
+Sauvigny-le-Bois (89),500 à 1000,25 à 30
 Francheville (39),50 à 150,10 à 15
-Offemont (90),250 à 500,15 à 20
+Offemont (90),500 à 1000,15 à 20
 Séligney (39),50 à 150,1 à 5
 Montagney (70),250 à 500,10 à 15
 Vaux-le-Moncelot (70),150 à 250,10 à 15
@@ -2906,17 +2906,17 @@ Noironte (25),150 à 250,5 à 10
 Chambain (21),0 à 10,0 à 1
 Fourg (25),50 à 150,1 à 5
 Tronchoy (89),0 à 10,0 à 1
-Plumont (39),150 à 250,5 à 10
+Plumont (39),150 à 250,10 à 15
 Marnoz (39),50 à 150,1 à 5
 Venizy (89),250 à 500,10 à 15
 Béru (89),1000 et plus,30 et plus
 Exincourt (25),500 à 1000,15 à 20
 Sochaux (25),250 à 500,10 à 15
 Champvoux (58),20 à 50,1 à 5
-Saint-Hippolyte (25),50 à 150,5 à 10
+Saint-Hippolyte (25),150 à 250,10 à 15
 Montigny-Mornay-Villeneuve-sur-Vingeanne (21),250 à 500,10 à 15
 Tromarey (70),500 à 1000,15 à 20
-Allenjoie (25),500 à 1000,10 à 15
+Allenjoie (25),500 à 1000,15 à 20
 Pin (70),250 à 500,10 à 15
 Sainte-Colombe (89),500 à 1000,15 à 20
 Planay (21),20 à 50,5 à 10
@@ -2925,7 +2925,7 @@ Prémery (58),250 à 500,10 à 15
 La Roche-Vanneau (21),1000 et plus,30 et plus
 Rancenay (25),150 à 250,5 à 10
 Magny-Châtelard (25),50 à 150,5 à 10
-Branges (71),150 à 250,5 à 10
+Branges (71),50 à 150,5 à 10
 Francourt (70),150 à 250,1 à 5
 Échay (25),50 à 150,5 à 10
 Villy-en-Auxois (21),20 à 50,0 à 1
@@ -2954,9 +2954,9 @@ Poligny (39),250 à 500,5 à 10
 Chassagne-Saint-Denis (25),250 à 500,15 à 20
 Corbigny (58),250 à 500,15 à 20
 La Chassagne (39),150 à 250,5 à 10
-Velleguindry-et-Levrecey (70),150 à 250,5 à 10
+Velleguindry-et-Levrecey (70),150 à 250,1 à 5
 Buffon (21),500 à 1000,30 et plus
-Lays-sur-le-Doubs (71),500 à 1000,20 à 25
+Lays-sur-le-Doubs (71),50 à 150,1 à 5
 Pierreclos (71),0 à 10,0 à 1
 Daix (21),150 à 250,1 à 5
 Betoncourt-sur-Mance (70),250 à 500,20 à 25
@@ -2969,7 +2969,7 @@ Saint-Firmin (71),20 à 50,1 à 5
 Les Essards-Taignevaux (39),50 à 150,1 à 5
 Recologne-lès-Rioz (70),50 à 150,1 à 5
 Thorey-sous-Charny (21),1000 et plus,20 à 25
-Amance (70),50 à 150,1 à 5
+Amance (70),20 à 50,1 à 5
 Villers-le-Sec (70),250 à 500,5 à 10
 Cordonnet (70),50 à 150,5 à 10
 Gonsans (25),50 à 150,1 à 5
@@ -3060,7 +3060,7 @@ Gurgy-le-Château (21),0 à 10,0 à 1
 Provenchère (70),50 à 150,1 à 5
 Maillot (89),250 à 500,5 à 10
 Navenne (70),150 à 250,5 à 10
-Menoux (70),50 à 150,1 à 5
+Menoux (70),20 à 50,1 à 5
 Gemeaux (21),50 à 150,1 à 5
 Passavant (25),50 à 150,5 à 10
 Clucy (39),50 à 150,1 à 5
@@ -3094,7 +3094,7 @@ Champlost (89),50 à 150,5 à 10
 Saint-Rémy (21),150 à 250,5 à 10
 Buxerolles (21),0 à 10,0 à 1
 Villers-sous-Montrond (25),500 à 1000,30 et plus
-Leuglay (21),500 à 1000,10 à 15
+Leuglay (21),500 à 1000,5 à 10
 La Basse-Vaivre (70),50 à 150,1 à 5
 Saint-Éloi (58),150 à 250,5 à 10
 Lanans (25),1000 et plus,30 et plus
@@ -3102,14 +3102,14 @@ Fleury-sur-Loire (58),0 à 10,1 à 5
 Collan (89),0 à 10,0 à 1
 Escamps (89),50 à 150,1 à 5
 Volon (70),50 à 150,5 à 10
-Romain (25),250 à 500,15 à 20
+Romain (25),250 à 500,10 à 15
 Villaines-les-Prévôtes (21),20 à 50,1 à 5
 Les Auxons (25),250 à 500,5 à 10
 Losne (21),0 à 10,0 à 1
-Fêche-l'Église (90),250 à 500,20 à 25
+Fêche-l'Église (90),250 à 500,25 à 30
 Pourrain (89),50 à 150,5 à 10
 Sainte-Marie-en-Chanois (70),20 à 50,10 à 15
-Sombernon (21),150 à 250,5 à 10
+Sombernon (21),150 à 250,10 à 15
 Neurey-lès-la-Demie (70),250 à 500,10 à 15
 Mercurey (71),0 à 10,0 à 1
 Colombier-Fontaine (25),150 à 250,5 à 10
@@ -3137,7 +3137,7 @@ Brussey (70),500 à 1000,15 à 20
 Blussangeaux (25),20 à 50,1 à 5
 Taizé (71),0 à 10,0 à 1
 Perceneige (89),50 à 150,5 à 10
-Châtel-Moron (71),0 à 10,0 à 1
+Châtel-Moron (71),0 à 10,1 à 5
 Pompierre-sur-Doubs (25),50 à 150,1 à 5
 Villers-Buzon (25),250 à 500,5 à 10
 Pasilly (89),20 à 50,5 à 10
@@ -3150,7 +3150,7 @@ Luzy (58),250 à 500,10 à 15
 Évans (39),500 à 1000,20 à 25
 Bretigney (25),20 à 50,1 à 5
 Villers-Grélot (25),150 à 250,10 à 15
-Serre-les-Moulières (39),150 à 250,1 à 5
+Serre-les-Moulières (39),150 à 250,5 à 10
 Vaivre-et-Montoille (70),250 à 500,5 à 10
 Bans (39),50 à 150,1 à 5
 Peseux (39),50 à 150,1 à 5
@@ -3173,7 +3173,7 @@ Orchamps (39),150 à 250,5 à 10
 Magny-sur-Tille (21),250 à 500,10 à 15
 La Résie-Saint-Martin (70),150 à 250,10 à 15
 Mélisey (70),150 à 250,10 à 15
-La Barre (70),150 à 250,5 à 10
+La Barre (70),150 à 250,15 à 20
 Annoire (39),50 à 150,1 à 5
 Saint-Saulge (58),0 à 10,0 à 1
 Saint-Lothain (39),250 à 500,5 à 10
@@ -3214,7 +3214,7 @@ Faimbe (25),20 à 50,0 à 1
 Villeblevin (89),10 à 20,0 à 1
 Épertully (71),0 à 10,0 à 1
 Thorigny-sur-Oreuse (89),50 à 150,5 à 10
-Lavangeot (39),50 à 150,10 à 15
+Lavangeot (39),150 à 250,10 à 15
 Roche-lès-Clerval (25),50 à 150,5 à 10
 Dampierre-sur-Salon (70),250 à 500,5 à 10
 Adam-lès-Passavant (25),50 à 150,1 à 5
@@ -3224,7 +3224,7 @@ Val-de-Roulans (25),150 à 250,1 à 5
 Fontenelle (21),250 à 500,10 à 15
 Scey-Maisières (25),150 à 250,5 à 10
 Passavant-la-Rochère (70),250 à 500,15 à 20
-Fontenois-la-Ville (70),50 à 150,10 à 15
+Fontenois-la-Ville (70),150 à 250,10 à 15
 Beulotte-Saint-Laurent (70),20 à 50,15 à 20
 Geneuille (25),250 à 500,10 à 15
 Brazey-en-Plaine (21),50 à 150,1 à 5
@@ -3295,7 +3295,7 @@ Couchey (21),50 à 150,1 à 5
 Breurey-lès-Faverney (70),20 à 50,1 à 5
 Soucy (89),50 à 150,5 à 10
 Nans (25),250 à 500,5 à 10
-La Bretenière (39),50 à 150,1 à 5
+La Bretenière (39),150 à 250,1 à 5
 Grignon (21),0 à 10,0 à 1
 Montain (39),50 à 150,1 à 5
 Val-Sonnette (39),50 à 150,5 à 10
@@ -3367,7 +3367,7 @@ Moncey (25),50 à 150,1 à 5
 Fesches-le-Châtel (25),150 à 250,10 à 15
 Cernans (39),50 à 150,1 à 5
 Belmont (39),50 à 150,1 à 5
-Frotey-lès-Vesoul (70),250 à 500,5 à 10
+Frotey-lès-Vesoul (70),150 à 250,5 à 10
 Montholon (89),50 à 150,10 à 15
 Chèvremont (90),500 à 1000,15 à 20
 Venarey-les-Laumes (21),10 à 20,0 à 1
@@ -3376,7 +3376,7 @@ Champ-d'Oiseau (21),20 à 50,1 à 5
 Devay (58),50 à 150,1 à 5
 Foulenay (39),150 à 250,10 à 15
 Vaudrey (39),250 à 500,10 à 15
-Courtefontaine (39),50 à 150,5 à 10
+Courtefontaine (39),50 à 150,10 à 15
 Dournon (39),50 à 150,1 à 5
 Sampans (39),150 à 250,5 à 10
 Ivory (39),50 à 150,1 à 5
@@ -3387,7 +3387,7 @@ Ruffey-le-Château (25),150 à 250,5 à 10
 Vergigny (89),250 à 500,20 à 25
 Traitiéfontaine (70),150 à 250,5 à 10
 Sergenaux (39),150 à 250,10 à 15
-Véria (39),500 à 1000,25 à 30
+Véria (39),500 à 1000,30 et plus
 Saint-Georges-sur-Baulche (89),150 à 250,5 à 10
 Seloncourt (25),150 à 250,5 à 10
 Verneuil (58),50 à 150,1 à 5
@@ -3411,7 +3411,7 @@ Pusy-et-Épenoux (70),50 à 150,1 à 5
 Sougy-sur-Loire (58),50 à 150,5 à 10
 Condal (71),50 à 150,1 à 5
 Saint-Maurice-des-Champs (71),0 à 10,0 à 1
-Achey (70),150 à 250,10 à 15
+Achey (70),150 à 250,5 à 10
 Boussey (21),0 à 10,0 à 1
 Soumaintrain (89),50 à 150,5 à 10
 Malbrans (25),250 à 500,20 à 25
@@ -3424,7 +3424,7 @@ Trouvans (25),500 à 1000,15 à 20
 Arrans (21),20 à 50,5 à 10
 Jancigny (21),0 à 10,0 à 1
 Devecey (25),250 à 500,5 à 10
-Cubry-lès-Faverney (70),20 à 50,5 à 10
+Cubry-lès-Faverney (70),20 à 50,1 à 5
 Noidans-lès-Vesoul (70),150 à 250,5 à 10
 Terrefondrée (21),0 à 10,1 à 5
 Chéu (89),50 à 150,1 à 5
@@ -3449,18 +3449,18 @@ Frontenaud (71),250 à 500,20 à 25
 Poilly-sur-Tholon (89),0 à 10,0 à 1
 Étivey (89),500 à 1000,25 à 30
 Thise (25),250 à 500,5 à 10
-Francalmont (70),50 à 150,10 à 15
+Francalmont (70),50 à 150,5 à 10
 Ivrey (39),50 à 150,1 à 5
 Rosay (39),20 à 50,1 à 5
 Semur-en-Auxois (21),50 à 150,1 à 5
-Longchamp (21),250 à 500,15 à 20
+Longchamp (21),250 à 500,10 à 15
 Lavernay (25),150 à 250,5 à 10
 Charrin (58),50 à 150,1 à 5
 Angely (89),20 à 50,1 à 5
 Hyet (70),150 à 250,10 à 15
 Nommay (25),1000 et plus,25 à 30
 Longcochon (39),50 à 150,20 à 25
-Bournois (25),500 à 1000,20 à 25
+Bournois (25),20 à 50,1 à 5
 Bligny-sur-Ouche (21),50 à 150,5 à 10
 Pont-de-Roide-Vermondans (25),150 à 250,10 à 15
 Chevagny-sur-Guye (71),10 à 20,0 à 1
@@ -3508,7 +3508,7 @@ Simandre (71),50 à 150,1 à 5
 Saint-Gratien-Savigny (58),150 à 250,20 à 25
 Chaume-et-Courchamp (21),250 à 500,10 à 15
 Montussaint (25),250 à 500,10 à 15
-Port-sur-Saône (70),50 à 150,1 à 5
+Port-sur-Saône (70),50 à 150,5 à 10
 Ahuy (21),20 à 50,0 à 1
 Pontoux (71),50 à 150,1 à 5
 Geney (25),500 à 1000,30 et plus
@@ -3519,9 +3519,9 @@ Bois-de-Gand (39),150 à 250,5 à 10
 Esmoulins (70),1000 et plus,30 et plus
 L'Hôpital-Saint-Lieffroy (25),50 à 150,1 à 5
 Demangevelle (70),50 à 150,10 à 15
-Le Fay (71),50 à 150,5 à 10
+Le Fay (71),50 à 150,1 à 5
 Chaumercenne (70),50 à 150,5 à 10
-Romange (39),150 à 250,5 à 10
+Romange (39),150 à 250,10 à 15
 Bulcy (58),50 à 150,5 à 10
 Molosmes (89),0 à 10,0 à 1
 Liesle (25),50 à 150,1 à 5
@@ -3561,7 +3561,7 @@ Cuse-et-Adrisans (25),250 à 500,15 à 20
 Bouhy (58),20 à 50,1 à 5
 Dampierre-et-Flée (21),0 à 10,0 à 1
 Vernois-lès-Belvoir (25),50 à 150,20 à 25
-Ainvelle (70),50 à 150,5 à 10
+Ainvelle (70),50 à 150,10 à 15
 Boulot (70),50 à 150,1 à 5
 Le Puy (25),1000 et plus,30 et plus
 Sainte-Colombe-en-Auxois (21),10 à 20,0 à 1
@@ -3593,7 +3593,7 @@ Rennes-sur-Loue (25),50 à 150,1 à 5
 Étuz (70),250 à 500,20 à 25
 Villers-sur-Port (70),50 à 150,1 à 5
 Pouilly-sur-Vingeanne (21),250 à 500,15 à 20
-Vorges-les-Pins (25),150 à 250,5 à 10
+Vorges-les-Pins (25),250 à 500,10 à 15
 Seigny (21),10 à 20,0 à 1
 Rochefort-sur-Nenon (39),250 à 500,5 à 10
 Cussey-sur-Lison (25),50 à 150,1 à 5
@@ -3639,7 +3639,7 @@ Noroy-le-Bourg (70),150 à 250,5 à 10
 Saint-Thibault (21),20 à 50,1 à 5
 Louvatange (39),20 à 50,1 à 5
 Saffres (21),20 à 50,1 à 5
-Antully (71),150 à 250,10 à 15
+Antully (71),150 à 250,15 à 20
 Bitry (58),20 à 50,1 à 5
 Motey-Besuche (70),50 à 150,1 à 5
 Salins-les-Bains (39),50 à 150,1 à 5
@@ -3647,7 +3647,7 @@ Pays-de-Clerval (25),250 à 500,10 à 15
 Choisey (39),500 à 1000,15 à 20
 Valravillon (89),0 à 10,0 à 1
 Cubrial (25),1000 et plus,30 et plus
-Châtenois (39),500 à 1000,20 à 25
+Châtenois (39),500 à 1000,25 à 30
 Mancenans (25),20 à 50,1 à 5
 Villethierry (89),0 à 10,0 à 1
 Montrevel (39),0 à 10,0 à 1
@@ -3655,7 +3655,7 @@ Bourbon-Lancy (71),150 à 250,5 à 10
 Sens (89),50 à 150,5 à 10
 Étigny (89),50 à 150,1 à 5
 Monteplain (39),150 à 250,5 à 10
-Fouchécourt (70),20 à 50,5 à 10
+Fouchécourt (70),20 à 50,1 à 5
 Scye (70),50 à 150,1 à 5
 Champvans (39),150 à 250,5 à 10
 Vézannes (89),0 à 10,0 à 1
@@ -3673,7 +3673,7 @@ Diennes-Aubigny (58),50 à 150,15 à 20
 Velogny (21),10 à 20,1 à 5
 Andelarrot (70),50 à 150,1 à 5
 Chaux-la-Lotière (70),250 à 500,5 à 10
-Salans (39),150 à 250,5 à 10
+Salans (39),150 à 250,10 à 15
 Branne (25),50 à 150,5 à 10
 Émagny (25),250 à 500,5 à 10
 Thurey-le-Mont (25),50 à 150,5 à 10
