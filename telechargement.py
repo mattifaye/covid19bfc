@@ -103,7 +103,7 @@ df_90 = pd.read_csv("90_positivite7j.csv")
 
 # Regroupement dans un seul fichier et export
 df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
+df_dep["dep_ok"] = df_dep["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
 df_dep.to_csv("dep_positivite7j.csv",index=False)
 
 # Calcul taux d'incidence régional sur 7 jours glissants
@@ -197,10 +197,10 @@ depBFC = ["21","25","39","58","70","71","89","90"]
 
 df = df[df["dep"].isin(depBFC)]
 
-df = df.replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
-df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comte").iloc[:-1]
+df = df.replace({"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
+df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comté").iloc[:-1]
 
-df[["Bourgogne-Franche-Comte","Côte-d'Or","Doubs","Jura","Nièvre","Haute-Saône","Saône-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
+df[["Bourgogne-Franche-Comté","Côte-d'Or","Doubs","Jura","Nièvre","Haute-Saône","Saône-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
 
 ######################
 ##### METROPOLES #####
