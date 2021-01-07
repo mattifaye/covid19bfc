@@ -36,7 +36,7 @@ df_89 = pd.read_csv("89_incidence7j.csv")
 df_90 = pd.read_csv("90_incidence7j.csv")
 
 df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
+df_dep["dep_ok"] = df_dep["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
 df_dep.to_csv("dep_incidence7j.csv",index=False)
 
 
@@ -145,7 +145,7 @@ sexe = ["0"]
 df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
 
 # Renommage colonnes et départements
-df["dep_ok"] = df["dep"].replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
+df["dep_ok"] = df["dep"].replace({21:"Côte-d'Or",25:"Doubs",39:"Jura",58:"Nièvre",70:"Haute-Saône",71:"Saône-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
 df2 = df[["dep","sexe","jour","hosp","rea","dc","dep_ok"]]
 df_ok = df2.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
 
@@ -200,7 +200,7 @@ df = df[df["dep"].isin(depBFC)]
 df = df.replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
 df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comte").iloc[:-1]
 
-df[["Bourgogne-Franche-Comte","Cote-d'Or","Doubs","Jura","Nievre","Haute-Saone","Saone-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
+df[["Bourgogne-Franche-Comte","Côte-d'Or","Doubs","Jura","Nièvre","Haute-Saône","Saône-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
 
 ######################
 ##### METROPOLES #####
