@@ -198,7 +198,7 @@ depBFC = ["21","25","39","58","70","71","89","90"]
 df = df[df["dep"].isin(depBFC)]
 
 df = df.replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
-df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comté").iloc[:-1]
+df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comte").iloc[:-1]
 
 df[["Bourgogne-Franche-Comte","Cote-d'Or","Doubs","Jura","Nievre","Haute-Saone","Saone-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
 
