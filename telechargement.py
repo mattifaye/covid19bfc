@@ -423,4 +423,7 @@ nat["nom"] = "France"
 
 nat2 = nat.last("1D")
 
-pd.concat([bfc,nat2])[["nom","total_vaccines"]].to_csv("max_vaccins.csv", index=False)
+total = pd.concat([bfc,nat2])[["nom","total_vaccines"]]
+total["date"] = total.index
+total["jour"] = total["date"].dt.strftime("%d/%m")
+total.to_csv("max_vaccins.csv", index=False)
