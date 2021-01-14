@@ -420,10 +420,18 @@ bfc = reg[reg["code"]=="REG-27"].last("1D")
 
 nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/b234a041-b5ea-4954-889b-67e64a25ce0d", parse_dates=["date"],index_col="date",sep=";")
 nat["nom"] = "France"
-
 nat2 = nat.last("1D")
 
+# Tableau récap chiffres régionaux et natio
 total = pd.concat([bfc,nat2])[["nom","total_vaccines"]]
 total["date"] = total.index
+
+# Mise en forme de la date pour être plus lisible
 total["jour"] = total["date"].dt.strftime("%d/%m")
+
+# Mise en forme du nombre de vacicnés pour être plus lisible
+total["total_vaccines"] = total["total_vaccines"].map('{:,}'.format)
+total["total_vaccines"] = total["total_vaccines"].str.replace(',', ' ')
+
+# Export de tout ça
 total.to_csv("max_vaccins.csv", index=False)
