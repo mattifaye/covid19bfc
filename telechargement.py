@@ -435,3 +435,19 @@ total["total_vaccines"] = total["total_vaccines"].str.replace(',', ' ')
 
 # Export de tout ça
 total.to_csv("max_vaccins.csv", index=False)
+
+
+########################################
+##### CARTE CENTRES DE VACCINATION #####
+########################################
+# Import
+df = pd.read_csv("https://static.data.gouv.fr/resources/lieux-de-vaccination-contre-la-covid-19/20210115-081801/centres-vaccination.csv",sep=";", encoding="CP437",dtype=str)
+
+# Calcul champ département
+df["dep"] = df["com_insee"].str[:2]
+
+# Filtre BFC
+df = df[df["dep"].isin(["21","25","39","58","70","71","89","90"])]
+
+#Export
+df.to_csv("lieux_vaccination.csv",index=False)
