@@ -441,7 +441,7 @@ total.to_csv("max_vaccins.csv", index=False)
 ##### CARTE CENTRES DE VACCINATION #####
 ########################################
 # Import
-df = pd.read_csv("https://static.data.gouv.fr/resources/lieux-de-vaccination-contre-la-covid-19/20210115-081801/centres-vaccination.csv",sep=";", encoding="CP437",dtype=str)
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372",sep=";", encoding="CP437",dtype=str)
 
 # Calcul champ département
 df["dep"] = df["com_insee"].str[:2]
