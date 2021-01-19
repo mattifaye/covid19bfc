@@ -1,5 +1,5 @@
-,2021-01-18 00:00:00,categorie
-hosp,1871,Personnes actuellement hospitalisées
+,2021-01-19 00:00:00,categorie
+hosp,1785,Personnes actuellement hospitalisées
 rea,180,Personnes actuellement en réanimation
-dc,3023,Décès à l'hôpital (cumul)
-rad,11093,Personnes de retour à domicile (cumul)
+dc,3049,Décès à l'hôpital (cumul)
+rad,11266,Personnes de retour à domicile (cumul)
