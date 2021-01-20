@@ -441,7 +441,7 @@ total.to_csv("max_vaccins.csv", index=False)
 ##### CARTE CENTRES DE VACCINATION #####
 ########################################
 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372",sep=";", encoding="latin1",dtype=str)
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372",sep=";", encoding="utf-8",dtype=str)
 df["dep"] = df["com_insee"].str[:2]
 df = df[df["dep"].isin(["21","25","39","58","70","71","89","90"])]
 df = df[["gid","nom","adr_num","adr_voie","com_cp","com_nom","lat_coor1","long_coor1","_edit_datemaj","lieu_accessibilite","rdv_lundi","rdv_mardi","rdv_mercredi","rdv_jeudi","rdv_vendredi","rdv_samedi","rdv_dimanche","date_fermeture","date_ouverture","rdv_site_web","rdv_tel","rdv_modalites","dep"]]
