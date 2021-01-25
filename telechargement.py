@@ -405,15 +405,15 @@ df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
 reg = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/eb672d49-7cc7-4114-a5a1-fa6fd147406b", parse_dates=["date"],index_col="date")
 
 # On ne garde que les chiffres les plus récents
-reg2 = reg.last("1D").rename(columns={"nom":"Région","total_vaccines":"Nombre cumulé de personnes vaccinées"}).replace({"Bourgogne-Franche-Comté":"**Bourgogne-Franche-Comté**"})
+reg2 = reg.last("1D").rename(columns={"nom":"Région","total_vaccines":"Nombre cumulé de doses de vaccins administrées"}).replace({"Bourgogne-Franche-Comté":"**Bourgogne-Franche-Comté**"})
 
 # On ajoute les chiffres de la population
 pop = pd.read_csv("population_reg.csv",sep=",")
 reg3 = reg2.merge(pop,left_on="code",right_on="Code région")
 
 # On calcule le pourcentage de la population et on exporte le tout
-reg3["% de la population"] = (reg3["Nombre cumulé de personnes vaccinées"]/reg3["Population municipale"]*100).round(decimals=2)
-reg3.sort_values(by="% de la population", ascending=False)[["Région","Nombre cumulé de personnes vaccinées","% de la population"]].to_csv("tableau_vaccination_regions.csv",index=False)
+reg3["% de la population"] = (reg3["Nombre cumulé de doses de vaccins administrées"]/reg3["Population municipale"]*100).round(decimals=2)
+reg3.sort_values(by="% de la population", ascending=False)[["Région","Nombre cumulé de doses de vaccins administrées,"% de la population"]].to_csv("tableau_vaccination_regions.csv",index=False)
 
 # Calcul des derniers chiffres régionaux et nationaux
 bfc = reg[reg["code"]=="REG-27"].last("1D")
