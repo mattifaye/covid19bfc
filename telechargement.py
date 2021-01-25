@@ -413,7 +413,7 @@ reg3 = reg2.merge(pop,left_on="code",right_on="Code région")
 
 # On calcule le pourcentage de la population et on exporte le tout
 reg3["% de la population"] = (reg3["Nombre cumulé de doses de vaccins administrées"]/reg3["Population municipale"]*100).round(decimals=2)
-reg3.sort_values(by="% de la population", ascending=False)[["Région","Nombre cumulé de doses de vaccins administrées,"% de la population"]].to_csv("tableau_vaccination_regions.csv",index=False)
+reg3.sort_values(by="% de la population", ascending=False)[["Région","Nombre cumulé de doses de vaccins administrées","% de la population"]].to_csv("tableau_vaccination_regions.csv",index=False)
 
 # Calcul des derniers chiffres régionaux et nationaux
 bfc = reg[reg["code"]=="REG-27"].last("1D")
