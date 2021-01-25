@@ -446,3 +446,26 @@ df["dep"] = df["com_insee"].str[:2]
 df = df[df["dep"].isin(["21","25","39","58","70","71","89","90"])]
 df = df[["gid","nom","adr_num","adr_voie","com_cp","com_nom","lat_coor1","long_coor1","_edit_datemaj","lieu_accessibilite","rdv_lundi","rdv_mardi","rdv_mercredi","rdv_jeudi","rdv_vendredi","rdv_samedi","rdv_dimanche","date_fermeture","date_ouverture","rdv_site_web","rdv_tel","rdv_modalites","dep"]]
 df.to_json("lieux_vaccination.json",orient="records")
+
+
+##################################
+##### CHIFFRES DOSES VACCINS #####
+##################################
+
+# Données cumul livraisons par région
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da",sep=";",index_col="date",parse_dates=["date"])
+df = df[df["code_region"]==27]
+df["region"] = "Bourgogne-Franche-Comté"
+df = df.last("1D").pivot_table(index="region",values=["nb_doses_receptionnees_cumul"],aggfunc=sum)
+
+# Données cumul livraisons national
+nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/6820ff9f-2dbb-4e87-8565-fcd7fa2dfa0f",sep=";",index_col="date",parse_dates=["date"])
+nat["region"] = "France"
+nat = nat.last("1D").pivot_table(index="region",values=["nb_doses_receptionnees_cumul"],aggfunc=sum)
+
+# On fusionne tout ça, on formate et on exporte
+total = pd.concat([df,nat])
+total["nb_doses_receptionnees_cumul"] = total["nb_doses_receptionnees_cumul"].map('{:,}'.format)
+total["nb_doses_receptionnees_cumul"] = total["nb_doses_receptionnees_cumul"].str.replace(',', ' ')
+
+total.to_csv("livraisons_vaccins.csv")
