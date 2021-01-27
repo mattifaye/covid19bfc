@@ -1,44 +1,44 @@
-,cl_age90,2021-01-23,2021-01-26
-Tests positifs les 7 derniers jours,de 0 à 9 ans,17.0,
-Tests positifs les 7 derniers jours,de 10 à 19 ans,102.0,
-Tests positifs les 7 derniers jours,de 20 à 29 ans,87.0,
-Tests positifs les 7 derniers jours,de 30 à 39 ans,96.0,
-Tests positifs les 7 derniers jours,de 40 à 49 ans,97.0,
-Tests positifs les 7 derniers jours,de 50 à 59 ans,97.0,
-Tests positifs les 7 derniers jours,de 60 à 69 ans,75.0,
-Tests positifs les 7 derniers jours,de 70 à 79 ans,66.0,
-Tests positifs les 7 derniers jours,de 80 à 89 ans,46.0,
-Tests positifs les 7 derniers jours,90 ans et plus,19.0,
-Hospitalisations en cours,0,,1826.0
+,cl_age90,2021-01-24,2021-01-27
+Tests positifs les 7 derniers jours,de 0 à 9 ans,1.0,
+Tests positifs les 7 derniers jours,de 10 à 19 ans,8.0,
+Tests positifs les 7 derniers jours,de 20 à 29 ans,8.0,
+Tests positifs les 7 derniers jours,de 30 à 39 ans,12.0,
+Tests positifs les 7 derniers jours,de 40 à 49 ans,8.0,
+Tests positifs les 7 derniers jours,de 50 à 59 ans,5.0,
+Tests positifs les 7 derniers jours,de 60 à 69 ans,10.0,
+Tests positifs les 7 derniers jours,de 70 à 79 ans,10.0,
+Tests positifs les 7 derniers jours,de 80 à 89 ans,15.0,
+Tests positifs les 7 derniers jours,90 ans et plus,12.0,
+Hospitalisations en cours,0,,1850.0
 Hospitalisations en cours,09,,0.0
-Hospitalisations en cours,19,,3.0
-Hospitalisations en cours,29,,30.0
-Hospitalisations en cours,39,,26.0
-Hospitalisations en cours,49,,37.0
-Hospitalisations en cours,59,,93.0
-Hospitalisations en cours,69,,238.0
-Hospitalisations en cours,79,,469.0
-Hospitalisations en cours,89,,615.0
-Hospitalisations en cours,90,,296.0
+Hospitalisations en cours,19,,5.0
+Hospitalisations en cours,29,,29.0
+Hospitalisations en cours,39,,24.0
+Hospitalisations en cours,49,,39.0
+Hospitalisations en cours,59,,98.0
+Hospitalisations en cours,69,,242.0
+Hospitalisations en cours,79,,466.0
+Hospitalisations en cours,89,,621.0
+Hospitalisations en cours,90,,306.0
 Réanimations en cours,0,,178.0
 Réanimations en cours,09,,0.0
 Réanimations en cours,19,,1.0
 Réanimations en cours,29,,1.0
 Réanimations en cours,39,,4.0
-Réanimations en cours,49,,3.0
-Réanimations en cours,59,,14.0
-Réanimations en cours,69,,49.0
-Réanimations en cours,79,,84.0
-Réanimations en cours,89,,18.0
+Réanimations en cours,49,,5.0
+Réanimations en cours,59,,13.0
+Réanimations en cours,69,,51.0
+Réanimations en cours,79,,79.0
+Réanimations en cours,89,,20.0
 Réanimations en cours,90,,2.0
-Décès depuis mars à l'hôpital,0,,3236.0
+Décès depuis mars à l'hôpital,0,,3250.0
 Décès depuis mars à l'hôpital,09,,0.0
 Décès depuis mars à l'hôpital,19,,0.0
 Décès depuis mars à l'hôpital,29,,2.0
 Décès depuis mars à l'hôpital,39,,8.0
 Décès depuis mars à l'hôpital,49,,17.0
 Décès depuis mars à l'hôpital,59,,78.0
-Décès depuis mars à l'hôpital,69,,278.0
-Décès depuis mars à l'hôpital,79,,658.0
-Décès depuis mars à l'hôpital,89,,1372.0
-Décès depuis mars à l'hôpital,90,,809.0
+Décès depuis mars à l'hôpital,69,,279.0
+Décès depuis mars à l'hôpital,79,,661.0
+Décès depuis mars à l'hôpital,89,,1378.0
+Décès depuis mars à l'hôpital,90,,812.0
