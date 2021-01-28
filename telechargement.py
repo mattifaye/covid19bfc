@@ -401,40 +401,88 @@ df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
 ##### CHIFFRES VACCINATION #####
 ################################
 
-# Import données régionales depuis data.gouv.fr
-reg = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/eb672d49-7cc7-4114-a5a1-fa6fd147406b", parse_dates=["date"],index_col="date")
+### Données de vaccination pour cartouche BFC et France ###
+# Filtres
+sexe = ["0"]
+reg = ["27","FR"]
+clage_vacsi = ["0"]
 
-# On ne garde que les chiffres les plus récents
-reg2 = reg.last("1D").rename(columns={"nom":"Région","total_vaccines":"Nombre cumulé de doses de vaccins administrées"}).replace({"Bourgogne-Franche-Comté":"**Bourgogne-Franche-Comté**"})
+# Téléchargement des fichiers
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
+nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/efe23314-67c4-45d3-89a2-3faef82fae90",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
 
-# On ajoute les chiffres de la population
-pop = pd.read_csv("population_reg.csv",sep=",")
-reg3 = reg2.merge(pop,left_on="code",right_on="Code région")
+# Filtrage région
+df = df[df["reg"].isin(reg)].last("1D")
 
-# On calcule le pourcentage de la population et on exporte le tout
-reg3["% de la population"] = (reg3["Nombre cumulé de doses de vaccins administrées"]/reg3["Population municipale"]*100).round(decimals=2)
-reg3.sort_values(by="% de la population", ascending=False)[["Région","Nombre cumulé de doses de vaccins administrées","% de la population"]].to_csv("tableau_vaccination_regions.csv",index=False)
+# Filtrage natio
+nat["reg"] = "FR"
+nat = nat.last("1D")
 
-# Calcul des derniers chiffres régionaux et nationaux
-bfc = reg[reg["code"]=="REG-27"].last("1D")
-
-nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/b234a041-b5ea-4954-889b-67e64a25ce0d", parse_dates=["date"],index_col="date",sep=";")
-nat["nom"] = "France"
-nat2 = nat.last("1D")
-
-# Tableau récap chiffres régionaux et natio
-total = pd.concat([bfc,nat2])[["nom","total_vaccines"]]
-total["date"] = total.index
+# On regroupe tout ça
+total = pd.concat([df,nat])[["reg","n_cum_dose1"]]
 
 # Mise en forme de la date pour être plus lisible
+total["date"] = total.index
 total["jour"] = total["date"].dt.strftime("%d/%m")
 
-# Mise en forme du nombre de vacicnés pour être plus lisible
-total["total_vaccines"] = total["total_vaccines"].map('{:,}'.format)
-total["total_vaccines"] = total["total_vaccines"].str.replace(',', ' ')
+# Mise en forme du nombre de vaccinés pour être plus lisible
+total["n_cum_dose1"] = total["n_cum_dose1"].map('{:,}'.format)
+total["n_cum_dose1"] = total["n_cum_dose1"].str.replace(',', ' ')
 
-# Export de tout ça
-total.to_csv("max_vaccins.csv", index=False)
+# Mise en forme du nom des régions pour être plus lisible
+nom = {"27": "Bourgogne-Franche-Comté", "FR":"France"}
+total["nom"] = total["reg"].map(nom)
+
+# Export des colonnes qui nous intéressent
+total[["nom","n_cum_dose1","jour"]].to_csv("max_vaccins.csv",index=False)
+
+### Données BFC avec évolution nombre de vaccinés ###
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8",sep=";",dtype={"reg":str,"n_dose1":int,"n_cum_dose1":int},parse_dates=["jour"],index_col="jour")
+df = df[df["reg"].isin(reg)]
+df = df[["n_dose1","n_cum_dose1"]].rename(columns={"n_dose1":"Nombre de personnes ayant reçu une dose de vaccin","n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"})
+df.to_csv("evolution_vaccination_bfc.csv")
+
+### Données pour graphique par tranches d'âge BFC ###
+
+# Import
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",parse_dates=["jour"],dtype={"reg":str,"clage_vacsi":str,"n_cum_dose1":int})
+
+# Filtre
+df = df[df["reg"].isin(reg)]
+df = df[df["clage_vacsi"] != "0"]
+
+# On explicite les données
+df = df.replace({"0":"Tous âges","9":"0-9 ans","17":"10-17 ans","24":"18-24 ans","29":"25-29 ans","39":"30-39 ans","49":"40-49 ans","59":"50-59 ans","64":"60-64 ans","69":"65-69 ans","74":"70-74 ans","79":"75-79 ans","80":"80 ans et plus"})
+
+# On remet tout ça en forme
+df = df.pivot_table(columns="clage_vacsi",values="n_cum_dose1",aggfunc=sum,fill_value=0)
+df = df.T
+df["clage"] = df.index
+df = df.rename(columns={"n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin","clage":"Classes d'âge"})
+
+# Et on exporte
+df.to_csv("vaccins_bfc_age.csv")
+
+### Données pour tableau détail par régions et comparaison à la population ###
+
+# Import
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",dtype={"reg":str,"n_dose1":int,"n_cum_dose1":int,"clage_vacsi":str})
+
+# Filtre
+df = df[df["clage_vacsi"].isin(clage_vacsi)]
+
+# On remet en forme
+df.pivot_table(index="reg",values="n_cum_dose1",aggfunc=sum)
+
+# On retrouve les chiffres de population
+pop = pd.read_csv("population_reg.csv",sep=",",dtype={"reg":str})
+
+# On fusionne tout ensemble et on calcule
+df = df.merge(pop,left_on="reg",right_on="reg")
+df["% de la population"] = (df["n_cum_dose1"]/df["pop"]*100).round(decimals=2)
+
+# On trie ça dans l'ordre et on exporte
+df.sort_values(by="% de la population", ascending=False)[["Région","n_cum_dose1","% de la population"]].rename(columns={"n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"}).to_csv("tableau_vaccination_regions.csv",index=False)       
 
 
 ########################################
