@@ -484,6 +484,25 @@ df["% de la population"] = (df["n_cum_dose1"]/df["pop"]*100).round(decimals=2)
 # On trie ça dans l'ordre et on exporte
 df.sort_values(by="% de la population", ascending=False)[["Région","n_cum_dose1","% de la population"]].rename(columns={"n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"}).to_csv("tableau_vaccination_regions.csv",index=False)       
 
+### Données rendez-vous vaccins ###
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/3c3565e5-8e50-482d-b76a-fe07599ab4a0",parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
+df = df[df["code_region"].isin(reg)]
+df = df.pivot_table(index="date_debut_semaine",values="nb",columns="rang_vaccinal",aggfunc=sum)
+df["Total"] = df["1"] + df["2"]
+df["date"] = df.index
+df["jour"] = df["date"].dt.strftime("%d/%m")
+df = df[["jour","1","2","Total"]].rename(columns={"jour":"Semaine du ","1":"Rendez-vous pour la première dose","2":"Rendez-vous pour la deuxième dose","Total":"Nombre total de rendez-vous"})
+df.to_csv("rdv_vaccination.csv")
+
+### Données livraisons vaccins ####
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da",sep=";",dtype={"code_region":str},parse_dates=["date"],index_col="date")
+df = df[df["code_region"].isin(reg)]
+df["date"] = df.index
+df["jour"] = df["date"].dt.strftime("%d/%m")
+df = df.last("1D").pivot_table(index=["type_de_vaccin","jour"],values="nb_doses_receptionnees_cumul",aggfunc=sum)
+df["nb_doses_receptionnees_cumul"] = df["nb_doses_receptionnees_cumul"].map('{:,}'.format)
+df["nb_doses_receptionnees_cumul"] = df["nb_doses_receptionnees_cumul"].str.replace(',', ' ')
+df.to_csv("livraisons_vaccins_bfc.csv")
 
 ########################################
 ##### CARTE CENTRES DE VACCINATION #####
