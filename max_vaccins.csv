@@ -1,3 +1,3 @@
-nom,total_vaccines,date,jour
-Bourgogne-Franche-Comté,73 413,2021-01-26,26/01
-France,1 184 510,2021-01-26,26/01
+nom,n_cum_dose1,jour
+Bourgogne-Franche-Comté,71 510,26/01
+France,1 130 753,26/01
