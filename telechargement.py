@@ -402,15 +402,15 @@ df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
 ################################
 ####  Filtres et tout ça ###
 sexe = ["0"]
-reg = ["27","FR"]
-dep = ["21","25","39","58","70","71","89","90"]
+code_reg = ["27","FR"]
+code_dep = ["21","25","39","58","70","71","89","90"]
 clage_vacsi = ["0"]
 nom_dep = {"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"}
 nom_reg = {"27":"Bourgogne-Franche-Comté","FR":"France"}
 
 ### Chiffres 1ère dose par département ### 
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
-df = df[df["dep"].isin(dep)]
+df = df[df["dep"].isin(code_dep)]
 df["n_cum_dose1"] = df["n_dose1"].groupby(df["dep"]).cumsum()
 df["nom_dep"] = df["dep"].map(nom_dep)
 dep = df[["dep","nom_dep","n_dose1","n_cum_dose1"]]
@@ -418,7 +418,7 @@ dep.to_csv("vaccins_dep_bfc.csv")
 
 ### Chiffres 1ère dose pour région BFC ### 
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
-df = df[df["dep"].isin(dep)]
+df = df[df["dep"].isin(code_dep)]
 df = df.pivot_table(index="jour",values=["n_dose1","n_cum_dose1"],aggfunc=sum)
 df["reg"] = "27"
 df["nom_reg"] = df["reg"].map(nom_reg)
@@ -430,7 +430,7 @@ nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-bea
 nat["reg"] = "FR"
 
 region = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-f2eeaab60d99",sep=";",parse_dates=["jour"],index_col="jour",dtype={"reg":str})
-region = region[region["reg"].isin(reg)]
+region = region[region["reg"].isin(code_reg)]
 
 total = pd.concat([region,nat])[["reg","n_tot_dose1"]]
 
@@ -451,7 +451,7 @@ total[["nom","n_tot_dose1","jour"]].to_csv("max_vaccins.csv",index=False)
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",parse_dates=["jour"],dtype={"reg":str,"clage_vacsi":str,"n_tot_dose1":int})
 
 # Filtre
-df = df[df["reg"].isin(reg)]
+df = df[df["reg"].isin(code_reg)]
 df = df[df["clage_vacsi"] != "0"]
 
 # On explicite les données
@@ -483,7 +483,7 @@ df.sort_values(by="% de la population", ascending=False)[["Région","n_tot_dose1
 
 ### Données rendez-vous vaccins ###
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/3c3565e5-8e50-482d-b76a-fe07599ab4a0",parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
-df = df[df["code_region"].isin(reg)]
+df = df[df["code_region"].isin(code_reg)]
 df = df.pivot_table(index="date_debut_semaine",values="nb",columns="rang_vaccinal",aggfunc=sum)
 df["Total"] = df["1"] + df["2"]
 df["date"] = df.index
@@ -493,7 +493,7 @@ df.to_csv("rdv_vaccination.csv")
 
 ### Données livraisons vaccins ####
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da",sep=";",dtype={"code_region":str},parse_dates=["date"],index_col="date")
-df = df[df["code_region"].isin(reg)]
+df = df[df["code_region"].isin(code_reg)]
 df["date"] = df.index
 df["jour"] = df["date"].dt.strftime("%d/%m")
 df = df.last("1D").pivot_table(index=["type_de_vaccin","jour"],values="nb_doses_receptionnees_cumul",aggfunc=sum)
