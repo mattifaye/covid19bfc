@@ -479,6 +479,13 @@ df["% de la population"] = (df["n_tot_dose1"]/df["pop"]*100).round(decimals=2)
 # On trie ça dans l'ordre et on exporte
 df.sort_values(by="% de la population", ascending=False)[["Région","n_tot_dose1","% de la population"]].rename(columns={"n_tot_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"}).to_csv("tableau_vaccination_regions.csv",index=False)    
 
+### Données vaccination 1ere dose BFC par sexe ###
+genre = {"1":"Hommes","2":"Femmes"}
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/d302c60b-cb7d-48cd-91f0-a3baee4bcf05",sep=";",dtype={"reg":str,"sexe":str})
+df = df[df["reg"].isin(code_reg) & df["sexe"].isin(["1","2"])]
+df["genre"] = df["sexe"].map(genre)
+df[["genre","n_tot_dose1"]].to_csv("vaccin_sexe.csv",index=False)
+
 ### Données rendez-vous vaccins ###
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/3c3565e5-8e50-482d-b76a-fe07599ab4a0",parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
 df = df[df["code_region"].isin(code_reg)]
