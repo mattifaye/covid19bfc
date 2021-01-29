@@ -400,6 +400,7 @@ df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
 ################################
 ##### CHIFFRES VACCINATION #####
 ################################
+
 ####  Filtres et tout ça ###
 sexe = ["0"]
 code_reg = ["27","FR"]
@@ -407,6 +408,9 @@ code_dep = ["21","25","39","58","70","71","89","90"]
 clage_vacsi = ["0"]
 nom_dep = {"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"}
 nom_reg = {"27":"Bourgogne-Franche-Comté","FR":"France"}
+genre = {"1":"Hommes","2":"Femmes"}
+pop_bfc_age = {"0":2786205,"9":288163,"17":None,"24":None,"29":135303,"39":311073,"49":339642,"59":374051,"64":186671,"69":181451,"74":178094,"79":108219,"80":203285}
+clage = {"0":"Tous âges","9":"0-9 ans","17":"10-17 ans","24":"18-24 ans","29":"25-29 ans","39":"30-39 ans","49":"40-49 ans","59":"50-59 ans","64":"60-64 ans","69":"65-69 ans","74":"70-74 ans","79":"75-79 ans","80":"80 ans et plus"}
 
 ### Chiffres 1ère dose par département ### 
 df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
@@ -444,25 +448,12 @@ total["nom"] = total["reg"].map(nom_reg)
 total[["nom","n_tot_dose1","jour"]].to_csv("max_vaccins.csv",index=False)
 
 ### Données pour graphique par tranches d'âge BFC ###
-
-# Import
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",parse_dates=["jour"],dtype={"reg":str,"clage_vacsi":str,"n_tot_dose1":int})
-
-# Filtre
-df = df[df["reg"].isin(code_reg)]
-df = df[df["clage_vacsi"] != "0"]
-
-# On explicite les données
-df = df.replace({"0":"Tous âges","9":"0-9 ans","17":"10-17 ans","24":"18-24 ans","29":"25-29 ans","39":"30-39 ans","49":"40-49 ans","59":"50-59 ans","64":"60-64 ans","69":"65-69 ans","74":"70-74 ans","79":"75-79 ans","80":"80 ans et plus"})
-
-# On remet tout ça en forme
-df = df.pivot_table(columns="clage_vacsi",values="n_tot_dose1",aggfunc=sum,fill_value=0)
-df = df.T
-df["clage"] = df.index
-df = df.rename(columns={"n_tot_dose1":"Nombre de personnes ayant reçu une dose de vaccin","clage":"Classes d'âge"})
-
-# Et on exporte
-df.to_csv("vaccins_bfc_age.csv")
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",dtype={"reg":str,"clage_vacsi":str},index_col="jour")
+df = df[df["reg"].isin(code_reg) & -df["clage_vacsi"].isin(clage_vacsi)]
+df["pop"] = df["clage_vacsi"].map(pop_bfc_age)
+df["taux_dose1"] = df["n_tot_dose1"]/df["pop"]*100
+df["clage"] = df["clage_vacsi"].map(clage)
+df[["clage","n_tot_dose1","taux_dose1"]].to_csv("vaccins_bfc_age.csv",index=False)
 
 ### Données pour tableau détail par régions et comparaison à la population ###
 
