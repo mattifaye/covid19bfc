@@ -417,10 +417,8 @@ dep = df[["dep","nom_dep","n_dose1","n_cum_dose1"]]
 dep.to_csv("vaccins_dep_bfc.csv")
 
 ### Chiffres 1ère dose pour région BFC ### 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
-df = df[df["dep"].isin(code_dep)]
-df = df.pivot_table(index="jour",values=["n_dose1","n_cum_dose1"],aggfunc=sum)
-df["reg"] = "27"
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8",sep=";",parse_dates=["jour"],index_col="jour",dtype={"reg":str})
+df = df[df["reg"].isin(code_reg)]
 df["nom_reg"] = df["reg"].map(nom_reg)
 region = df[["reg","nom_reg","n_dose1","n_cum_dose1"]].rename(columns={"n_dose1":"Nombre de personnes ayant reçu une dose de vaccin","n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"})
 region.to_csv("evolution_vaccination_bfc.csv")
