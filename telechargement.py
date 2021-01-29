@@ -416,6 +416,15 @@ df["nom_dep"] = df["dep"].map(nom_dep)
 dep = df[["dep","nom_dep","n_dose1","n_cum_dose1"]]
 dep.to_csv("vaccins_dep_bfc.csv")
 
+### Chiffres 1ère dose pour région BFC ### 
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
+df = df[df["dep"].isin(dep)]
+df = df.pivot_table(index="jour",values=["n_dose1","n_cum_dose1"],aggfunc=sum)
+df["reg"] = "27"
+df["nom_reg"] = df["reg"].map(nom_reg)
+region = df[["reg","nom_reg","n_dose1","n_cum_dose1"]].rename(columns={"n_dose1":"Nombre de personnes ayant reçu une dose de vaccin","n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"})
+region.to_csv("evolution_vaccination_bfc.csv")
+
 ###  Chiffres pour cartouche région et natio ### 
 nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-beaa-0eafc4b88466",sep=";",parse_dates=["jour"],index_col="jour")
 nat["reg"] = "FR"
@@ -456,14 +465,6 @@ df = df.rename(columns={"n_tot_dose1":"Nombre de personnes ayant reçu une dose 
 
 # Et on exporte
 df.to_csv("vaccins_bfc_age.csv")
-
-
-### Chiffres 1ère dose pour région BFC ### 
-df = df.pivot_table(index="jour",values=["n_dose1","n_cum_dose1"],aggfunc=sum)
-df["reg"] = "27"
-df["nom_reg"] = df["reg"].map(nom_reg)
-region = df[["reg","nom_reg","n_dose1","n_cum_dose1"]].rename(columns={"n_dose1":"Nombre de personnes ayant reçu une dose de vaccin","n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"})
-region.to_csv("evolution_vaccination_bfc.csv")
 
 ### Données pour tableau détail par régions et comparaison à la population ###
 
