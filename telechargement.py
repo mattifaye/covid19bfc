@@ -453,7 +453,11 @@ df = df[df["reg"].isin(code_reg) & -df["clage_vacsi"].isin(clage_vacsi)]
 df["pop"] = df["clage_vacsi"].map(pop_bfc_age)
 df["taux_dose1"] = df["n_tot_dose1"]/df["pop"]*100
 df["clage"] = df["clage_vacsi"].map(clage)
-df[["clage","n_tot_dose1","taux_dose1"]].to_csv("vaccins_bfc_age.csv",index=False)
+df["taux_pasdose1"] = 100-df["taux_dose1"]
+df[["clage","n_tot_dose1","taux_dose1","taux_pasdose1"]].to_csv("vaccins_bfc_age.csv",index=False)
+
+df["taux_pasdose1"] = 100-df["taux_dose1"]
+df.to_csv("vaccins_bfc_age.csv",index=False)
 
 ### Données pour tableau détail par régions et comparaison à la population ###
 
