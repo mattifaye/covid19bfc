@@ -408,8 +408,8 @@ reg = ["27","FR"]
 clage_vacsi = ["0"]
 
 # Téléchargement des fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
-nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/efe23314-67c4-45d3-89a2-3faef82fae90",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
+df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-f2eeaab60d99",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
+nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-beaa-0eafc4b88466",sep=";",parse_dates=["jour"],dtype={"reg":str},index_col="jour")
 
 # Filtrage région
 df = df[df["reg"].isin(reg)].last("1D")
