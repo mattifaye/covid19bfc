@@ -456,9 +456,6 @@ df["clage"] = df["clage_vacsi"].map(clage)
 df["taux_pasdose1"] = 100-df["taux_dose1"]
 df[["clage","n_tot_dose1","taux_dose1","taux_pasdose1"]].to_csv("vaccins_bfc_age.csv",index=False)
 
-df["taux_pasdose1"] = 100-df["taux_dose1"]
-df.to_csv("vaccins_bfc_age.csv",index=False)
-
 ### Données pour tableau détail par régions et comparaison à la population ###
 
 # Import
