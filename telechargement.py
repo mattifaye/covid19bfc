@@ -163,7 +163,7 @@ depistage_incidence_positivite_par_dep_plus_recent = depistage_incidence_par_dep
 depistage_incidence_positivite_par_dep_plus_recent["debut_7j"] = depistage_incidence_positivite_par_dep_plus_recent["debut_7j"].dt.strftime("%d/%m")
 depistage_incidence_positivite_par_dep_plus_recent["fin_7j"] = depistage_incidence_positivite_par_dep_plus_recent["fin_7j"].dt.strftime("%d/%m")
 
-depistage_incidence_positivite_par_dep_plus_recent.to_csv("donnees/depistage_incidence_positivite_par_dep_plus_recent.csv")
+depistage_incidence_positivite_par_dep_plus_recent.to_csv("donnees/depistage_incidence_positivite_par_dep_plus_recent.csv",index=False)
 
 #### Taux d'incidence et taux de positivité sur 7 jours glissants pour BFC et France
 df = pd.read_csv(sp_ti_tp_7j_reg,sep=";",dtype={"reg":str,"P":int,"T":int,"pop":float})
