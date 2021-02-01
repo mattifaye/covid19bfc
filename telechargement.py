@@ -19,6 +19,8 @@ vacsi_tot_reg = "https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-
 vacsi_tot_fra = "https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-beaa-0eafc4b88466"
 vacsi_tot_dep = "https://www.data.gouv.fr/fr/datasets/r/7969c06d-848e-40cf-9c3c-21b5bd5a874b"
 vacsi_tot_a_reg = "https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2"
+vacsi_reg  = "https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8"
+
 
 # Lieux de vaccination
 centres_vaccination = "https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372"
@@ -220,6 +222,13 @@ df["td_classe"] = df.loc[:,"td_classe"].str.replace("à Max","et plus",regex=Fal
 depistage_carte_communes_bfc = df[["com2020","dep","debut_7j","fin_7j","clage_65","tp_classe","ti_classe","td_classe"]][df["fin_7j"] == max(df["fin_7j"])]
 
 depistage_carte_communes_bfc.to_csv("donnees/depistage_carte_communes_bfc.csv",index=False)
+
+### Evolution vaccination BFC
+df = pd.read_csv(vacsi_reg,dtype={"reg":str,"n_dose1":int,"n_cum_dose1":int,"n_dose2":int,"n_cum_dose2":int},parse_dates=["jour"])
+df = df[df["reg"].isin(code_reg)]
+
+vaccin_historique_bfc = df[["jour","n_cum_dose1"]].rename(columns={"n_cum_dose1":"Premières doses (cumul)"})
+vaccin_historique_bfc.to_csv("vaccin_historique_bfc.csv",index=False)
 
 ### Total vaccination BFC
 df = pd.read_csv(vacsi_tot_reg,dtype={"reg":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
