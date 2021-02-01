@@ -106,6 +106,10 @@ df["nom_dep"] = df["dep"].map(nom_dep)
 hosp_totales_par_dep_historique = df[["jour","nom_dep","hosp","rea"]].rename(columns=colonnes_donnees_hopital)
 hosp_totales_par_dep_historique.to_csv("donnees/hosp_totales_par_dep_historique.csv",index=False)
 
+### Hospitalisations BFC
+hosp_totales_bfc_historique = df.pivot_table(index="jour",values=["hosp","rea"],aggfunc=sum).rename(columns=colonnes_donnees_hopital)
+hosp_totales_bfc_historique.to_csv("donnees/hosp_totales_bfc_historique.csv")
+
 ### Cartouche hospitalisations BFC
 reg_plus_recent = df[df["jour"] == max(df["jour"])].pivot_table(index="jour",aggfunc=sum)
 reg_plus_recent = reg_plus_recent[["hosp","rea","dc"]].rename(columns=colonnes_donnees_hopital).T
