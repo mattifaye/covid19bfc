@@ -200,7 +200,7 @@ incidence_positivite_france_bfc_plus_recent.loc[:,"fin_7j"] = incidence_positivi
 
 depistage_incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc_plus_recent
 
-depistage_incidence_positivite_france_bfc_plus_recent.to_csv("donnees/depistage_incidence_positivite_france_bfc_plus_recent.csv")
+depistage_incidence_positivite_france_bfc_plus_recent.to_csv("donnees/depistage_incidence_positivite_france_bfc_plus_recent.csv",index=False)
 
 
 ### Carte taux d'incidence et positivité par commune BFC
