@@ -228,7 +228,7 @@ df = pd.read_csv(vacsi_reg,dtype={"reg":str,"n_dose1":int,"n_cum_dose1":int,"n_d
 df = df[df["reg"].isin(code_reg)]
 
 vaccin_historique_bfc = df[["jour","n_cum_dose1"]].rename(columns={"n_cum_dose1":"Premières doses (cumul)"})
-vaccin_historique_bfc.to_csv("vaccin_historique_bfc.csv",index=False)
+vaccin_historique_bfc.to_csv("donnees/vaccin_historique_bfc.csv",index=False)
 
 ### Total vaccination BFC
 df = pd.read_csv(vacsi_tot_reg,dtype={"reg":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
