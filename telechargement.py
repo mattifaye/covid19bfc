@@ -112,6 +112,7 @@ df = df[df["dep"].isin(code_dep) & df["sexe"].isin(sexe)]
 df["nom_dep"] = df["dep"].map(nom_dep)
 hosp_totales_par_dep_historique = df[["jour","nom_dep","hosp","rea"]].rename(columns=colonnes_donnees_hopital)
 hosp_totales_par_dep_historique.to_csv("donnees/hosp_totales_par_dep_historique.csv",index=False)
+print ("C'est bon pour hosp_totales_par_dep_historique")
 
 ### Hospitalisations BFC
 hosp_totales_bfc_historique = df.pivot_table(index="jour",values=["hosp","rea"],aggfunc=sum).rename(columns=colonnes_donnees_hopital)
@@ -133,6 +134,7 @@ df = df[df["dep"].isin(code_dep)]
 df["nom_dep"] = df["dep"].map(nom_dep)
 hosp_nouvelles_par_dep = df[["jour","nom_dep","incid_hosp","incid_rea","incid_dc","incid_rad"]].rename(columns=colonnes_donnees_hopital)
 hosp_nouvelles_par_dep.to_csv("donnees/hosp_nouvelles_par_dep.csv",index=False)
+print ("C'est bon pour hosp_nouvelles_par_dep")
 
 ### Cartouche nouvelles hospitalisations BFC
 reg_plus_recent = df[df["jour"] == max(df["jour"])].pivot_table(index="jour",aggfunc=sum)
@@ -145,6 +147,7 @@ hosp_nouvelles_bfc_plus_recent.to_csv("donnees/hosp_nouvelles_bfc_plus_recent.cs
 ### Cartouche hôpital BFC
 hosp_bfc_recap = pd.concat([hosp_totales_bfc_plus_recent,hosp_nouvelles_bfc_plus_recent])
 hosp_bfc_recap.to_csv("donnees/hosp_bfc_recap.csv")
+print("C'est bon pour hosp_bfc_recap")
 
 ### Taux d'incidence et de positivité par département
 df = pd.read_csv(sp_ti_tp_7j_dep,sep=";",
@@ -162,7 +165,7 @@ incidence_positivite_dep.loc[:,"fin_7j"] = pd.to_datetime(incidence_positivite_d
 
 depistage_incidence_positivite_dep_historique = incidence_positivite_dep.rename(columns=colonnes_donnees_depistage)
 depistage_incidence_positivite_dep_historique.to_csv("donnees/depistage_incidence_positivite_dep_historique.csv",index=False)
-
+print("C'est bon pour depistage_incidence_positivite_dep_historique")
 
 ### Cartouche taux incidence et positivité par département
 depistage_incidence_par_dep_plus_recent = incidence_positivite_dep[["nom_dep","debut_7j","fin_7j","taux_incidence_7j"]][incidence_positivite_dep["fin_7j"] == max(incidence_positivite_dep["fin_7j"])]
@@ -175,6 +178,7 @@ depistage_incidence_positivite_par_dep_plus_recent["debut_7j"] = depistage_incid
 depistage_incidence_positivite_par_dep_plus_recent["fin_7j"] = depistage_incidence_positivite_par_dep_plus_recent["fin_7j"].dt.strftime("%d/%m")
 
 depistage_incidence_positivite_par_dep_plus_recent.to_csv("donnees/depistage_incidence_positivite_par_dep_plus_recent.csv",index=False)
+print("C'est bon pour depistage_incidence_positivite_par_dep_plus_recent")
 
 #### Taux d'incidence et taux de positivité sur 7 jours glissants pour BFC et France
 df = pd.read_csv(sp_ti_tp_7j_reg,sep=";",dtype={"reg":str,"P":int,"T":int,"pop":float})
@@ -200,10 +204,11 @@ incidence_positivite_france_bfc = pd.concat([incidence_positivite_bfc,incidence_
 
 depistage_incidence_bfc_france_historique = incidence_positivite_france_bfc.pivot_table(index=["debut_7j","fin_7j"],columns="nom_reg",values="taux_incidence_7j")
 depistage_incidence_bfc_france_historique.to_csv("donnees/depistage_incidence_bfc_france_historique.csv")
+print("C'est bon pour depistage_incidence_bfc_france_historique")
 
 depistage_positivite_bfc_france_historique = incidence_positivite_france_bfc.pivot_table(index=["debut_7j","fin_7j"],columns="nom_reg",values="taux_positivite_7j")
 depistage_positivite_bfc_france_historique.to_csv("donnees/depistage_positivite_bfc_france_historique.csv")
-
+print("C'est bon pour depistage_positivite_bfc_france_historique")
 
 incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc[incidence_positivite_france_bfc["fin_7j"] == max(incidence_positivite_france_bfc["fin_7j"])]
 
@@ -216,7 +221,7 @@ incidence_positivite_france_bfc_plus_recent.loc[:,"fin_7j"] = incidence_positivi
 depistage_incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc_plus_recent
 
 depistage_incidence_positivite_france_bfc_plus_recent.to_csv("donnees/depistage_incidence_positivite_france_bfc_plus_recent.csv",index=False)
-
+print("C'est bon pour depistage_incidence_positivite_france_bfc_plus_recent")
 
 ### Carte taux d'incidence et positivité par commune BFC
 df = pd.read_csv(sg_com_opendata,sep=";",skiprows=1,names=["com2020","semaine_glissante","clage_65","ti_classe_debut","ti_classe_fin","td_classe_debut","td_classe_fin","tp_classe_debut","tp_classe_fin"],dtype=str)
@@ -237,6 +242,7 @@ df["td_classe"] = df.loc[:,"td_classe"].str.replace("à Max","et plus",regex=Fal
 depistage_carte_communes_bfc = df[["com2020","dep","debut_7j","fin_7j","clage_65","tp_classe","ti_classe","td_classe"]][df["fin_7j"] == max(df["fin_7j"])]
 
 depistage_carte_communes_bfc.to_csv("donnees/depistage_carte_communes_bfc.csv",index=False)
+print("C'est bon pour depistage_carte_communes_bfc")
 
 ### Evolution vaccination BFC
 df = pd.read_csv(vacsi_reg,dtype={"reg":str,"n_dose1":int,"n_cum_dose1":int,"n_dose2":int,"n_cum_dose2":int},parse_dates=["jour"])
@@ -272,8 +278,8 @@ df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
 
 vaccin_tot_bfc_fr = df
 
-
 vaccin_tot_bfc_fr.to_csv("donnees/vaccin_tot_bfc_fr.csv",index=False)
+print("C'est bon pour vaccin_tot_bfc_fr")
 
 ### Vaccination par département
 df = pd.read_csv(vacsi_tot_dep,dtype={"dep":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
@@ -294,6 +300,7 @@ df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
 vaccin_tot_dep = df
 
 vaccin_tot_dep.to_csv("donnees/vaccin_tot_dep.csv",index=False)
+print("C'est bon pour vaccin_tot_dep")
 
 ### Vaccination par âge BFC
 df = pd.read_csv(vacsi_tot_a_reg,dtype={"reg":str,"clage_vacsi":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
@@ -317,7 +324,7 @@ df["jour"] = df["jour"].dt.strftime("%d/%m")
 vaccin_par_age_bfc = df[["nom_clage_vacsi","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2","jour"]].rename(columns=colonnes_donnees_vaccination)
 
 vaccin_par_age_bfc.to_csv("donnees/vaccin_par_age_bfc.csv",index=False)
-
+print("C'est bon pour vaccin_par_age_bfc")
 
 ### Données pour tableau détail par régions et comparaison à la population ###
 
@@ -338,6 +345,7 @@ df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
 vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns=colonnes_donnees_vaccination)
 
 vaccin_comparaison_region.to_csv("donnees/vaccin_comparaison_regions.csv",index=False)  
+print("C'est bon pour vaccin_comparaison_region")
 
 ### Données rendez-vous vaccins ###
 df = pd.read_csv(prise_rdv_par_reg,parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
@@ -350,6 +358,7 @@ df = df[["jour","1","2","Total"]].rename(columns={"jour":"Semaine du ","1":"Rend
 vaccin_nombre_rdv_bfc = df
 
 vaccin_nombre_rdv_bfc.to_csv("donnees/vaccin_nombre_rdv_bfc.csv",index=False)
+print("C'est bon pour vaccin_nombre_rdv_bfc")
 
 ### Données livraisons vaccins ####
 df = pd.read_csv(livraisons_regional,sep=";",dtype={"code_region":str},parse_dates=["date"],index_col="date")
@@ -362,6 +371,7 @@ df["nb_doses_receptionnees_cumul"] = df["nb_doses_receptionnees_cumul"].str.repl
 vaccin_livraisons_doses = df
 
 vaccin_livraisons_doses.to_csv("donnees/vaccin_livraisons_doses.csv")
+print("C'est bon pour vaccin_livraisons_doses")
 
 # Lieux vaccinations
 df = pd.read_csv(centres_vaccination,sep=";", encoding="utf-8",dtype=str)
@@ -370,3 +380,6 @@ df = df[df["dep"].isin(code_dep)]
 df = df[["gid","nom","adr_num","adr_voie","com_cp","com_nom","lat_coor1","long_coor1","_edit_datemaj","lieu_accessibilite","rdv_lundi","rdv_mardi","rdv_mercredi","rdv_jeudi","rdv_vendredi","rdv_samedi","rdv_dimanche","date_fermeture","date_ouverture","rdv_site_web","rdv_tel","rdv_modalites","dep"]]
 vaccin_lieux_vaccination = df
 vaccin_lieux_vaccination.to_json("donnees/vaccin_lieux_vaccination.json",orient="records")
+print("C'est bon pour vaccin_lieux_vaccination")
+
+print("C'est tout bon !")
