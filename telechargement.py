@@ -84,17 +84,24 @@ clage_vacsi = {"0":"Tous âges",
 
 
 colonnes_donnees_hopital = {"nom_dep":"Département",
-                           "hosp":"Hospitalisations en cours",
-                           "rea":"Réanimations en cours",
-                           "dc":"Décès (cumul)",
+                           "hosp":"Hospitalisations",
+                           "rea":"Réanimations",
+                           "dc":"Décès à l'hôpital (cumul)",
                            "rad":"Retours à domicile (cumul)",
                            "incid_hosp":"Nouvelles hospitalisations",
                            "incid_rea":"Nouvelles entrées en réanimation",
-                           "incid_dc":"Nouveaux décès",
+                           "incid_dc":"Nouveaux décès à l'hôpital",
                            "incid_rad":"Nouveaux retours à domicile"}
 
 colonnes_donnees_depistage = {"taux_incidence_7j":"Taux d'incidence",
                              "taux_positivite_7j":"Taux de positivité"}
+
+colonnes_donnees_vaccination = {"nom_reg":"Région",
+                                "n_tot_dose1":"Premières doses",
+                                "n_tot_dose2":"Deuxièmes doses",
+                                "pct_n_tot_dose1":"% de la population",
+                                "pct_n_tot_dose2":"% de la population",
+                                "nom_clage_vacsi":"Classe d'âge"}
 
 ### Hospitalisations par département
 df = pd.read_csv(donnees_hospitalieres_covid19,sep=";",
@@ -307,7 +314,7 @@ df["nom_clage_vacsi"] = df["clage_vacsi"].map(clage_vacsi)
 
 df["jour"] = df["jour"].dt.strftime("%d/%m")
 
-vaccin_par_age_bfc = df[["nom_clage_vacsi","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2","jour"]]
+vaccin_par_age_bfc = df[["nom_clage_vacsi","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2","jour"]].rename(columns=colonnes_donnees_vaccination)
 
 vaccin_par_age_bfc.to_csv("donnees/vaccin_par_age_bfc.csv",index=False)
 
@@ -328,7 +335,7 @@ df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
 df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
 df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
 
-vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns={"nom_reg":"Région","n_tot_dose1":"Premières doses","n_tot_dose2":"Deuxièmes doses","pct_n_tot_dose1":"% de la population","pct_n_tot_dose2":"% de la population"})
+vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns=colonnes_donnees_vaccination)
 
 vaccin_comparaison_region.to_csv("donnees/vaccin_comparaison_regions.csv",index=False)  
 
