@@ -88,10 +88,10 @@ colonnes_donnees_hopital = {"nom_dep":"Département",
                            "rea":"Réanimations",
                            "dc":"Décès à l'hôpital (cumul)",
                            "rad":"Retours à domicile (cumul)",
-                           "incid_hosp":"Nouvelles hospitalisations",
-                           "incid_rea":"Nouvelles entrées en réanimation",
-                           "incid_dc":"Nouveaux décès à l'hôpital",
-                           "incid_rad":"Nouveaux retours à domicile"}
+                           "incid_hosp":"Nouvelles hospitalisations en 24h",
+                           "incid_rea":"Nouvelles entrées en réanimation en 24h",
+                           "incid_dc":"Nouveaux décès à l'hôpital en 24h",
+                           "incid_rad":"Nouveaux retours à domicile en 24h"}
 
 colonnes_donnees_depistage = {"taux_incidence_7j":"Taux d'incidence",
                              "taux_positivite_7j":"Taux de positivité"}

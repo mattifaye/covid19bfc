@@ -1,4 +1,4 @@
-jour,Département,Nouvelles hospitalisations,Nouvelles entrées en réanimation,Nouveaux décès à l'hôpital,Nouveaux retours à domicile
+jour,Département,Nouvelles hospitalisations en 24h,Nouvelles entrées en réanimation en 24h,Nouveaux décès à l'hôpital en 24h,Nouveaux retours à domicile en 24h
 2020-03-19,Côte-d'Or,26,11,2,24
 2020-03-19,Doubs,12,11,2,5
 2020-03-19,Jura,1,0,0,0
