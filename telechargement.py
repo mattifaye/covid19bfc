@@ -311,7 +311,7 @@ df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
 df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
 df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
 
-vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns={"n_tot_dose1":"Premières doses","n_tot_dose2":"Deuxièmes doses","pct_n_tot_dose1":"% de la population","pct_n_tot_dose2":"% de la population"})
+vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns={"nom_reg":"Région","n_tot_dose1":"Premières doses","n_tot_dose2":"Deuxièmes doses","pct_n_tot_dose1":"% de la population","pct_n_tot_dose2":"% de la population"})
 
 vaccin_comparaison_region.to_csv("donnees/vaccin_comparaison_regions.csv",index=False)  
 
