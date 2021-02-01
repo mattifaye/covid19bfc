@@ -1,4 +1,4 @@
-reg,Code région,Région,pop
+reg,code_reg,nom_reg,pop
 84,REG-84,Auvergne-Rhône-Alpes,7994459
 27,REG-27,Bourgogne-Franche-Comté,2807807
 53,REG-53,Bretagne,3335414

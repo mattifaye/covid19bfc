@@ -1,532 +1,348 @@
 #coding: utf-8
 import pandas as pd
 
-############################
-##### TAUX D'INCIDENCE #####
-############################
+### Fichiers source
+# Hôpital
+donnees_hospitalieres_covid19 = "https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7"
+donnees_hospitalieres_nouveaux_covid19 = "https://www.data.gouv.fr/fr/datasets/r/6fadff46-9efd-4c53-942a-54aca783c30c"
+## A FAIRE donnees_hospitalieres_classe_age_covid19 = "https://www.data.gouv.fr/fr/datasets/r/08c18e08-6780-452d-9b8c-ae244ad529b3"
 
-# Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/19a91d64-3cd3-42fc-9943-d635491a4d76", sep=";", dtype={"dep":object,"P":int,"cl_age90":object})
+# Dépistage
+sp_pos_quot_dep = "https://www.data.gouv.fr/fr/datasets/r/406c6a23-e283-4300-9484-54e78c8ae675"
+sp_ti_tp_7j_dep = "https://www.data.gouv.fr/fr/datasets/r/d1c1846c-f2d1-43cb-ad84-b46c40d1bec8"
+sp_ti_tp_7j_reg = "https://www.data.gouv.fr/fr/datasets/r/df2f66d3-ef9b-48e0-abdf-f33a6a7ff2fa"
+sp_ti_tp_7j_fra = "https://www.data.gouv.fr/fr/datasets/r/c1167c4e-8c89-40f2-adb3-1954f8fedfa7"
+sg_com_opendata = "https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3"
+
+# Vaccination
+vacsi_tot_reg = "https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-f2eeaab60d99"
+vacsi_tot_fra = "https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-beaa-0eafc4b88466"
+vacsi_tot_dep = "https://www.data.gouv.fr/fr/datasets/r/7969c06d-848e-40cf-9c3c-21b5bd5a874b"
+vacsi_tot_a_reg = "https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2"
+
+# Lieux de vaccination
+centres_vaccination = "https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372"
+
+# Rendez-vous vaccinations
+prise_rdv_par_reg = "https://www.data.gouv.fr/fr/datasets/r/3c3565e5-8e50-482d-b76a-fe07599ab4a0"
+
+# Stock vaccin
+livraisons_regional = "https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da"
+
+vacsi_reg = "https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8"
 
 # Filtres
-depBFC = ["21","25","39","58","70","71","89","90"]
-age = ["0"]
-
-# Filtre données BFC et toutes classes d'âge
-df = df[df["dep"].isin(depBFC) & df["cl_age90"].isin(age)]
-
-
-# Calcul taux d'incidence quotidien
-df["taux_incidence_quot"] = df["P"]/df["pop"]*100000
-
-# Calcul taux d'incidence par département sur sept jours glissants
-for dep in depBFC:
-    df2 = df[df["dep"] == dep]
-    df2["positif_7j"] = df2["P"].rolling(7).sum()
-    df2["taux_incid_7j"] = df2["positif_7j"]/df2["pop"]*100000
-    df2.to_csv(dep+"_incidence7j.csv",index=False)
-
-df_21 = pd.read_csv("21_incidence7j.csv")
-df_25 = pd.read_csv("25_incidence7j.csv")
-df_39 = pd.read_csv("39_incidence7j.csv")
-df_58 = pd.read_csv("58_incidence7j.csv")
-df_70 = pd.read_csv("70_incidence7j.csv")
-df_71 = pd.read_csv("71_incidence7j.csv")
-df_89 = pd.read_csv("89_incidence7j.csv")
-df_90 = pd.read_csv("90_incidence7j.csv")
-
-df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
-df_dep.to_csv("dep_incidence7j.csv",index=False)
-
-
-####### Taux incidence avec accents pour test
-for dep in depBFC:
-    df2 = df[df["dep"] == dep]
-    df2["positif_7j"] = df2["P"].rolling(7).sum()
-    df2["taux_incid_7j"] = df2["positif_7j"]/df2["pop"]*100000
-    df2.to_csv(dep+"_incidence7j.csv",index=False)
-
-df_21 = pd.read_csv("21_incidence7j.csv")
-df_25 = pd.read_csv("25_incidence7j.csv")
-df_39 = pd.read_csv("39_incidence7j.csv")
-df_58 = pd.read_csv("58_incidence7j.csv")
-df_70 = pd.read_csv("70_incidence7j.csv")
-df_71 = pd.read_csv("71_incidence7j.csv")
-df_89 = pd.read_csv("89_incidence7j.csv")
-df_90 = pd.read_csv("90_incidence7j.csv")
-
-df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
-df_dep.to_csv("dep_incidence7j_accents.csv",index=False)
-
-
-# Calcul taux d'incidence régional sur sept jours glissants
-tcd = df.pivot_table(index=["jour"],values=["P","pop"],aggfunc=sum)
-
-
-tcd["positif_7j"] = tcd["P"].rolling(7).sum()
-tcd["taux_incid_7j"] = tcd["positif_7j"]/tcd["pop"]*100000
-tcd.to_csv("bfc_incidence7j.csv")
-
-##############################
-##### TAUX DE POSITIVITÉ #####
-##############################
-
-# Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/406c6a23-e283-4300-9484-54e78c8ae675", sep=";",dtype={"dep":object,"P":int,"cl_age90":object})
-
-# Description filtre
-depBFC = ["21","25","39","58","70","71","89","90"]
-age = ["0"]
-
-# Filtre données BFC et toutes classes d'âge
-df = df[df["dep"].isin(depBFC) & df["cl_age90"].isin(age)]
-df["taux_positivite_quotidien"] = df["P"]/df["T"]*100
-
-# Calcul taux de positivité sur sept jours glissants par département
-for dep in depBFC:
-    df2 = df[df["dep"] == dep]
-    df2["positifs_7j"] = df2["P"].rolling(7).sum()
-    df2["tests_7j"] = df2["T"].rolling(7).sum()
-    df2["taux_positivite_7j"] = df2["positifs_7j"]/df2["tests_7j"]*100
-    df2.to_csv(dep+"_positivite7j.csv", index=False)
-    
-df_21 = pd.read_csv("21_positivite7j.csv")
-df_25 = pd.read_csv("25_positivite7j.csv")
-df_39 = pd.read_csv("39_positivite7j.csv")
-df_58 = pd.read_csv("58_positivite7j.csv")
-df_70 = pd.read_csv("70_positivite7j.csv")
-df_71 = pd.read_csv("71_positivite7j.csv")
-df_89 = pd.read_csv("89_positivite7j.csv")
-df_90 = pd.read_csv("90_positivite7j.csv")
-
-# Regroupement dans un seul fichier et export
-df_dep = pd.concat([df_21,df_25,df_39,df_58,df_70,df_71,df_89,df_90])
-df_dep["dep_ok"] = df_dep["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
-df_dep.to_csv("dep_positivite7j.csv",index=False)
-
-# Calcul taux d'incidence régional sur 7 jours glissants
-tcd = df.pivot_table(index=["jour"],values=["P","T"],aggfunc=sum)
-tcd["positifs_7j"] = tcd["P"].rolling(7).sum()
-tcd["tests_7j"] = tcd["T"].rolling(7).sum()
-tcd["taux_positivite_7j"] = tcd["positifs_7j"]/tcd["tests_7j"]*100
-tcd.to_csv("bfc_positivite7j.csv")
-
-
-# Chiffres derniers jours taux d'incidence et taux de positivité
-df = pd.read_csv("bfc_positivite7j.csv",parse_dates=["jour"],index_col="jour")
-df2 = df[["tests_7j","positifs_7j","taux_positivite_7j"]]
-df_ok = df2.last("1D")
-
-pos = pd.read_csv("bfc_incidence7j.csv",parse_dates=["jour"],index_col="jour")
-pos_ok = pos.last("1D")[["taux_incid_7j"]]
-
-df2 = df_ok.join(pos_ok).T
-df2["categorie"] = df2.index
-df3 = df2.replace({"tests_7j":"Tests réalisés","positifs_7j":"Tests positifs","taux_positivite_7j":"Pourcentage de tests positifs","taux_incid_7j":"Taux d'incidence"})
-df4 = df3.round()
-df4.to_csv("bfc_tests_jour.csv",float_format='%.0f')
-
-############################
-##### HOSPITALISATIONS #####
-############################
-
-#### Détails par départements ####
-# Import fichiers
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";", dtype={"dep":object,"sexe":object},parse_dates=["jour"])
-
-
-# Description filtre
-depBFC = ["21","25","39","58","70","71","89","90"]
-sexe = ["0"]
-
-# Filtre données BFC et toutes classes d'âge
-df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
-
-# Renommage colonnes et départements
-df["dep_ok"] = df["dep"].replace({21:"Cote-d'Or",25:"Doubs",39:"Jura",58:"Nievre",70:"Haute-Saone",71:"Saone-et-Loire",89:"Yonne",90:"Territoire de Belfort"})
-df2 = df[["dep","sexe","jour","hosp","rea","dc","dep_ok"]]
-df_ok = df2.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
-
-# Export fichier
-df_ok.to_csv("dep_hospitalisations.csv",index=False)
-for departement in depBFC:
-    df3 = df_ok[df_ok["dep"] == departement]
-    df3.to_csv(departement+"_hospitalisations.csv",index=False)
-
-# Tableau croisé total BFC
-tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"], aggfunc=sum)
-tcd_ok = tcd.rename(index=str, columns={"hosp":"Personnes hospitalisées","rea":"Personnes en réanimation","rad":"Personnes de retour à domicile (cumul)","dc":"Personnes décédées (cumul)"})
-tcd_ok["jour_ok"]=tcd.index
-tcd_ok.to_csv("bfc_hospitalisations_total.csv",date_format='%Y-%m-%d')
-
-
-### Synthèse pour la région (dernier jour) ###
-# Nouvelles hospitalisations
-
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/6fadff46-9efd-4c53-942a-54aca783c30c", sep=";",parse_dates=["jour"])
-
-df = df[df["dep"].isin(depBFC)]
-
-tcd = df.pivot_table(index="jour",values=["incid_hosp","incid_rea","incid_dc","incid_rad"],aggfunc=sum)
-tcd2 = tcd[['incid_hosp', 'incid_rea', 'incid_dc', 'incid_rad']].last("1D").T
-tcd2["categorie"] = tcd2.index
-tcd3 = tcd2.replace({"incid_dc":"Nouveaux décès","incid_hosp":"Nouvelles hospitalisations", "incid_rea":"Nouvelles admissions en réanimation","incid_rad":"Nouveaux retours à domicile"})
-tcd3.to_csv("bfc_nouvelles_hospitalisations.csv")
-
-# Total hospitalisations
-
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/63352e38-d353-4b54-bfd1-f1b3ee1cabd7", sep=";",parse_dates=["jour"],dtype={"dep":object,"sexe":object})
-
-df = df[df["dep"].isin(depBFC) & df["sexe"].isin(sexe)]
-
-
-tcd = df.pivot_table(index=["jour"],values=["hosp","rea","dc","rad"],aggfunc=sum)
-
-
-tcd2 = tcd[['hosp', 'rea', 'dc', 'rad']].last("1D").T
-tcd2["categorie"] = tcd2.index
-tcd3 = tcd2.replace({"dc":"Décès à l'hôpital (cumul)","hosp":"Personnes actuellement hospitalisées", "rea":"Personnes actuellement en réanimation","rad":"Personnes de retour à domicile (cumul)"})
-tcd3.to_csv("bfc_hospitalisations_jour.csv")
-
-### Nombre de décès par jour à l'hôpital ###
-
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/6fadff46-9efd-4c53-942a-54aca783c30c", sep=";", parse_dates=["jour"])
-depBFC = ["21","25","39","58","70","71","89","90"]
-
-df = df[df["dep"].isin(depBFC)]
-
-df = df.replace({"21":"Cote-d'Or","25":"Doubs","39":"Jura","58":"Nievre","70":"Haute-Saone","71":"Saone-et-Loire","89":"Yonne","90":"Territoire de Belfort"})
-df = df.pivot_table(index="jour",columns="dep",values="incid_dc",aggfunc=sum,margins=True,margins_name="Bourgogne-Franche-Comte").iloc[:-1]
-
-df[["Bourgogne-Franche-Comte","Cote-d'Or","Doubs","Jura","Nievre","Haute-Saone","Saone-et-Loire","Yonne","Territoire de Belfort"]].to_csv("dep_nouveaux_deces_jour.csv")
-
-######################
-##### METROPOLES #####
-######################
-
-# Import fichier
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/61533034-0f2f-4b16-9a6d-28ffabb33a02",sep=";")
-epci = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/0fa52fca-4eb3-4786-92f1-6db24273068f",sep=";",encoding="latin")
-df = pd.merge(df,epci,left_on="epci2020",right_on="EPCI")
-
-# Filtre
-epciBFC = ["242100410"]
-age = ["0","65"]
-
-# Application filtre
-df = df[df["EPCI"].isin(epciBFC) & df["clage_65"].isin(age)]
-
-
-df["debut_periode"] = df["semaine_glissante"].str[:10]
-df["fin_periode"] = df["semaine_glissante"].str[-10:]
-df["clage_ok"] = df["clage_65"].replace({0:"tous âges",65:"65 ans et plus"})
-
-# Renommage
-df_ok = df.rename(index=str, columns={"ti":"Taux d'incidence"})
-
-# Export
-df_ok.to_csv("epci_incidence7j.csv",index=False)
-
-#########################
-##### CLASSES D'AGE #####
-#########################
-reg = ["27"]
-# Import données hospitalières
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/08c18e08-6780-452d-9b8c-ae244ad529b3",sep=";",parse_dates=["jour"],dtype={"reg":object,"cl_age90":object})
-
-
-df = df[df["reg"].isin(reg)]
-df = df[df["cl_age90"] != 0]
-
-df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["dc","hosp","rea"]).last("1D")
-df3 = df2.rename(columns={"hosp":"Hospitalisations en cours","rea":"Réanimations en cours","dc":"Décès depuis mars à l'hôpital"})
-
-
-hosp = df3.rename(columns={0:"tous",9:"de 0 à 9 ans",19:"de 10 à 19 ans",29:"de 20 à 29 ans",39:"de 30 à 39 ans",49:"de 40 à 49 ans",59:"de 50 à 59 ans",69:"de 60 à 69 ans",79:"de 70 à 79 ans",89:"de 80 à 89 ans",90:"90 ans et plus"})
-hosp = hosp[["Hospitalisations en cours","Réanimations en cours","Décès depuis mars à l'hôpital"]]
-
-# Import données tests de dépistage
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/001aca18-df6a-45c8-89e6-f82d689e6c01",sep=";",parse_dates=["jour"])
-reg = ["27"]
-df = df[df["reg"].isin(reg)]
-df = df[df["cl_age90"] != 0]
-
-df2 = df.pivot_table(index=["jour"],columns="cl_age90",values=["P"]).last("1D")
-df3 = df2.rename(columns={"P":"Tests positifs les 7 derniers jours"})
-tests = df3.rename(columns={0:"tous",9:"de 0 à 9 ans",19:"de 10 à 19 ans",29:"de 20 à 29 ans",39:"de 30 à 39 ans",49:"de 40 à 49 ans",59:"de 50 à 59 ans",69:"de 60 à 69 ans",79:"de 70 à 79 ans",89:"de 80 à 89 ans",90:"90 ans et plus"})
-
-# Regroupement dans un seul fichier et export
-pd.concat([tests.T,hosp.T]).to_csv("classes_age.csv")
-
-##################
-##### CARTES #####
-##################
-# Import données
-# df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object,sep=";")
-
-# Filtre départements
-# depBFC = ["21","25","39","58","70","71","89","90"]
-
-# Calcul nouvelles colonnes
-# df["dep"] = df["com2020"].str[:2]
-# df["date"] = df["semaine_glissante"].str[-5:]
-# df["fin_periode"] = df["date"].str[-2:] + "/" + df["date"].str[:2]
-
-# Données les plus récentes pour la population générale
-# age = ["0"]
-# age = df[df["dep"].isin(depBFC) & df["clage_65"].isin(age)]
-# tcd = age.pivot_table(index="com2020",aggfunc='last')
-# carte = pd.read_csv("base_carte.csv",dtype=object)
-# carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
-# df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
-
-# df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-# df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-# df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-
-# df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
-# df3.to_csv("carte_0.csv",index=False)
-
-# Données les plus récentes pour les plus de 65 ans
-# age = ["65"]
-# age = df[df["dep"].isin(depBFC) & df["clage_65"].isin(age)]
-# tcd = age.pivot_table(index="com2020",aggfunc='last')
-# carte = pd.read_csv("base_carte.csv",dtype=object)
-# carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
-# df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
-
-# df2["tp_classe"] = df2["tp_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-# df2["ti_classe"] = df2["ti_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-# df2["td_classe"] = df2["td_classe"].str.replace(";"," à ").str.replace("[","").str.replace("]","").str.replace("à Max","et plus")
-
-# df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
-# df3.to_csv("carte_65.csv",index=False)
-
-# Tableaux récap
-# df = pd.read_csv("carte_0.csv")
-# df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
-# df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
-# df2.to_csv("tableau_0.csv",index=False)
-
-# df = pd.read_csv("carte_65.csv")
-# df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
-# df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
-# df2.to_csv("tableau_65.csv",index=False)
-
-##############################################
-##### CARTES avec données séparées par ; #####
-##############################################
-
-# Import données
-import pandas as pd
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c2e2e844-9671-4f81-8c81-1b79f7687de3",dtype=object, index_col=None,skiprows=1,sep=";",names=["com2020","semaine_glissante","clage_65","ti_classe_debut","ti_classe_fin","td_classe_debut","td_classe_fin","tp_classe_debut","tp_classe_fin"])
-df["dep"] = df["com2020"].str[:2]
-
-# Filtre départements
-depBFC = ["21","25","39","58","70","71","89","90"]
-age = ["0"]
-
-df = df[df["dep"].isin(depBFC)]
-
-# Calcul nouvelles colonnes
-
-df["date"] = df["semaine_glissante"].str[-10:]
-df["fin_periode"] = df["date"].str[-5:].str[-2:] + "/" + df["date"].str[-5:].str[:2]
-
-# Données les plus récentes pour la population générale
-cl_age = ["0"]
-age = df[df["clage_65"].isin(cl_age)]
-
-tcd = age.pivot_table(index="com2020",aggfunc='last')
-
-carte = pd.read_csv("base_carte.csv",dtype=object)
-carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
-df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
-
-df2["tp_classe"] = df2["tp_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["tp_classe_fin"].str.replace("[","").str.replace("]","")
-df2["ti_classe"] = df2["ti_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["ti_classe_fin"].str.replace("[","").str.replace("]","")
-df2["td_classe"] = df2["td_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["td_classe_fin"].str.replace("[","").str.replace("]","")
-
-df2["tp_classe"] = df2["tp_classe"].str.replace("à Max","et plus")
-df2["ti_classe"] = df2["ti_classe"].str.replace("à Max","et plus")
-df2["td_classe"] = df2["td_classe"].str.replace("à Max","et plus")
-
-df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
-df3.to_csv("carte_0.csv",index=False)
-
-# Données les plus récentes pour les 65 ans et plus
-cl_age = ["65"]
-age = df[df["clage_65"].isin(cl_age)]
-
-tcd = age.pivot_table(index="com2020",aggfunc='last')
-
-carte = pd.read_csv("base_carte.csv",dtype=object)
-carte["NOM_COM_OK"] = carte["NOM_COM"] + " (" + carte["INSEE_DEP"] + ")"
-df2 = carte.merge(tcd,left_on="INSEE_COM",right_on="com2020")
-
-df2["tp_classe"] = df2["tp_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["tp_classe_fin"].str.replace("[","").str.replace("]","")
-df2["ti_classe"] = df2["ti_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["ti_classe_fin"].str.replace("[","").str.replace("]","")
-df2["td_classe"] = df2["td_classe_debut"].str.replace("[","").str.replace("]","") + " à " + df2["td_classe_fin"].str.replace("[","").str.replace("]","")
-
-df2["tp_classe"] = df2["tp_classe"].str.replace("à Max","et plus")
-df2["ti_classe"] = df2["ti_classe"].str.replace("à Max","et plus")
-df2["td_classe"] = df2["td_classe"].str.replace("à Max","et plus")
-
-df3 = df2[["geometry","INSEE_COM","INSEE_DEP","NOM_COM_OK","fin_periode","clage_65","ti_classe","tp_classe","td_classe"]]
-df3.to_csv("carte_65.csv",index=False)
-
-# Tableaux récap
-df = pd.read_csv("carte_0.csv")
-df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
-df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
-df2.to_csv("tableau_0.csv",index=False)
-
-df = pd.read_csv("carte_65.csv")
-df = df [["NOM_COM_OK","ti_classe","tp_classe"]]
-df2 = df.rename(columns={"NOM_COM_OK":"Commune","ti_classe":"Taux d'incidence","tp_classe":"Taux de positivité"})
-df2.to_csv("tableau_65.csv",index=False)
-
-############################
-##### DATE MISE À JOUR #####
-############################
-
-df = pd.read_csv("bfc_hospitalisations_total.csv", parse_dates=["jour"],index_col="jour")
-df = df.last("1D")
-df["Dernière mise à jour"] = df["jour_ok"].str[-2:] + "/" + df["jour_ok"].str[-5:].str[:2]
-df[["Dernière mise à jour"]].to_csv("date_maj.csv",index=False)
-
-################################
-##### CHIFFRES VACCINATION #####
-################################
-
-####  Filtres et tout ça ###
-sexe = ["0"]
-code_reg = ["27","FR"]
 code_dep = ["21","25","39","58","70","71","89","90"]
-clage_vacsi = ["0"]
-nom_dep = {"21":"Côte-d'Or","25":"Doubs","39":"Jura","58":"Nièvre","70":"Haute-Saône","71":"Saône-et-Loire","89":"Yonne","90":"Territoire de Belfort"}
-nom_reg = {"27":"Bourgogne-Franche-Comté","FR":"France"}
-genre = {"1":"Hommes","2":"Femmes"}
-pop_bfc_age = {"0":2786205,"9":288163,"17":None,"24":None,"29":135303,"39":311073,"49":339642,"59":374051,"64":186671,"69":181451,"74":178094,"79":108219,"80":203285}
-clage = {"0":"Tous âges","9":"0-9 ans","17":"10-17 ans","24":"18-24 ans","29":"25-29 ans","39":"30-39 ans","49":"40-49 ans","59":"50-59 ans","64":"60-64 ans","69":"65-69 ans","74":"70-74 ans","79":"75-79 ans","80":"80 ans et plus"}
+code_reg = ["27"]
+sexe = ["0"]
+cl_age90 = ["0"]
 
-### Chiffres 1ère dose par département ### 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/4f39ec91-80d7-4602-befb-4b522804c0af",sep=";",parse_dates=["jour"],index_col="jour",dtype={"dep":str})
-df = df[df["dep"].isin(code_dep)]
-df["n_cum_dose1"] = df["n_dose1"].groupby(df["dep"]).cumsum()
+# Définitions
+nom_dep = {"21":"Côte-d'Or",
+           "25":"Doubs",
+           "39":"Jura",
+           "58":"Nièvre",
+           "70":"Haute-Saône",
+           "71":"Saône-et-Loire",
+           "89":"Yonne",
+           "90":"Territoire de Belfort"}
+
+nom_reg = {"27":"Bourgogne-Franche-Comté",
+          "FR":"France"}
+
+pop_bfc = {"0":2228187, ## <-- total population uniquement 18 et plus
+           "9":310831,
+           "17":272405,
+           
+           "24":206308,
+           "29":146612,
+           "39":318460,
+           "49":360444,
+           "59":379032,
+           "64":189118,
+           "69":187345,
+           "74":135474,
+           "79":105926,
+           "80":199468}
+
+clage_vacsi = {"0":"Tous âges",
+         "9":"0-9 ans",
+         "17":"10-17 ans",
+         "24":"18-24 ans",
+         "29":"25-29 ans",
+         "39":"30-39 ans",
+         "49":"40-49 ans",
+         "59":"50-59 ans",
+         "64":"60-64 ans",
+         "69":"65-69 ans",
+         "74":"70-74 ans",
+         "79":"75-79 ans",
+         "80":"80 ans et plus"}
+
+
+
+colonnes_donnees_hopital = {"nom_dep":"Département",
+                           "hosp":"Hospitalisations en cours",
+                           "rea":"Réanimations en cours",
+                           "dc":"Décès (cumul)",
+                           "rad":"Retours à domicile (cumul)",
+                           "incid_hosp":"Nouvelles hospitalisations",
+                           "incid_rea":"Nouvelles entrées en réanimation",
+                           "incid_dc":"Nouveaux décès",
+                           "incid_rad":"Nouveaux retours à domicile"}
+
+colonnes_donnees_depistage = {"taux_incidence_7j":"Taux d'incidence",
+                             "taux_positivite_7j":"Taux de positivité"}
+
+### Hospitalisations par département
+df = pd.read_csv(donnees_hospitalieres_covid19,sep=";",
+                 parse_dates=["jour"],
+                 dtype={"dep":str,"sexe":str,"hosp":int,"rea":int,"rad":int,"dc":int})
+df = df[df["dep"].isin(code_dep) & df["sexe"].isin(sexe)]
+
 df["nom_dep"] = df["dep"].map(nom_dep)
-dep = df[["dep","nom_dep","n_dose1","n_cum_dose1"]]
-dep.to_csv("vaccins_dep_bfc.csv")
+hosp_totales_par_dep_historique = df[["jour","nom_dep","hosp","rea"]].rename(columns=colonnes_donnees_hopital)
+hosp_totales_par_dep_historique.to_csv("donnees/hosp_totales_par_dep_historique.csv",index=False)
 
-### Chiffres 1ère dose pour région BFC ### 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/735b0df8-51b4-4dd2-8a2d-8e46d77d60d8",sep=";",parse_dates=["jour"],index_col="jour",dtype={"reg":str})
+### Cartouche hospitalisations BFC
+reg_plus_recent = df[df["jour"] == max(df["jour"])].pivot_table(index="jour",aggfunc=sum)
+reg_plus_recent = reg_plus_recent[["hosp","rea","dc"]].rename(columns=colonnes_donnees_hopital).T
+reg_plus_recent.iloc[:,0] = reg_plus_recent.iloc[:,0].map('{:,}'.format)
+reg_plus_recent.iloc[:,0] = reg_plus_recent.iloc[:,0].str.replace(',', ' ')
+hosp_totales_bfc_plus_recent = reg_plus_recent
+hosp_totales_bfc_plus_recent
+
+### Nouvelles hospitalisations par département
+df = pd.read_csv(donnees_hospitalieres_nouveaux_covid19,sep=";",
+                 dtype={"dep":str,"incid_hosp":int,"incid_rea":int,"incid_dc":int,"incid_rea":int},
+                 parse_dates=["jour"])
+df = df[df["dep"].isin(code_dep)]
+df["nom_dep"] = df["dep"].map(nom_dep)
+hosp_nouvelles_par_dep = df[["jour","nom_dep","incid_hosp","incid_rea","incid_dc","incid_rad"]].rename(columns=colonnes_donnees_hopital)
+hosp_nouvelles_par_dep.to_csv("donnees/hosp_nouvelles_par_dep.csv",index=False)
+
+### Cartouche nouvelles hospitalisations BFC
+reg_plus_recent = df[df["jour"] == max(df["jour"])].pivot_table(index="jour",aggfunc=sum)
+reg_plus_recent = reg_plus_recent[["incid_hosp","incid_rea","incid_dc"]].rename(columns=colonnes_donnees_hopital).T
+reg_plus_recent.iloc[:,0] = reg_plus_recent.iloc[:,0].map('{:,}'.format)
+reg_plus_recent.iloc[:,0] = reg_plus_recent.iloc[:,0].str.replace(',', ' ')
+hosp_nouvelles_bfc_plus_recent = reg_plus_recent
+hosp_nouvelles_bfc_plus_recent.to_csv("donnees/hosp_nouvelles_bfc_plus_recent.csv")
+
+### Cartouche hôpital BFC
+hosp_bfc_recap = pd.concat([hosp_totales_bfc_plus_recent,hosp_nouvelles_bfc_plus_recent])
+hosp_bfc_recap.to_csv("donnees/hosp_bfc_recap.csv")
+
+### Taux d'incidence et de positivité par département
+df = pd.read_csv(sp_ti_tp_7j_dep,sep=";",
+                 dtype={"dep":str,"P":int,"T":int,"pop":float})
+df = df[df["dep"].isin(code_dep)]
+df["debut_7j"] = df.loc[:,"semaine_glissante"].str[:10]
+df["fin_7j"] = df.loc[:,"semaine_glissante"].str[-10:]
+df["taux_incidence_7j"] = (df["P"]*100000/df["pop"]).round(decimals=1)
+df["taux_positivite_7j"] = (df["P"]/df["T"]*100).round(decimals=1)
+df["nom_dep"] = df["dep"].map(nom_dep)
+incidence_positivite_dep = df[["nom_dep","debut_7j","fin_7j","taux_incidence_7j","taux_positivite_7j"]]
+
+incidence_positivite_dep.loc[:,"debut_7j"] = pd.to_datetime(incidence_positivite_dep.loc[:,"debut_7j"])
+incidence_positivite_dep.loc[:,"fin_7j"] = pd.to_datetime(incidence_positivite_dep.loc[:,"fin_7j"])
+
+depistage_incidence_positivite_dep_historique = incidence_positivite_dep.rename(columns=colonnes_donnees_depistage)
+depistage_incidence_positivite_dep_historique.to_csv("donnees/depistage_incidence_positivite_dep_historique.csv",index=False)
+
+
+### Cartouche taux incidence et positivité par département
+depistage_incidence_par_dep_plus_recent = incidence_positivite_dep[["nom_dep","debut_7j","fin_7j","taux_incidence_7j"]][incidence_positivite_dep["fin_7j"] == max(incidence_positivite_dep["fin_7j"])]
+
+depistage_positivite_par_dep_plus_recent = incidence_positivite_dep[["nom_dep","taux_positivite_7j"]][incidence_positivite_dep["fin_7j"] == max(incidence_positivite_dep["fin_7j"])]
+
+depistage_incidence_positivite_par_dep_plus_recent = depistage_incidence_par_dep_plus_recent.merge(depistage_positivite_par_dep_plus_recent,left_on="nom_dep",right_on="nom_dep")
+
+depistage_incidence_positivite_par_dep_plus_recent["debut_7j"] = depistage_incidence_positivite_par_dep_plus_recent["debut_7j"].dt.strftime("%d/%m")
+depistage_incidence_positivite_par_dep_plus_recent["fin_7j"] = depistage_incidence_positivite_par_dep_plus_recent["fin_7j"].dt.strftime("%d/%m")
+
+depistage_incidence_positivite_par_dep_plus_recent.to_csv("donnees/depistage_incidence_positivite_par_dep_plus_recent.csv")
+
+#### Taux d'incidence et taux de positivité sur 7 jours glissants pour BFC et France
+df = pd.read_csv(sp_ti_tp_7j_reg,sep=";",dtype={"reg":str,"P":int,"T":int,"pop":float})
+df = df[df["reg"].isin(code_reg)]
+df["debut_7j"] = df["semaine_glissante"].str[:10]
+df["fin_7j"] = df["semaine_glissante"].str[-10:]
+df["taux_incidence_7j"] = (df["P"]*100000/df["pop"]).round(decimals=1)
+df["taux_positivite_7j"] = (df["P"]/df["T"]*100).round(decimals=1)
+df["nom_reg"] = df["reg"].map(nom_reg)
+
+incidence_positivite_bfc = df[["nom_reg","debut_7j","fin_7j","taux_incidence_7j","taux_positivite_7j"]]
+
+df = pd.read_csv(sp_ti_tp_7j_fra,sep=";",dtype={"P":int,"T":int,"pop":float})
+df["reg"] = "FR"
+df["debut_7j"] = df["semaine_glissante"].str[:10]
+df["fin_7j"] = df["semaine_glissante"].str[-10:]
+df["taux_incidence_7j"] = (df["P"]*100000/df["pop"]).round(decimals=1)
+df["taux_positivite_7j"] = (df["P"]/df["T"]*100).round(decimals=1)
+df["nom_reg"] = df["reg"].map(nom_reg)
+
+incidence_positivite_france = df[["nom_reg","debut_7j","fin_7j","taux_incidence_7j","taux_positivite_7j"]]
+incidence_positivite_france_bfc = pd.concat([incidence_positivite_bfc,incidence_positivite_france])
+depistage_incidence_positivite_bfc_france_historique = incidence_positivite_france_bfc.rename(columns=colonnes_donnees_depistage)
+
+depistage_incidence_positivite_bfc_france_historique.to_csv("donnees/depistage_incidence_positivite_bfc_france_historique.csv",index=False)
+
+incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc[incidence_positivite_france_bfc["fin_7j"] == max(incidence_positivite_france_bfc["fin_7j"])]
+
+incidence_positivite_france_bfc_plus_recent.loc[:,"debut_7j"] = pd.to_datetime(incidence_positivite_france_bfc_plus_recent["debut_7j"])
+incidence_positivite_france_bfc_plus_recent.loc[:,"fin_7j"] = pd.to_datetime(incidence_positivite_france_bfc_plus_recent["fin_7j"])
+
+incidence_positivite_france_bfc_plus_recent.loc[:,"debut_7j"] = incidence_positivite_france_bfc_plus_recent["debut_7j"].dt.strftime("%d/%m")
+incidence_positivite_france_bfc_plus_recent.loc[:,"fin_7j"] = incidence_positivite_france_bfc_plus_recent["fin_7j"].dt.strftime("%d/%m")
+
+depistage_incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc_plus_recent
+
+depistage_incidence_positivite_france_bfc_plus_recent.to_csv("donnees/depistage_incidence_positivite_france_bfc_plus_recent.csv")
+
+
+### Carte taux d'incidence et positivité par commune BFC
+df = pd.read_csv(sg_com_opendata,sep=";",skiprows=1,names=["com2020","semaine_glissante","clage_65","ti_classe_debut","ti_classe_fin","td_classe_debut","td_classe_fin","tp_classe_debut","tp_classe_fin"],dtype=str)
+
+df["dep"] = df["com2020"].str[:2]
+df = df[df["dep"].isin(code_dep)]
+df["debut_7j"] = df.loc[:,"semaine_glissante"].str[:10]
+df["fin_7j"] = df.loc[:,"semaine_glissante"].str[-10:]
+
+df["tp_classe"] = df.loc[:,"tp_classe_debut"].str.replace("[","",regex=False).str.replace("]","",regex=False) + " à " + df.loc[:,"tp_classe_fin"].str.replace("[","",regex=False).str.replace("]","",regex=False)
+df["ti_classe"] = df.loc[:,"ti_classe_debut"].str.replace("[","",regex=False).str.replace("]","",regex=False) + " à " + df.loc[:,"ti_classe_fin"].str.replace("[","",regex=False).str.replace("]","",regex=False)
+df["td_classe"] = df.loc[:,"td_classe_debut"].str.replace("[","",regex=False).str.replace("]","",regex=False) + " à " + df.loc[:,"td_classe_fin"].str.replace("[","",regex=False).str.replace("]","",regex=False)
+
+df["tp_classe"] = df.loc[:,"tp_classe"].str.replace("à Max","et plus",regex=False)
+df["ti_classe"] = df.loc[:,"ti_classe"].str.replace("à Max","et plus",regex=False)
+df["td_classe"] = df.loc[:,"td_classe"].str.replace("à Max","et plus",regex=False)
+
+depistage_carte_communes_bfc = df[["com2020","dep","debut_7j","fin_7j","clage_65","tp_classe","ti_classe","td_classe"]][df["fin_7j"] == max(df["fin_7j"])]
+
+depistage_carte_communes_bfc.to_csv("donnees/depistage_carte_communes_bfc.csv",index=False)
+
+### Total vaccination BFC
+df = pd.read_csv(vacsi_tot_reg,dtype={"reg":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
 df = df[df["reg"].isin(code_reg)]
 df["nom_reg"] = df["reg"].map(nom_reg)
-region = df[["reg","nom_reg","n_dose1","n_cum_dose1"]].rename(columns={"n_dose1":"Nombre de personnes ayant reçu une dose de vaccin","n_cum_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"})
-region.to_csv("evolution_vaccination_bfc.csv")
+vaccin_tot_bfc = df[["nom_reg","jour","n_tot_dose1","n_tot_dose2"]]
 
-###  Chiffres pour cartouche région et natio ### 
-nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/131c6b39-51b5-40a7-beaa-0eafc4b88466",sep=";",parse_dates=["jour"],index_col="jour")
-nat["reg"] = "FR"
 
-region = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-f2eeaab60d99",sep=";",parse_dates=["jour"],index_col="jour",dtype={"reg":str})
-region = region[region["reg"].isin(code_reg)]
+### Total vaccination France
+df = pd.read_csv(vacsi_tot_fra,dtype={"reg":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
+df["reg"] = df["fra"]
+df["nom_reg"] = df["reg"].map(nom_reg)
+vaccin_tot_fr = df[["nom_reg","jour","n_tot_dose1","n_tot_dose2"]]
 
-total = pd.concat([region,nat])[["reg","n_tot_dose1"]]
 
-# Mise en forme de la date pour être plus lisible
-total["date"] = total.index
-total["jour"] = total["date"].dt.strftime("%d/%m")
+### Cartouche vaccination BFC et France
+df = pd.concat([vaccin_tot_bfc,vaccin_tot_fr])
 
-total["n_tot_dose1"] = total["n_tot_dose1"].map('{:,}'.format)
-total["n_tot_dose1"] = total["n_tot_dose1"].str.replace(',', ' ')
+df["jour"] = df["jour"].dt.strftime("%d/%m")
 
-# Mise en forme du nom des régions pour être plus lisible
-total["nom"] = total["reg"].map(nom_reg)
-total[["nom","n_tot_dose1","jour"]].to_csv("max_vaccins.csv",index=False)
+df["n_tot_dose1"] = df["n_tot_dose1"].map('{:,}'.format)
+df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
 
-### Données pour graphique par tranches d'âge BFC ###
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/2dadbaa7-02ae-43df-92bb-53a82e790cb2",sep=";",dtype={"reg":str,"clage_vacsi":str},index_col="jour")
-df = df[df["reg"].isin(code_reg) & -df["clage_vacsi"].isin(clage_vacsi)]
-df["pop"] = df["clage_vacsi"].map(pop_bfc_age)
-df["taux_dose1"] = df["n_tot_dose1"]/df["pop"]*100
-df["clage"] = df["clage_vacsi"].map(clage)
-df["taux_pasdose1"] = 100-df["taux_dose1"]
-df[["clage","n_tot_dose1","taux_dose1","taux_pasdose1"]].to_csv("vaccins_bfc_age.csv",index=False)
+df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
+df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
+
+vaccin_tot_bfc_fr = df
+
+
+vaccin_tot_bfc_fr.to_csv("donnees/vaccin_tot_bfc_fr.csv",index=False)
+
+### Vaccination par département
+df = pd.read_csv(vacsi_tot_dep,dtype={"dep":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
+
+df = df[df["dep"].isin(code_dep)]
+df["nom_dep"] = df["dep"].map(nom_dep)
+df["n_tot_dose2"] = df["n_tot_dose1"]### a changer quand on pourra
+df = df[["nom_dep","jour","n_tot_dose1","n_tot_dose2"]]
+
+df["jour"] = df["jour"].dt.strftime("%d/%m")
+
+df["n_tot_dose1"] = df["n_tot_dose1"].map('{:,}'.format)
+df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
+
+df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
+df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
+
+vaccin_tot_dep = df
+
+vaccin_tot_dep.to_csv("donnees/vaccin_tot_dep.csv",index=False)
+
+### Vaccination par âge BFC
+df = pd.read_csv(vacsi_tot_a_reg,dtype={"reg":str,"clage_vacsi":str,"n_tot_dose1":int,"n_tot_dose2":int},parse_dates=["jour"])
+df = df[df["reg"].isin(code_reg)]
+df = df[df["clage_vacsi"] != "0"]
+df["pop"] = df["clage_vacsi"].map(pop_bfc)
+
+df["pct_n_tot_dose1"] = (df["n_tot_dose1"]/df["pop"]*100).round(decimals=2)
+df["pct_n_tot_dose2"] = (df["n_tot_dose2"]/df["pop"]*100).round(decimals=2)
+
+df["n_tot_dose1"] = df["n_tot_dose1"].map('{:,}'.format)
+df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
+
+df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
+df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
+
+df["nom_clage_vacsi"] = df["clage_vacsi"].map(clage_vacsi)
+
+df["jour"] = df["jour"].dt.strftime("%d/%m")
+
+vaccin_par_age_bfc = df[["nom_clage_vacsi","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2","jour"]]
+
+vaccin_par_age_bfc.to_csv("donnees/vaccin_par_age_bfc.csv",index=False)
+
 
 ### Données pour tableau détail par régions et comparaison à la population ###
 
-# Import
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/9b1e6c8c-7e1d-47f9-9eb9-f2eeaab60d99",sep=";",dtype={"reg":str,"n_tot_dose1":int})
+df = pd.read_csv(vacsi_tot_reg,sep=",",dtype={"reg":str,"n_tot_dose1":int,"n_tot_dose2":int})
 
-# On retrouve les chiffres de population
-pop = pd.read_csv("population_reg.csv",sep=",",dtype={"reg":str})
+pop = pd.read_csv("sources/pop_regions.csv",sep=",",dtype={"code_reg":str,"reg":str,"nom_reg":str,"pop":int})
 
-# On fusionne tout ensemble et on calcule
 df = df.merge(pop,left_on="reg",right_on="reg")
-df["% de la population"] = (df["n_tot_dose1"]/df["pop"]*100).round(decimals=2)
+df["pct_n_tot_dose1"] = (df["n_tot_dose1"]/df["pop"]*100).round(decimals=2)
+df["pct_n_tot_dose2"] = (df["n_tot_dose2"]/df["pop"]*100).round(decimals=2)
 
-# On trie ça dans l'ordre et on exporte
-df.sort_values(by="% de la population", ascending=False)[["Région","n_tot_dose1","% de la population"]].rename(columns={"n_tot_dose1":"Nombre cumulé de personnes ayant reçu une dose de vaccin"}).to_csv("tableau_vaccination_regions.csv",index=False)    
+df["n_tot_dose1"] = df["n_tot_dose1"].map('{:,}'.format)
+df["n_tot_dose1"] = df["n_tot_dose1"].str.replace(',', ' ')
 
-### Données vaccination 1ere dose BFC par sexe ###
-genre = {"1":"Hommes","2":"Femmes"}
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/d302c60b-cb7d-48cd-91f0-a3baee4bcf05",sep=";",dtype={"reg":str,"sexe":str})
-df = df[df["reg"].isin(code_reg) & df["sexe"].isin(["1","2"])]
-df["genre"] = df["sexe"].map(genre)
-df[["genre","n_tot_dose1"]].rename(columns={"n_tot_dose1":"Nombre total de personnes ayant reçu une dose de vaccin"}).to_csv("vaccin_sexe.csv",index=False)
+df["n_tot_dose2"] = df["n_tot_dose2"].map('{:,}'.format)
+df["n_tot_dose2"] = df["n_tot_dose2"].str.replace(',', ' ')
+
+vaccin_comparaison_region = df.sort_values(by="pct_n_tot_dose2", ascending=False)[["nom_reg","n_tot_dose1","pct_n_tot_dose1","n_tot_dose2","pct_n_tot_dose2"]].rename(columns={"n_tot_dose1":"Premières doses","n_tot_dose2":"Deuxièmes doses","pct_n_tot_dose1":"% de la population","pct_n_tot_dose2":"% de la population"})
+
+vaccin_comparaison_region.to_csv("donnees/vaccin_comparaison_regions.csv",index=False)  
 
 ### Données rendez-vous vaccins ###
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/3c3565e5-8e50-482d-b76a-fe07599ab4a0",parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
+df = pd.read_csv(prise_rdv_par_reg,parse_dates=["date_debut_semaine"],dtype={"code_region":str,"rang_vaccinal":str,"nb":int})
 df = df[df["code_region"].isin(code_reg)]
 df = df.pivot_table(index="date_debut_semaine",values="nb",columns="rang_vaccinal",aggfunc=sum)
 df["Total"] = df["1"] + df["2"]
 df["date"] = df.index
 df["jour"] = df["date"].dt.strftime("%d/%m")
 df = df[["jour","1","2","Total"]].rename(columns={"jour":"Semaine du ","1":"Rendez-vous pour la première dose","2":"Rendez-vous pour la deuxième dose","Total":"Nombre total de rendez-vous"})
-df.to_csv("rdv_vaccination.csv")
+vaccin_nombre_rdv_bfc = df
+
+vaccin_nombre_rdv_bfc.to_csv("donnees/vaccin_nombre_rdv_bfc.csv",index=False)
 
 ### Données livraisons vaccins ####
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da",sep=";",dtype={"code_region":str},parse_dates=["date"],index_col="date")
+df = pd.read_csv(livraisons_regional,sep=";",dtype={"code_region":str},parse_dates=["date"],index_col="date")
 df = df[df["code_region"].isin(code_reg)]
 df["date"] = df.index
 df["jour"] = df["date"].dt.strftime("%d/%m")
 df = df.last("1D").pivot_table(index=["type_de_vaccin","jour"],values="nb_doses_receptionnees_cumul",aggfunc=sum)
 df["nb_doses_receptionnees_cumul"] = df["nb_doses_receptionnees_cumul"].map('{:,}'.format)
 df["nb_doses_receptionnees_cumul"] = df["nb_doses_receptionnees_cumul"].str.replace(',', ' ')
-df.to_csv("livraisons_vaccins_bfc.csv")   
+vaccin_livraisons_doses = df
 
-########################################
-##### CARTE CENTRES DE VACCINATION #####
-########################################
+vaccin_livraisons_doses.to_csv("donnees/vaccin_livraisons_doses.csv")
 
-df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/5cb21a85-b0b0-4a65-a249-806a040ec372",sep=";", encoding="utf-8",dtype=str)
+# Lieux vaccinations
+df = pd.read_csv(centres_vaccination,sep=";", encoding="utf-8",dtype=str)
 df["dep"] = df["com_insee"].str[:2]
-df = df[df["dep"].isin(["21","25","39","58","70","71","89","90"])]
+df = df[df["dep"].isin(code_dep)]
 df = df[["gid","nom","adr_num","adr_voie","com_cp","com_nom","lat_coor1","long_coor1","_edit_datemaj","lieu_accessibilite","rdv_lundi","rdv_mardi","rdv_mercredi","rdv_jeudi","rdv_vendredi","rdv_samedi","rdv_dimanche","date_fermeture","date_ouverture","rdv_site_web","rdv_tel","rdv_modalites","dep"]]
-df.to_json("lieux_vaccination.json",orient="records")
-
-
-##################################
-##### CHIFFRES DOSES VACCINS #####
-##################################
-
-# Données cumul livraisons par région
-#df = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/c3f04527-2d19-4476-b02c-0d86b5a9d3da",sep=";",index_col="date",parse_dates=["date"])
-#df = df[df["code_region"]==27]
-#df["region"] = "Bourgogne-Franche-Comté"
-#df = df.last("1D").pivot_table(index="region",values=["nb_doses_receptionnees_cumul"],aggfunc=sum)
-
-# Données cumul livraisons national
-#nat = pd.read_csv("https://www.data.gouv.fr/fr/datasets/r/6820ff9f-2dbb-4e87-8565-fcd7fa2dfa0f",sep=";",index_col="date",parse_dates=["date"])
-#nat["region"] = "France"
-#nat = nat.last("1D").pivot_table(index="region",values=["nb_doses_receptionnees_cumul"],aggfunc=sum)
-
-# On fusionne tout ça, on formate et on exporte
-#total = pd.concat([df,nat])
-#total["nb_doses_receptionnees_cumul"] = total["nb_doses_receptionnees_cumul"].map('{:,}'.format)
-#total["nb_doses_receptionnees_cumul"] = total["nb_doses_receptionnees_cumul"].str.replace(',', ' ')
-
-#total.to_csv("livraisons_vaccins.csv")
+vaccin_lieux_vaccination = df
+vaccin_lieux_vaccination.to_json("donnees/vaccin_lieux_vaccination.json",orient="records")

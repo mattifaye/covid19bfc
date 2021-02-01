@@ -1,0 +1,2561 @@
+jour,Département,Hospitalisations en cours,Réanimations en cours
+2020-03-18,Côte-d'Or,60,16
+2020-03-18,Doubs,26,3
+2020-03-18,Jura,2,1
+2020-03-18,Nièvre,0,0
+2020-03-18,Haute-Saône,14,4
+2020-03-18,Saône-et-Loire,35,0
+2020-03-18,Yonne,6,0
+2020-03-18,Territoire de Belfort,25,9
+2020-03-19,Côte-d'Or,53,19
+2020-03-19,Doubs,33,11
+2020-03-19,Jura,2,1
+2020-03-19,Nièvre,0,0
+2020-03-19,Haute-Saône,14,3
+2020-03-19,Saône-et-Loire,48,3
+2020-03-19,Yonne,5,1
+2020-03-19,Territoire de Belfort,39,9
+2020-03-20,Côte-d'Or,82,31
+2020-03-20,Doubs,43,15
+2020-03-20,Jura,6,1
+2020-03-20,Nièvre,1,1
+2020-03-20,Haute-Saône,26,6
+2020-03-20,Saône-et-Loire,53,5
+2020-03-20,Yonne,10,3
+2020-03-20,Territoire de Belfort,49,9
+2020-03-21,Côte-d'Or,79,30
+2020-03-21,Doubs,48,21
+2020-03-21,Jura,7,1
+2020-03-21,Nièvre,1,1
+2020-03-21,Haute-Saône,26,6
+2020-03-21,Saône-et-Loire,50,6
+2020-03-21,Yonne,11,3
+2020-03-21,Territoire de Belfort,61,11
+2020-03-22,Côte-d'Or,101,31
+2020-03-22,Doubs,63,21
+2020-03-22,Jura,8,1
+2020-03-22,Nièvre,1,1
+2020-03-22,Haute-Saône,26,6
+2020-03-22,Saône-et-Loire,65,6
+2020-03-22,Yonne,13,3
+2020-03-22,Territoire de Belfort,68,14
+2020-03-23,Côte-d'Or,113,34
+2020-03-23,Doubs,65,22
+2020-03-23,Jura,10,1
+2020-03-23,Nièvre,3,2
+2020-03-23,Haute-Saône,26,6
+2020-03-23,Saône-et-Loire,84,7
+2020-03-23,Yonne,16,7
+2020-03-23,Territoire de Belfort,94,20
+2020-03-24,Côte-d'Or,114,34
+2020-03-24,Doubs,80,26
+2020-03-24,Jura,24,2
+2020-03-24,Nièvre,3,2
+2020-03-24,Haute-Saône,37,13
+2020-03-24,Saône-et-Loire,92,14
+2020-03-24,Yonne,18,8
+2020-03-24,Territoire de Belfort,109,22
+2020-03-25,Côte-d'Or,153,42
+2020-03-25,Doubs,84,27
+2020-03-25,Jura,28,4
+2020-03-25,Nièvre,3,2
+2020-03-25,Haute-Saône,44,18
+2020-03-25,Saône-et-Loire,109,19
+2020-03-25,Yonne,32,11
+2020-03-25,Territoire de Belfort,138,27
+2020-03-26,Côte-d'Or,163,40
+2020-03-26,Doubs,84,29
+2020-03-26,Jura,45,9
+2020-03-26,Nièvre,4,2
+2020-03-26,Haute-Saône,62,22
+2020-03-26,Saône-et-Loire,149,22
+2020-03-26,Yonne,35,12
+2020-03-26,Territoire de Belfort,137,30
+2020-03-27,Côte-d'Or,170,42
+2020-03-27,Doubs,100,37
+2020-03-27,Jura,48,12
+2020-03-27,Nièvre,6,3
+2020-03-27,Haute-Saône,67,23
+2020-03-27,Saône-et-Loire,165,27
+2020-03-27,Yonne,37,12
+2020-03-27,Territoire de Belfort,147,30
+2020-03-28,Côte-d'Or,202,45
+2020-03-28,Doubs,91,38
+2020-03-28,Jura,37,9
+2020-03-28,Nièvre,7,4
+2020-03-28,Haute-Saône,66,21
+2020-03-28,Saône-et-Loire,182,31
+2020-03-28,Yonne,38,12
+2020-03-28,Territoire de Belfort,164,34
+2020-03-29,Côte-d'Or,218,48
+2020-03-29,Doubs,148,56
+2020-03-29,Jura,37,9
+2020-03-29,Nièvre,9,6
+2020-03-29,Haute-Saône,66,18
+2020-03-29,Saône-et-Loire,184,27
+2020-03-29,Yonne,40,13
+2020-03-29,Territoire de Belfort,171,40
+2020-03-30,Côte-d'Or,211,46
+2020-03-30,Doubs,152,53
+2020-03-30,Jura,48,9
+2020-03-30,Nièvre,12,7
+2020-03-30,Haute-Saône,63,16
+2020-03-30,Saône-et-Loire,187,34
+2020-03-30,Yonne,52,15
+2020-03-30,Territoire de Belfort,177,40
+2020-03-31,Côte-d'Or,166,40
+2020-03-31,Doubs,148,51
+2020-03-31,Jura,52,9
+2020-03-31,Nièvre,12,8
+2020-03-31,Haute-Saône,69,15
+2020-03-31,Saône-et-Loire,191,30
+2020-03-31,Yonne,75,16
+2020-03-31,Territoire de Belfort,201,43
+2020-04-01,Côte-d'Or,190,44
+2020-04-01,Doubs,161,53
+2020-04-01,Jura,55,9
+2020-04-01,Nièvre,12,9
+2020-04-01,Haute-Saône,68,16
+2020-04-01,Saône-et-Loire,173,33
+2020-04-01,Yonne,85,21
+2020-04-01,Territoire de Belfort,219,44
+2020-04-02,Côte-d'Or,202,56
+2020-04-02,Doubs,186,62
+2020-04-02,Jura,55,10
+2020-04-02,Nièvre,15,7
+2020-04-02,Haute-Saône,77,15
+2020-04-02,Saône-et-Loire,169,35
+2020-04-02,Yonne,97,19
+2020-04-02,Territoire de Belfort,216,46
+2020-04-03,Côte-d'Or,212,62
+2020-04-03,Doubs,173,72
+2020-04-03,Jura,60,11
+2020-04-03,Nièvre,21,7
+2020-04-03,Haute-Saône,81,14
+2020-04-03,Saône-et-Loire,163,36
+2020-04-03,Yonne,101,20
+2020-04-03,Territoire de Belfort,217,43
+2020-04-04,Côte-d'Or,255,66
+2020-04-04,Doubs,175,76
+2020-04-04,Jura,70,11
+2020-04-04,Nièvre,27,8
+2020-04-04,Haute-Saône,80,16
+2020-04-04,Saône-et-Loire,162,37
+2020-04-04,Yonne,102,19
+2020-04-04,Territoire de Belfort,204,41
+2020-04-05,Côte-d'Or,259,65
+2020-04-05,Doubs,183,73
+2020-04-05,Jura,78,11
+2020-04-05,Nièvre,34,11
+2020-04-05,Haute-Saône,80,17
+2020-04-05,Saône-et-Loire,173,37
+2020-04-05,Yonne,101,18
+2020-04-05,Territoire de Belfort,212,43
+2020-04-06,Côte-d'Or,284,76
+2020-04-06,Doubs,183,75
+2020-04-06,Jura,77,10
+2020-04-06,Nièvre,36,10
+2020-04-06,Haute-Saône,79,16
+2020-04-06,Saône-et-Loire,193,38
+2020-04-06,Yonne,103,18
+2020-04-06,Territoire de Belfort,221,42
+2020-04-07,Côte-d'Or,307,79
+2020-04-07,Doubs,196,81
+2020-04-07,Jura,90,11
+2020-04-07,Nièvre,34,9
+2020-04-07,Haute-Saône,84,17
+2020-04-07,Saône-et-Loire,191,36
+2020-04-07,Yonne,94,19
+2020-04-07,Territoire de Belfort,216,43
+2020-04-08,Côte-d'Or,310,74
+2020-04-08,Doubs,199,81
+2020-04-08,Jura,100,12
+2020-04-08,Nièvre,36,9
+2020-04-08,Haute-Saône,87,18
+2020-04-08,Saône-et-Loire,191,36
+2020-04-08,Yonne,95,19
+2020-04-08,Territoire de Belfort,209,43
+2020-04-09,Côte-d'Or,290,73
+2020-04-09,Doubs,199,77
+2020-04-09,Jura,105,13
+2020-04-09,Nièvre,37,8
+2020-04-09,Haute-Saône,91,18
+2020-04-09,Saône-et-Loire,188,35
+2020-04-09,Yonne,91,18
+2020-04-09,Territoire de Belfort,210,41
+2020-04-10,Côte-d'Or,350,79
+2020-04-10,Doubs,190,75
+2020-04-10,Jura,111,16
+2020-04-10,Nièvre,48,10
+2020-04-10,Haute-Saône,89,17
+2020-04-10,Saône-et-Loire,184,36
+2020-04-10,Yonne,88,20
+2020-04-10,Territoire de Belfort,222,37
+2020-04-11,Côte-d'Or,325,72
+2020-04-11,Doubs,186,77
+2020-04-11,Jura,112,14
+2020-04-11,Nièvre,53,10
+2020-04-11,Haute-Saône,87,17
+2020-04-11,Saône-et-Loire,174,33
+2020-04-11,Yonne,85,20
+2020-04-11,Territoire de Belfort,217,35
+2020-04-12,Côte-d'Or,344,72
+2020-04-12,Doubs,213,75
+2020-04-12,Jura,117,15
+2020-04-12,Nièvre,56,10
+2020-04-12,Haute-Saône,85,17
+2020-04-12,Saône-et-Loire,175,34
+2020-04-12,Yonne,84,20
+2020-04-12,Territoire de Belfort,220,35
+2020-04-13,Côte-d'Or,340,73
+2020-04-13,Doubs,212,75
+2020-04-13,Jura,124,17
+2020-04-13,Nièvre,60,11
+2020-04-13,Haute-Saône,85,17
+2020-04-13,Saône-et-Loire,176,34
+2020-04-13,Yonne,83,20
+2020-04-13,Territoire de Belfort,229,37
+2020-04-14,Côte-d'Or,346,73
+2020-04-14,Doubs,234,75
+2020-04-14,Jura,131,18
+2020-04-14,Nièvre,58,10
+2020-04-14,Haute-Saône,95,18
+2020-04-14,Saône-et-Loire,180,34
+2020-04-14,Yonne,91,21
+2020-04-14,Territoire de Belfort,226,36
+2020-04-15,Côte-d'Or,361,78
+2020-04-15,Doubs,230,70
+2020-04-15,Jura,132,18
+2020-04-15,Nièvre,55,11
+2020-04-15,Haute-Saône,89,16
+2020-04-15,Saône-et-Loire,187,31
+2020-04-15,Yonne,86,19
+2020-04-15,Territoire de Belfort,201,31
+2020-04-16,Côte-d'Or,384,81
+2020-04-16,Doubs,221,71
+2020-04-16,Jura,132,17
+2020-04-16,Nièvre,63,11
+2020-04-16,Haute-Saône,89,16
+2020-04-16,Saône-et-Loire,190,32
+2020-04-16,Yonne,96,19
+2020-04-16,Territoire de Belfort,195,32
+2020-04-17,Côte-d'Or,380,74
+2020-04-17,Doubs,213,66
+2020-04-17,Jura,145,17
+2020-04-17,Nièvre,61,10
+2020-04-17,Haute-Saône,95,17
+2020-04-17,Saône-et-Loire,201,30
+2020-04-17,Yonne,97,19
+2020-04-17,Territoire de Belfort,188,29
+2020-04-18,Côte-d'Or,391,77
+2020-04-18,Doubs,192,59
+2020-04-18,Jura,139,14
+2020-04-18,Nièvre,60,11
+2020-04-18,Haute-Saône,96,17
+2020-04-18,Saône-et-Loire,202,29
+2020-04-18,Yonne,90,19
+2020-04-18,Territoire de Belfort,181,29
+2020-04-19,Côte-d'Or,367,66
+2020-04-19,Doubs,190,53
+2020-04-19,Jura,136,14
+2020-04-19,Nièvre,59,11
+2020-04-19,Haute-Saône,96,17
+2020-04-19,Saône-et-Loire,202,30
+2020-04-19,Yonne,94,19
+2020-04-19,Territoire de Belfort,183,29
+2020-04-20,Côte-d'Or,367,65
+2020-04-20,Doubs,193,53
+2020-04-20,Jura,136,12
+2020-04-20,Nièvre,58,10
+2020-04-20,Haute-Saône,90,19
+2020-04-20,Saône-et-Loire,209,30
+2020-04-20,Yonne,93,20
+2020-04-20,Territoire de Belfort,188,29
+2020-04-21,Côte-d'Or,366,63
+2020-04-21,Doubs,196,52
+2020-04-21,Jura,122,9
+2020-04-21,Nièvre,58,9
+2020-04-21,Haute-Saône,91,18
+2020-04-21,Saône-et-Loire,207,30
+2020-04-21,Yonne,104,20
+2020-04-21,Territoire de Belfort,175,28
+2020-04-22,Côte-d'Or,361,63
+2020-04-22,Doubs,198,55
+2020-04-22,Jura,115,11
+2020-04-22,Nièvre,55,7
+2020-04-22,Haute-Saône,91,17
+2020-04-22,Saône-et-Loire,227,29
+2020-04-22,Yonne,119,26
+2020-04-22,Territoire de Belfort,168,26
+2020-04-23,Côte-d'Or,340,56
+2020-04-23,Doubs,177,50
+2020-04-23,Jura,108,10
+2020-04-23,Nièvre,51,7
+2020-04-23,Haute-Saône,96,17
+2020-04-23,Saône-et-Loire,230,27
+2020-04-23,Yonne,117,27
+2020-04-23,Territoire de Belfort,164,23
+2020-04-24,Côte-d'Or,303,54
+2020-04-24,Doubs,177,49
+2020-04-24,Jura,108,9
+2020-04-24,Nièvre,52,8
+2020-04-24,Haute-Saône,114,15
+2020-04-24,Saône-et-Loire,214,25
+2020-04-24,Yonne,109,23
+2020-04-24,Territoire de Belfort,156,20
+2020-04-25,Côte-d'Or,292,59
+2020-04-25,Doubs,171,46
+2020-04-25,Jura,104,8
+2020-04-25,Nièvre,52,8
+2020-04-25,Haute-Saône,111,13
+2020-04-25,Saône-et-Loire,223,25
+2020-04-25,Yonne,115,23
+2020-04-25,Territoire de Belfort,148,19
+2020-04-26,Côte-d'Or,285,50
+2020-04-26,Doubs,179,49
+2020-04-26,Jura,104,8
+2020-04-26,Nièvre,51,7
+2020-04-26,Haute-Saône,113,13
+2020-04-26,Saône-et-Loire,224,26
+2020-04-26,Yonne,113,22
+2020-04-26,Territoire de Belfort,149,20
+2020-04-27,Côte-d'Or,288,52
+2020-04-27,Doubs,179,49
+2020-04-27,Jura,103,9
+2020-04-27,Nièvre,50,6
+2020-04-27,Haute-Saône,101,13
+2020-04-27,Saône-et-Loire,231,26
+2020-04-27,Yonne,112,21
+2020-04-27,Territoire de Belfort,146,20
+2020-04-28,Côte-d'Or,288,53
+2020-04-28,Doubs,178,40
+2020-04-28,Jura,97,10
+2020-04-28,Nièvre,50,6
+2020-04-28,Haute-Saône,98,13
+2020-04-28,Saône-et-Loire,234,28
+2020-04-28,Yonne,108,21
+2020-04-28,Territoire de Belfort,146,20
+2020-04-29,Côte-d'Or,285,54
+2020-04-29,Doubs,168,41
+2020-04-29,Jura,93,9
+2020-04-29,Nièvre,51,6
+2020-04-29,Haute-Saône,97,12
+2020-04-29,Saône-et-Loire,243,24
+2020-04-29,Yonne,110,21
+2020-04-29,Territoire de Belfort,139,19
+2020-04-30,Côte-d'Or,287,57
+2020-04-30,Doubs,160,38
+2020-04-30,Jura,99,8
+2020-04-30,Nièvre,52,4
+2020-04-30,Haute-Saône,101,9
+2020-04-30,Saône-et-Loire,238,24
+2020-04-30,Yonne,109,22
+2020-04-30,Territoire de Belfort,135,19
+2020-05-01,Côte-d'Or,274,56
+2020-05-01,Doubs,155,38
+2020-05-01,Jura,98,8
+2020-05-01,Nièvre,50,4
+2020-05-01,Haute-Saône,102,9
+2020-05-01,Saône-et-Loire,228,24
+2020-05-01,Yonne,102,21
+2020-05-01,Territoire de Belfort,131,18
+2020-05-02,Côte-d'Or,278,57
+2020-05-02,Doubs,157,38
+2020-05-02,Jura,98,8
+2020-05-02,Nièvre,49,4
+2020-05-02,Haute-Saône,101,8
+2020-05-02,Saône-et-Loire,229,22
+2020-05-02,Yonne,100,18
+2020-05-02,Territoire de Belfort,127,17
+2020-05-03,Côte-d'Or,276,57
+2020-05-03,Doubs,156,38
+2020-05-03,Jura,98,8
+2020-05-03,Nièvre,49,4
+2020-05-03,Haute-Saône,100,7
+2020-05-03,Saône-et-Loire,229,25
+2020-05-03,Yonne,106,18
+2020-05-03,Territoire de Belfort,129,17
+2020-05-04,Côte-d'Or,273,50
+2020-05-04,Doubs,156,38
+2020-05-04,Jura,97,5
+2020-05-04,Nièvre,49,4
+2020-05-04,Haute-Saône,98,7
+2020-05-04,Saône-et-Loire,222,21
+2020-05-04,Yonne,115,20
+2020-05-04,Territoire de Belfort,131,16
+2020-05-05,Côte-d'Or,267,34
+2020-05-05,Doubs,145,32
+2020-05-05,Jura,83,6
+2020-05-05,Nièvre,48,4
+2020-05-05,Haute-Saône,97,8
+2020-05-05,Saône-et-Loire,224,19
+2020-05-05,Yonne,110,18
+2020-05-05,Territoire de Belfort,139,14
+2020-05-06,Côte-d'Or,270,27
+2020-05-06,Doubs,140,31
+2020-05-06,Jura,84,6
+2020-05-06,Nièvre,46,3
+2020-05-06,Haute-Saône,93,4
+2020-05-06,Saône-et-Loire,225,14
+2020-05-06,Yonne,109,16
+2020-05-06,Territoire de Belfort,144,13
+2020-05-07,Côte-d'Or,244,28
+2020-05-07,Doubs,134,29
+2020-05-07,Jura,83,5
+2020-05-07,Nièvre,42,3
+2020-05-07,Haute-Saône,78,4
+2020-05-07,Saône-et-Loire,218,13
+2020-05-07,Yonne,107,17
+2020-05-07,Territoire de Belfort,143,13
+2020-05-08,Côte-d'Or,225,28
+2020-05-08,Doubs,124,29
+2020-05-08,Jura,86,5
+2020-05-08,Nièvre,42,3
+2020-05-08,Haute-Saône,77,5
+2020-05-08,Saône-et-Loire,209,13
+2020-05-08,Yonne,108,17
+2020-05-08,Territoire de Belfort,140,15
+2020-05-09,Côte-d'Or,226,27
+2020-05-09,Doubs,122,28
+2020-05-09,Jura,74,3
+2020-05-09,Nièvre,42,3
+2020-05-09,Haute-Saône,79,5
+2020-05-09,Saône-et-Loire,208,13
+2020-05-09,Yonne,109,17
+2020-05-09,Territoire de Belfort,142,15
+2020-05-10,Côte-d'Or,218,24
+2020-05-10,Doubs,124,28
+2020-05-10,Jura,74,3
+2020-05-10,Nièvre,41,1
+2020-05-10,Haute-Saône,80,5
+2020-05-10,Saône-et-Loire,207,13
+2020-05-10,Yonne,113,17
+2020-05-10,Territoire de Belfort,143,15
+2020-05-11,Côte-d'Or,174,22
+2020-05-11,Doubs,128,27
+2020-05-11,Jura,75,5
+2020-05-11,Nièvre,42,3
+2020-05-11,Haute-Saône,79,5
+2020-05-11,Saône-et-Loire,203,14
+2020-05-11,Yonne,113,16
+2020-05-11,Territoire de Belfort,144,16
+2020-05-12,Côte-d'Or,141,24
+2020-05-12,Doubs,130,29
+2020-05-12,Jura,71,3
+2020-05-12,Nièvre,44,4
+2020-05-12,Haute-Saône,77,3
+2020-05-12,Saône-et-Loire,189,14
+2020-05-12,Yonne,110,13
+2020-05-12,Territoire de Belfort,134,15
+2020-05-13,Côte-d'Or,135,23
+2020-05-13,Doubs,128,28
+2020-05-13,Jura,72,3
+2020-05-13,Nièvre,39,2
+2020-05-13,Haute-Saône,78,2
+2020-05-13,Saône-et-Loire,187,11
+2020-05-13,Yonne,110,13
+2020-05-13,Territoire de Belfort,130,14
+2020-05-14,Côte-d'Or,133,23
+2020-05-14,Doubs,118,27
+2020-05-14,Jura,70,3
+2020-05-14,Nièvre,38,2
+2020-05-14,Haute-Saône,79,2
+2020-05-14,Saône-et-Loire,189,12
+2020-05-14,Yonne,112,13
+2020-05-14,Territoire de Belfort,124,13
+2020-05-15,Côte-d'Or,121,22
+2020-05-15,Doubs,115,25
+2020-05-15,Jura,67,3
+2020-05-15,Nièvre,39,3
+2020-05-15,Haute-Saône,78,2
+2020-05-15,Saône-et-Loire,183,13
+2020-05-15,Yonne,108,13
+2020-05-15,Territoire de Belfort,120,13
+2020-05-16,Côte-d'Or,121,22
+2020-05-16,Doubs,108,24
+2020-05-16,Jura,64,3
+2020-05-16,Nièvre,38,3
+2020-05-16,Haute-Saône,78,2
+2020-05-16,Saône-et-Loire,181,14
+2020-05-16,Yonne,109,13
+2020-05-16,Territoire de Belfort,112,13
+2020-05-17,Côte-d'Or,119,22
+2020-05-17,Doubs,108,24
+2020-05-17,Jura,64,3
+2020-05-17,Nièvre,38,3
+2020-05-17,Haute-Saône,78,2
+2020-05-17,Saône-et-Loire,181,14
+2020-05-17,Yonne,109,13
+2020-05-17,Territoire de Belfort,113,13
+2020-05-18,Côte-d'Or,119,22
+2020-05-18,Doubs,95,20
+2020-05-18,Jura,63,2
+2020-05-18,Nièvre,38,3
+2020-05-18,Haute-Saône,77,3
+2020-05-18,Saône-et-Loire,185,11
+2020-05-18,Yonne,106,12
+2020-05-18,Territoire de Belfort,114,13
+2020-05-19,Côte-d'Or,108,20
+2020-05-19,Doubs,90,17
+2020-05-19,Jura,58,1
+2020-05-19,Nièvre,38,3
+2020-05-19,Haute-Saône,73,2
+2020-05-19,Saône-et-Loire,179,10
+2020-05-19,Yonne,103,10
+2020-05-19,Territoire de Belfort,109,12
+2020-05-20,Côte-d'Or,106,20
+2020-05-20,Doubs,86,16
+2020-05-20,Jura,56,0
+2020-05-20,Nièvre,29,2
+2020-05-20,Haute-Saône,72,1
+2020-05-20,Saône-et-Loire,171,10
+2020-05-20,Yonne,100,10
+2020-05-20,Territoire de Belfort,110,11
+2020-05-21,Côte-d'Or,104,20
+2020-05-21,Doubs,83,14
+2020-05-21,Jura,56,0
+2020-05-21,Nièvre,24,2
+2020-05-21,Haute-Saône,72,1
+2020-05-21,Saône-et-Loire,169,9
+2020-05-21,Yonne,101,10
+2020-05-21,Territoire de Belfort,75,11
+2020-05-22,Côte-d'Or,98,17
+2020-05-22,Doubs,80,12
+2020-05-22,Jura,55,0
+2020-05-22,Nièvre,24,2
+2020-05-22,Haute-Saône,72,1
+2020-05-22,Saône-et-Loire,162,10
+2020-05-22,Yonne,94,9
+2020-05-22,Territoire de Belfort,76,11
+2020-05-23,Côte-d'Or,99,17
+2020-05-23,Doubs,76,14
+2020-05-23,Jura,55,0
+2020-05-23,Nièvre,24,2
+2020-05-23,Haute-Saône,72,0
+2020-05-23,Saône-et-Loire,162,10
+2020-05-23,Yonne,98,9
+2020-05-23,Territoire de Belfort,72,10
+2020-05-24,Côte-d'Or,99,17
+2020-05-24,Doubs,76,14
+2020-05-24,Jura,55,0
+2020-05-24,Nièvre,23,2
+2020-05-24,Haute-Saône,72,0
+2020-05-24,Saône-et-Loire,161,10
+2020-05-24,Yonne,99,9
+2020-05-24,Territoire de Belfort,71,9
+2020-05-25,Côte-d'Or,84,14
+2020-05-25,Doubs,75,13
+2020-05-25,Jura,55,0
+2020-05-25,Nièvre,23,2
+2020-05-25,Haute-Saône,62,0
+2020-05-25,Saône-et-Loire,159,12
+2020-05-25,Yonne,94,9
+2020-05-25,Territoire de Belfort,72,8
+2020-05-26,Côte-d'Or,66,13
+2020-05-26,Doubs,61,12
+2020-05-26,Jura,24,0
+2020-05-26,Nièvre,21,2
+2020-05-26,Haute-Saône,48,0
+2020-05-26,Saône-et-Loire,147,10
+2020-05-26,Yonne,78,9
+2020-05-26,Territoire de Belfort,69,8
+2020-05-27,Côte-d'Or,53,11
+2020-05-27,Doubs,43,12
+2020-05-27,Jura,21,0
+2020-05-27,Nièvre,18,1
+2020-05-27,Haute-Saône,49,0
+2020-05-27,Saône-et-Loire,142,9
+2020-05-27,Yonne,80,9
+2020-05-27,Territoire de Belfort,61,7
+2020-05-28,Côte-d'Or,48,9
+2020-05-28,Doubs,39,13
+2020-05-28,Jura,20,0
+2020-05-28,Nièvre,17,1
+2020-05-28,Haute-Saône,48,0
+2020-05-28,Saône-et-Loire,139,9
+2020-05-28,Yonne,78,9
+2020-05-28,Territoire de Belfort,59,7
+2020-05-29,Côte-d'Or,44,8
+2020-05-29,Doubs,37,10
+2020-05-29,Jura,29,0
+2020-05-29,Nièvre,8,1
+2020-05-29,Haute-Saône,49,0
+2020-05-29,Saône-et-Loire,130,6
+2020-05-29,Yonne,70,9
+2020-05-29,Territoire de Belfort,55,6
+2020-05-30,Côte-d'Or,44,7
+2020-05-30,Doubs,33,5
+2020-05-30,Jura,27,0
+2020-05-30,Nièvre,11,1
+2020-05-30,Haute-Saône,50,0
+2020-05-30,Saône-et-Loire,130,6
+2020-05-30,Yonne,69,9
+2020-05-30,Territoire de Belfort,57,6
+2020-05-31,Côte-d'Or,44,7
+2020-05-31,Doubs,33,5
+2020-05-31,Jura,27,0
+2020-05-31,Nièvre,11,1
+2020-05-31,Haute-Saône,50,0
+2020-05-31,Saône-et-Loire,130,6
+2020-05-31,Yonne,64,9
+2020-05-31,Territoire de Belfort,57,6
+2020-06-01,Côte-d'Or,45,7
+2020-06-01,Doubs,33,5
+2020-06-01,Jura,27,0
+2020-06-01,Nièvre,11,1
+2020-06-01,Haute-Saône,50,0
+2020-06-01,Saône-et-Loire,130,6
+2020-06-01,Yonne,63,9
+2020-06-01,Territoire de Belfort,56,6
+2020-06-02,Côte-d'Or,44,5
+2020-06-02,Doubs,32,5
+2020-06-02,Jura,24,0
+2020-06-02,Nièvre,11,1
+2020-06-02,Haute-Saône,46,0
+2020-06-02,Saône-et-Loire,120,6
+2020-06-02,Yonne,60,9
+2020-06-02,Territoire de Belfort,53,6
+2020-06-03,Côte-d'Or,41,5
+2020-06-03,Doubs,29,5
+2020-06-03,Jura,24,0
+2020-06-03,Nièvre,12,1
+2020-06-03,Haute-Saône,41,0
+2020-06-03,Saône-et-Loire,102,6
+2020-06-03,Yonne,53,8
+2020-06-03,Territoire de Belfort,49,4
+2020-06-04,Côte-d'Or,42,5
+2020-06-04,Doubs,28,5
+2020-06-04,Jura,23,0
+2020-06-04,Nièvre,12,1
+2020-06-04,Haute-Saône,40,0
+2020-06-04,Saône-et-Loire,100,6
+2020-06-04,Yonne,49,5
+2020-06-04,Territoire de Belfort,43,4
+2020-06-05,Côte-d'Or,37,3
+2020-06-05,Doubs,29,6
+2020-06-05,Jura,20,0
+2020-06-05,Nièvre,12,1
+2020-06-05,Haute-Saône,39,0
+2020-06-05,Saône-et-Loire,97,6
+2020-06-05,Yonne,51,5
+2020-06-05,Territoire de Belfort,43,4
+2020-06-06,Côte-d'Or,35,2
+2020-06-06,Doubs,29,6
+2020-06-06,Jura,20,0
+2020-06-06,Nièvre,12,1
+2020-06-06,Haute-Saône,35,0
+2020-06-06,Saône-et-Loire,97,6
+2020-06-06,Yonne,53,5
+2020-06-06,Territoire de Belfort,43,4
+2020-06-07,Côte-d'Or,35,2
+2020-06-07,Doubs,28,5
+2020-06-07,Jura,21,0
+2020-06-07,Nièvre,12,1
+2020-06-07,Haute-Saône,35,0
+2020-06-07,Saône-et-Loire,97,6
+2020-06-07,Yonne,54,5
+2020-06-07,Territoire de Belfort,42,4
+2020-06-08,Côte-d'Or,34,1
+2020-06-08,Doubs,28,4
+2020-06-08,Jura,20,0
+2020-06-08,Nièvre,11,1
+2020-06-08,Haute-Saône,32,0
+2020-06-08,Saône-et-Loire,99,7
+2020-06-08,Yonne,55,5
+2020-06-08,Territoire de Belfort,42,4
+2020-06-09,Côte-d'Or,29,1
+2020-06-09,Doubs,27,4
+2020-06-09,Jura,20,0
+2020-06-09,Nièvre,10,1
+2020-06-09,Haute-Saône,25,0
+2020-06-09,Saône-et-Loire,94,7
+2020-06-09,Yonne,53,5
+2020-06-09,Territoire de Belfort,41,4
+2020-06-10,Côte-d'Or,30,1
+2020-06-10,Doubs,26,4
+2020-06-10,Jura,19,0
+2020-06-10,Nièvre,10,1
+2020-06-10,Haute-Saône,19,0
+2020-06-10,Saône-et-Loire,80,7
+2020-06-10,Yonne,50,5
+2020-06-10,Territoire de Belfort,37,4
+2020-06-11,Côte-d'Or,31,2
+2020-06-11,Doubs,25,4
+2020-06-11,Jura,20,1
+2020-06-11,Nièvre,10,1
+2020-06-11,Haute-Saône,19,0
+2020-06-11,Saône-et-Loire,75,5
+2020-06-11,Yonne,51,5
+2020-06-11,Territoire de Belfort,37,4
+2020-06-12,Côte-d'Or,31,2
+2020-06-12,Doubs,25,4
+2020-06-12,Jura,20,1
+2020-06-12,Nièvre,10,1
+2020-06-12,Haute-Saône,19,0
+2020-06-12,Saône-et-Loire,61,5
+2020-06-12,Yonne,33,4
+2020-06-12,Territoire de Belfort,35,4
+2020-06-13,Côte-d'Or,28,2
+2020-06-13,Doubs,24,4
+2020-06-13,Jura,19,1
+2020-06-13,Nièvre,10,1
+2020-06-13,Haute-Saône,19,0
+2020-06-13,Saône-et-Loire,59,5
+2020-06-13,Yonne,34,4
+2020-06-13,Territoire de Belfort,33,3
+2020-06-14,Côte-d'Or,28,2
+2020-06-14,Doubs,24,4
+2020-06-14,Jura,19,1
+2020-06-14,Nièvre,10,1
+2020-06-14,Haute-Saône,19,0
+2020-06-14,Saône-et-Loire,59,5
+2020-06-14,Yonne,29,4
+2020-06-14,Territoire de Belfort,33,3
+2020-06-15,Côte-d'Or,28,2
+2020-06-15,Doubs,24,4
+2020-06-15,Jura,19,0
+2020-06-15,Nièvre,10,1
+2020-06-15,Haute-Saône,19,0
+2020-06-15,Saône-et-Loire,60,5
+2020-06-15,Yonne,29,4
+2020-06-15,Territoire de Belfort,34,3
+2020-06-16,Côte-d'Or,29,2
+2020-06-16,Doubs,23,4
+2020-06-16,Jura,18,0
+2020-06-16,Nièvre,10,1
+2020-06-16,Haute-Saône,19,0
+2020-06-16,Saône-et-Loire,54,5
+2020-06-16,Yonne,26,3
+2020-06-16,Territoire de Belfort,32,3
+2020-06-17,Côte-d'Or,27,2
+2020-06-17,Doubs,22,3
+2020-06-17,Jura,12,0
+2020-06-17,Nièvre,10,1
+2020-06-17,Haute-Saône,19,0
+2020-06-17,Saône-et-Loire,53,5
+2020-06-17,Yonne,25,3
+2020-06-17,Territoire de Belfort,29,1
+2020-06-18,Côte-d'Or,24,2
+2020-06-18,Doubs,22,3
+2020-06-18,Jura,13,0
+2020-06-18,Nièvre,10,1
+2020-06-18,Haute-Saône,19,0
+2020-06-18,Saône-et-Loire,53,5
+2020-06-18,Yonne,24,3
+2020-06-18,Territoire de Belfort,27,1
+2020-06-19,Côte-d'Or,24,2
+2020-06-19,Doubs,22,3
+2020-06-19,Jura,12,0
+2020-06-19,Nièvre,10,1
+2020-06-19,Haute-Saône,19,0
+2020-06-19,Saône-et-Loire,38,4
+2020-06-19,Yonne,21,1
+2020-06-19,Territoire de Belfort,27,1
+2020-06-20,Côte-d'Or,24,2
+2020-06-20,Doubs,22,3
+2020-06-20,Jura,12,0
+2020-06-20,Nièvre,11,1
+2020-06-20,Haute-Saône,19,0
+2020-06-20,Saône-et-Loire,38,4
+2020-06-20,Yonne,20,1
+2020-06-20,Territoire de Belfort,27,1
+2020-06-21,Côte-d'Or,24,2
+2020-06-21,Doubs,22,3
+2020-06-21,Jura,12,0
+2020-06-21,Nièvre,11,1
+2020-06-21,Haute-Saône,19,0
+2020-06-21,Saône-et-Loire,38,4
+2020-06-21,Yonne,20,1
+2020-06-21,Territoire de Belfort,27,1
+2020-06-22,Côte-d'Or,24,2
+2020-06-22,Doubs,21,2
+2020-06-22,Jura,11,0
+2020-06-22,Nièvre,12,1
+2020-06-22,Haute-Saône,19,0
+2020-06-22,Saône-et-Loire,34,4
+2020-06-22,Yonne,22,1
+2020-06-22,Territoire de Belfort,28,2
+2020-06-23,Côte-d'Or,25,2
+2020-06-23,Doubs,19,2
+2020-06-23,Jura,12,0
+2020-06-23,Nièvre,12,1
+2020-06-23,Haute-Saône,19,0
+2020-06-23,Saône-et-Loire,28,5
+2020-06-23,Yonne,23,1
+2020-06-23,Territoire de Belfort,29,2
+2020-06-24,Côte-d'Or,24,2
+2020-06-24,Doubs,18,2
+2020-06-24,Jura,13,0
+2020-06-24,Nièvre,9,1
+2020-06-24,Haute-Saône,19,0
+2020-06-24,Saône-et-Loire,27,5
+2020-06-24,Yonne,24,1
+2020-06-24,Territoire de Belfort,28,2
+2020-06-25,Côte-d'Or,23,2
+2020-06-25,Doubs,18,2
+2020-06-25,Jura,13,0
+2020-06-25,Nièvre,9,1
+2020-06-25,Haute-Saône,19,0
+2020-06-25,Saône-et-Loire,27,5
+2020-06-25,Yonne,23,1
+2020-06-25,Territoire de Belfort,25,1
+2020-06-26,Côte-d'Or,23,2
+2020-06-26,Doubs,19,2
+2020-06-26,Jura,13,0
+2020-06-26,Nièvre,8,1
+2020-06-26,Haute-Saône,19,0
+2020-06-26,Saône-et-Loire,28,5
+2020-06-26,Yonne,23,1
+2020-06-26,Territoire de Belfort,25,1
+2020-06-27,Côte-d'Or,24,2
+2020-06-27,Doubs,19,2
+2020-06-27,Jura,15,1
+2020-06-27,Nièvre,8,1
+2020-06-27,Haute-Saône,19,0
+2020-06-27,Saône-et-Loire,28,5
+2020-06-27,Yonne,24,1
+2020-06-27,Territoire de Belfort,24,1
+2020-06-28,Côte-d'Or,25,2
+2020-06-28,Doubs,19,2
+2020-06-28,Jura,15,1
+2020-06-28,Nièvre,8,1
+2020-06-28,Haute-Saône,19,0
+2020-06-28,Saône-et-Loire,28,5
+2020-06-28,Yonne,24,1
+2020-06-28,Territoire de Belfort,23,1
+2020-06-29,Côte-d'Or,24,2
+2020-06-29,Doubs,18,2
+2020-06-29,Jura,15,1
+2020-06-29,Nièvre,8,1
+2020-06-29,Haute-Saône,19,0
+2020-06-29,Saône-et-Loire,29,4
+2020-06-29,Yonne,27,1
+2020-06-29,Territoire de Belfort,22,1
+2020-06-30,Côte-d'Or,24,2
+2020-06-30,Doubs,17,2
+2020-06-30,Jura,15,1
+2020-06-30,Nièvre,8,1
+2020-06-30,Haute-Saône,18,0
+2020-06-30,Saône-et-Loire,28,4
+2020-06-30,Yonne,26,1
+2020-06-30,Territoire de Belfort,11,0
+2020-07-01,Côte-d'Or,18,1
+2020-07-01,Doubs,17,2
+2020-07-01,Jura,15,1
+2020-07-01,Nièvre,7,1
+2020-07-01,Haute-Saône,18,0
+2020-07-01,Saône-et-Loire,25,3
+2020-07-01,Yonne,22,1
+2020-07-01,Territoire de Belfort,10,0
+2020-07-02,Côte-d'Or,18,1
+2020-07-02,Doubs,16,2
+2020-07-02,Jura,6,0
+2020-07-02,Nièvre,7,1
+2020-07-02,Haute-Saône,18,0
+2020-07-02,Saône-et-Loire,24,2
+2020-07-02,Yonne,22,1
+2020-07-02,Territoire de Belfort,10,0
+2020-07-03,Côte-d'Or,12,1
+2020-07-03,Doubs,10,0
+2020-07-03,Jura,6,0
+2020-07-03,Nièvre,8,1
+2020-07-03,Haute-Saône,18,0
+2020-07-03,Saône-et-Loire,24,2
+2020-07-03,Yonne,22,1
+2020-07-03,Territoire de Belfort,10,0
+2020-07-04,Côte-d'Or,11,1
+2020-07-04,Doubs,10,0
+2020-07-04,Jura,6,0
+2020-07-04,Nièvre,8,1
+2020-07-04,Haute-Saône,18,0
+2020-07-04,Saône-et-Loire,24,2
+2020-07-04,Yonne,22,1
+2020-07-04,Territoire de Belfort,10,0
+2020-07-05,Côte-d'Or,11,1
+2020-07-05,Doubs,10,0
+2020-07-05,Jura,6,0
+2020-07-05,Nièvre,8,1
+2020-07-05,Haute-Saône,18,0
+2020-07-05,Saône-et-Loire,24,2
+2020-07-05,Yonne,22,1
+2020-07-05,Territoire de Belfort,10,0
+2020-07-06,Côte-d'Or,8,1
+2020-07-06,Doubs,10,0
+2020-07-06,Jura,6,0
+2020-07-06,Nièvre,8,1
+2020-07-06,Haute-Saône,18,0
+2020-07-06,Saône-et-Loire,24,2
+2020-07-06,Yonne,24,1
+2020-07-06,Territoire de Belfort,11,0
+2020-07-07,Côte-d'Or,6,1
+2020-07-07,Doubs,12,0
+2020-07-07,Jura,5,0
+2020-07-07,Nièvre,8,1
+2020-07-07,Haute-Saône,15,0
+2020-07-07,Saône-et-Loire,24,2
+2020-07-07,Yonne,24,2
+2020-07-07,Territoire de Belfort,11,0
+2020-07-08,Côte-d'Or,7,1
+2020-07-08,Doubs,12,0
+2020-07-08,Jura,5,0
+2020-07-08,Nièvre,7,1
+2020-07-08,Haute-Saône,15,0
+2020-07-08,Saône-et-Loire,23,3
+2020-07-08,Yonne,22,2
+2020-07-08,Territoire de Belfort,11,0
+2020-07-09,Côte-d'Or,7,1
+2020-07-09,Doubs,12,0
+2020-07-09,Jura,5,0
+2020-07-09,Nièvre,7,1
+2020-07-09,Haute-Saône,15,0
+2020-07-09,Saône-et-Loire,14,2
+2020-07-09,Yonne,19,2
+2020-07-09,Territoire de Belfort,7,0
+2020-07-10,Côte-d'Or,7,1
+2020-07-10,Doubs,11,0
+2020-07-10,Jura,5,0
+2020-07-10,Nièvre,7,1
+2020-07-10,Haute-Saône,15,0
+2020-07-10,Saône-et-Loire,15,2
+2020-07-10,Yonne,19,2
+2020-07-10,Territoire de Belfort,7,0
+2020-07-11,Côte-d'Or,10,1
+2020-07-11,Doubs,11,0
+2020-07-11,Jura,4,0
+2020-07-11,Nièvre,7,1
+2020-07-11,Haute-Saône,15,0
+2020-07-11,Saône-et-Loire,17,4
+2020-07-11,Yonne,19,2
+2020-07-11,Territoire de Belfort,7,0
+2020-07-12,Côte-d'Or,10,1
+2020-07-12,Doubs,11,0
+2020-07-12,Jura,4,0
+2020-07-12,Nièvre,7,1
+2020-07-12,Haute-Saône,15,0
+2020-07-12,Saône-et-Loire,17,4
+2020-07-12,Yonne,19,2
+2020-07-12,Territoire de Belfort,7,0
+2020-07-13,Côte-d'Or,10,1
+2020-07-13,Doubs,11,0
+2020-07-13,Jura,4,1
+2020-07-13,Nièvre,7,1
+2020-07-13,Haute-Saône,15,0
+2020-07-13,Saône-et-Loire,19,4
+2020-07-13,Yonne,19,1
+2020-07-13,Territoire de Belfort,7,0
+2020-07-14,Côte-d'Or,10,1
+2020-07-14,Doubs,11,0
+2020-07-14,Jura,4,1
+2020-07-14,Nièvre,7,1
+2020-07-14,Haute-Saône,15,0
+2020-07-14,Saône-et-Loire,19,4
+2020-07-14,Yonne,18,1
+2020-07-14,Territoire de Belfort,7,0
+2020-07-15,Côte-d'Or,9,1
+2020-07-15,Doubs,11,0
+2020-07-15,Jura,5,1
+2020-07-15,Nièvre,8,1
+2020-07-15,Haute-Saône,15,0
+2020-07-15,Saône-et-Loire,19,4
+2020-07-15,Yonne,18,2
+2020-07-15,Territoire de Belfort,4,0
+2020-07-16,Côte-d'Or,9,2
+2020-07-16,Doubs,4,0
+2020-07-16,Jura,5,1
+2020-07-16,Nièvre,9,1
+2020-07-16,Haute-Saône,15,0
+2020-07-16,Saône-et-Loire,20,4
+2020-07-16,Yonne,18,2
+2020-07-16,Territoire de Belfort,4,0
+2020-07-17,Côte-d'Or,9,2
+2020-07-17,Doubs,4,0
+2020-07-17,Jura,5,1
+2020-07-17,Nièvre,8,0
+2020-07-17,Haute-Saône,15,0
+2020-07-17,Saône-et-Loire,16,2
+2020-07-17,Yonne,19,2
+2020-07-17,Territoire de Belfort,4,0
+2020-07-18,Côte-d'Or,9,2
+2020-07-18,Doubs,4,0
+2020-07-18,Jura,4,1
+2020-07-18,Nièvre,7,0
+2020-07-18,Haute-Saône,15,0
+2020-07-18,Saône-et-Loire,13,1
+2020-07-18,Yonne,19,2
+2020-07-18,Territoire de Belfort,4,0
+2020-07-19,Côte-d'Or,9,2
+2020-07-19,Doubs,4,0
+2020-07-19,Jura,4,1
+2020-07-19,Nièvre,7,0
+2020-07-19,Haute-Saône,15,0
+2020-07-19,Saône-et-Loire,13,1
+2020-07-19,Yonne,19,2
+2020-07-19,Territoire de Belfort,4,0
+2020-07-20,Côte-d'Or,8,2
+2020-07-20,Doubs,4,0
+2020-07-20,Jura,4,1
+2020-07-20,Nièvre,6,0
+2020-07-20,Haute-Saône,14,0
+2020-07-20,Saône-et-Loire,14,1
+2020-07-20,Yonne,20,2
+2020-07-20,Territoire de Belfort,4,0
+2020-07-21,Côte-d'Or,6,2
+2020-07-21,Doubs,4,0
+2020-07-21,Jura,3,1
+2020-07-21,Nièvre,2,0
+2020-07-21,Haute-Saône,14,0
+2020-07-21,Saône-et-Loire,11,1
+2020-07-21,Yonne,15,2
+2020-07-21,Territoire de Belfort,4,0
+2020-07-22,Côte-d'Or,6,2
+2020-07-22,Doubs,3,0
+2020-07-22,Jura,3,1
+2020-07-22,Nièvre,2,0
+2020-07-22,Haute-Saône,14,0
+2020-07-22,Saône-et-Loire,10,1
+2020-07-22,Yonne,16,2
+2020-07-22,Territoire de Belfort,1,0
+2020-07-23,Côte-d'Or,6,2
+2020-07-23,Doubs,2,0
+2020-07-23,Jura,2,1
+2020-07-23,Nièvre,2,0
+2020-07-23,Haute-Saône,3,0
+2020-07-23,Saône-et-Loire,8,1
+2020-07-23,Yonne,19,2
+2020-07-23,Territoire de Belfort,0,0
+2020-07-24,Côte-d'Or,6,2
+2020-07-24,Doubs,1,0
+2020-07-24,Jura,2,1
+2020-07-24,Nièvre,0,0
+2020-07-24,Haute-Saône,1,0
+2020-07-24,Saône-et-Loire,8,1
+2020-07-24,Yonne,18,2
+2020-07-24,Territoire de Belfort,0,0
+2020-07-25,Côte-d'Or,7,2
+2020-07-25,Doubs,1,0
+2020-07-25,Jura,2,1
+2020-07-25,Nièvre,0,0
+2020-07-25,Haute-Saône,0,0
+2020-07-25,Saône-et-Loire,9,1
+2020-07-25,Yonne,15,2
+2020-07-25,Territoire de Belfort,0,0
+2020-07-26,Côte-d'Or,7,2
+2020-07-26,Doubs,1,0
+2020-07-26,Jura,2,1
+2020-07-26,Nièvre,0,0
+2020-07-26,Haute-Saône,0,0
+2020-07-26,Saône-et-Loire,9,1
+2020-07-26,Yonne,15,2
+2020-07-26,Territoire de Belfort,0,0
+2020-07-27,Côte-d'Or,6,2
+2020-07-27,Doubs,1,0
+2020-07-27,Jura,2,1
+2020-07-27,Nièvre,0,0
+2020-07-27,Haute-Saône,0,0
+2020-07-27,Saône-et-Loire,9,1
+2020-07-27,Yonne,15,2
+2020-07-27,Territoire de Belfort,0,0
+2020-07-28,Côte-d'Or,6,1
+2020-07-28,Doubs,1,0
+2020-07-28,Jura,1,0
+2020-07-28,Nièvre,0,0
+2020-07-28,Haute-Saône,0,0
+2020-07-28,Saône-et-Loire,5,1
+2020-07-28,Yonne,15,2
+2020-07-28,Territoire de Belfort,0,0
+2020-07-29,Côte-d'Or,5,1
+2020-07-29,Doubs,1,0
+2020-07-29,Jura,1,0
+2020-07-29,Nièvre,0,0
+2020-07-29,Haute-Saône,0,0
+2020-07-29,Saône-et-Loire,3,1
+2020-07-29,Yonne,13,2
+2020-07-29,Territoire de Belfort,0,0
+2020-07-30,Côte-d'Or,3,0
+2020-07-30,Doubs,2,0
+2020-07-30,Jura,1,0
+2020-07-30,Nièvre,0,0
+2020-07-30,Haute-Saône,0,0
+2020-07-30,Saône-et-Loire,2,1
+2020-07-30,Yonne,12,2
+2020-07-30,Territoire de Belfort,2,0
+2020-07-31,Côte-d'Or,3,0
+2020-07-31,Doubs,2,0
+2020-07-31,Jura,1,0
+2020-07-31,Nièvre,0,0
+2020-07-31,Haute-Saône,0,0
+2020-07-31,Saône-et-Loire,2,1
+2020-07-31,Yonne,12,3
+2020-07-31,Territoire de Belfort,3,0
+2020-08-01,Côte-d'Or,3,0
+2020-08-01,Doubs,2,0
+2020-08-01,Jura,1,0
+2020-08-01,Nièvre,0,0
+2020-08-01,Haute-Saône,0,0
+2020-08-01,Saône-et-Loire,2,1
+2020-08-01,Yonne,12,3
+2020-08-01,Territoire de Belfort,3,0
+2020-08-02,Côte-d'Or,3,0
+2020-08-02,Doubs,2,0
+2020-08-02,Jura,1,0
+2020-08-02,Nièvre,0,0
+2020-08-02,Haute-Saône,0,0
+2020-08-02,Saône-et-Loire,2,1
+2020-08-02,Yonne,12,3
+2020-08-02,Territoire de Belfort,3,0
+2020-08-03,Côte-d'Or,3,0
+2020-08-03,Doubs,1,0
+2020-08-03,Jura,1,0
+2020-08-03,Nièvre,0,0
+2020-08-03,Haute-Saône,0,0
+2020-08-03,Saône-et-Loire,4,1
+2020-08-03,Yonne,9,3
+2020-08-03,Territoire de Belfort,3,0
+2020-08-04,Côte-d'Or,3,0
+2020-08-04,Doubs,1,0
+2020-08-04,Jura,1,0
+2020-08-04,Nièvre,0,0
+2020-08-04,Haute-Saône,0,0
+2020-08-04,Saône-et-Loire,4,1
+2020-08-04,Yonne,9,3
+2020-08-04,Territoire de Belfort,3,0
+2020-08-05,Côte-d'Or,2,0
+2020-08-05,Doubs,1,0
+2020-08-05,Jura,1,0
+2020-08-05,Nièvre,0,0
+2020-08-05,Haute-Saône,0,0
+2020-08-05,Saône-et-Loire,3,1
+2020-08-05,Yonne,10,3
+2020-08-05,Territoire de Belfort,4,0
+2020-08-06,Côte-d'Or,2,0
+2020-08-06,Doubs,1,0
+2020-08-06,Jura,0,0
+2020-08-06,Nièvre,0,0
+2020-08-06,Haute-Saône,0,0
+2020-08-06,Saône-et-Loire,3,1
+2020-08-06,Yonne,14,3
+2020-08-06,Territoire de Belfort,4,0
+2020-08-07,Côte-d'Or,2,0
+2020-08-07,Doubs,1,0
+2020-08-07,Jura,0,0
+2020-08-07,Nièvre,0,0
+2020-08-07,Haute-Saône,0,0
+2020-08-07,Saône-et-Loire,3,1
+2020-08-07,Yonne,14,3
+2020-08-07,Territoire de Belfort,4,0
+2020-08-08,Côte-d'Or,2,0
+2020-08-08,Doubs,1,0
+2020-08-08,Jura,0,0
+2020-08-08,Nièvre,0,0
+2020-08-08,Haute-Saône,0,0
+2020-08-08,Saône-et-Loire,3,1
+2020-08-08,Yonne,13,3
+2020-08-08,Territoire de Belfort,4,0
+2020-08-09,Côte-d'Or,2,0
+2020-08-09,Doubs,1,0
+2020-08-09,Jura,0,0
+2020-08-09,Nièvre,0,0
+2020-08-09,Haute-Saône,0,0
+2020-08-09,Saône-et-Loire,3,1
+2020-08-09,Yonne,13,3
+2020-08-09,Territoire de Belfort,4,0
+2020-08-10,Côte-d'Or,2,0
+2020-08-10,Doubs,1,0
+2020-08-10,Jura,0,0
+2020-08-10,Nièvre,0,0
+2020-08-10,Haute-Saône,0,0
+2020-08-10,Saône-et-Loire,3,1
+2020-08-10,Yonne,15,2
+2020-08-10,Territoire de Belfort,3,0
+2020-08-11,Côte-d'Or,2,0
+2020-08-11,Doubs,1,0
+2020-08-11,Jura,0,0
+2020-08-11,Nièvre,0,0
+2020-08-11,Haute-Saône,0,0
+2020-08-11,Saône-et-Loire,4,1
+2020-08-11,Yonne,15,2
+2020-08-11,Territoire de Belfort,3,0
+2020-08-12,Côte-d'Or,2,0
+2020-08-12,Doubs,1,0
+2020-08-12,Jura,0,0
+2020-08-12,Nièvre,0,0
+2020-08-12,Haute-Saône,0,0
+2020-08-12,Saône-et-Loire,4,1
+2020-08-12,Yonne,15,2
+2020-08-12,Territoire de Belfort,5,1
+2020-08-13,Côte-d'Or,2,0
+2020-08-13,Doubs,1,0
+2020-08-13,Jura,0,0
+2020-08-13,Nièvre,0,0
+2020-08-13,Haute-Saône,0,0
+2020-08-13,Saône-et-Loire,5,1
+2020-08-13,Yonne,15,2
+2020-08-13,Territoire de Belfort,5,1
+2020-08-14,Côte-d'Or,2,0
+2020-08-14,Doubs,1,0
+2020-08-14,Jura,0,0
+2020-08-14,Nièvre,0,0
+2020-08-14,Haute-Saône,0,0
+2020-08-14,Saône-et-Loire,5,1
+2020-08-14,Yonne,16,0
+2020-08-14,Territoire de Belfort,5,1
+2020-08-15,Côte-d'Or,2,0
+2020-08-15,Doubs,2,0
+2020-08-15,Jura,0,0
+2020-08-15,Nièvre,0,0
+2020-08-15,Haute-Saône,0,0
+2020-08-15,Saône-et-Loire,6,1
+2020-08-15,Yonne,16,0
+2020-08-15,Territoire de Belfort,5,1
+2020-08-16,Côte-d'Or,2,0
+2020-08-16,Doubs,2,0
+2020-08-16,Jura,0,0
+2020-08-16,Nièvre,0,0
+2020-08-16,Haute-Saône,0,0
+2020-08-16,Saône-et-Loire,6,1
+2020-08-16,Yonne,16,0
+2020-08-16,Territoire de Belfort,5,1
+2020-08-17,Côte-d'Or,3,0
+2020-08-17,Doubs,3,0
+2020-08-17,Jura,0,0
+2020-08-17,Nièvre,0,0
+2020-08-17,Haute-Saône,0,0
+2020-08-17,Saône-et-Loire,6,1
+2020-08-17,Yonne,17,0
+2020-08-17,Territoire de Belfort,4,1
+2020-08-18,Côte-d'Or,3,0
+2020-08-18,Doubs,3,0
+2020-08-18,Jura,0,0
+2020-08-18,Nièvre,0,0
+2020-08-18,Haute-Saône,0,0
+2020-08-18,Saône-et-Loire,6,1
+2020-08-18,Yonne,14,0
+2020-08-18,Territoire de Belfort,3,1
+2020-08-19,Côte-d'Or,2,0
+2020-08-19,Doubs,3,0
+2020-08-19,Jura,0,0
+2020-08-19,Nièvre,0,0
+2020-08-19,Haute-Saône,0,0
+2020-08-19,Saône-et-Loire,3,1
+2020-08-19,Yonne,14,0
+2020-08-19,Territoire de Belfort,3,1
+2020-08-20,Côte-d'Or,3,1
+2020-08-20,Doubs,1,0
+2020-08-20,Jura,0,0
+2020-08-20,Nièvre,0,0
+2020-08-20,Haute-Saône,0,0
+2020-08-20,Saône-et-Loire,4,1
+2020-08-20,Yonne,13,1
+2020-08-20,Territoire de Belfort,2,1
+2020-08-21,Côte-d'Or,3,1
+2020-08-21,Doubs,1,0
+2020-08-21,Jura,0,0
+2020-08-21,Nièvre,0,0
+2020-08-21,Haute-Saône,0,0
+2020-08-21,Saône-et-Loire,2,1
+2020-08-21,Yonne,10,1
+2020-08-21,Territoire de Belfort,2,1
+2020-08-22,Côte-d'Or,3,1
+2020-08-22,Doubs,2,1
+2020-08-22,Jura,0,0
+2020-08-22,Nièvre,0,0
+2020-08-22,Haute-Saône,0,0
+2020-08-22,Saône-et-Loire,2,1
+2020-08-22,Yonne,10,1
+2020-08-22,Territoire de Belfort,2,1
+2020-08-23,Côte-d'Or,3,1
+2020-08-23,Doubs,2,1
+2020-08-23,Jura,0,0
+2020-08-23,Nièvre,0,0
+2020-08-23,Haute-Saône,0,0
+2020-08-23,Saône-et-Loire,3,1
+2020-08-23,Yonne,10,1
+2020-08-23,Territoire de Belfort,2,1
+2020-08-24,Côte-d'Or,4,1
+2020-08-24,Doubs,3,1
+2020-08-24,Jura,0,0
+2020-08-24,Nièvre,0,0
+2020-08-24,Haute-Saône,0,0
+2020-08-24,Saône-et-Loire,3,1
+2020-08-24,Yonne,10,1
+2020-08-24,Territoire de Belfort,2,1
+2020-08-25,Côte-d'Or,4,1
+2020-08-25,Doubs,3,1
+2020-08-25,Jura,0,0
+2020-08-25,Nièvre,1,0
+2020-08-25,Haute-Saône,0,0
+2020-08-25,Saône-et-Loire,3,1
+2020-08-25,Yonne,7,1
+2020-08-25,Territoire de Belfort,2,1
+2020-08-26,Côte-d'Or,2,1
+2020-08-26,Doubs,3,1
+2020-08-26,Jura,1,0
+2020-08-26,Nièvre,1,0
+2020-08-26,Haute-Saône,0,0
+2020-08-26,Saône-et-Loire,3,1
+2020-08-26,Yonne,6,1
+2020-08-26,Territoire de Belfort,2,0
+2020-08-27,Côte-d'Or,4,1
+2020-08-27,Doubs,4,1
+2020-08-27,Jura,1,0
+2020-08-27,Nièvre,1,0
+2020-08-27,Haute-Saône,0,0
+2020-08-27,Saône-et-Loire,3,1
+2020-08-27,Yonne,6,1
+2020-08-27,Territoire de Belfort,2,0
+2020-08-28,Côte-d'Or,4,1
+2020-08-28,Doubs,4,1
+2020-08-28,Jura,2,0
+2020-08-28,Nièvre,1,0
+2020-08-28,Haute-Saône,0,0
+2020-08-28,Saône-et-Loire,5,1
+2020-08-28,Yonne,7,1
+2020-08-28,Territoire de Belfort,3,0
+2020-08-29,Côte-d'Or,4,1
+2020-08-29,Doubs,4,1
+2020-08-29,Jura,2,0
+2020-08-29,Nièvre,1,0
+2020-08-29,Haute-Saône,0,0
+2020-08-29,Saône-et-Loire,5,1
+2020-08-29,Yonne,7,1
+2020-08-29,Territoire de Belfort,3,0
+2020-08-30,Côte-d'Or,4,1
+2020-08-30,Doubs,4,1
+2020-08-30,Jura,2,0
+2020-08-30,Nièvre,1,0
+2020-08-30,Haute-Saône,0,0
+2020-08-30,Saône-et-Loire,5,1
+2020-08-30,Yonne,7,1
+2020-08-30,Territoire de Belfort,3,0
+2020-08-31,Côte-d'Or,4,1
+2020-08-31,Doubs,4,1
+2020-08-31,Jura,2,0
+2020-08-31,Nièvre,1,0
+2020-08-31,Haute-Saône,0,0
+2020-08-31,Saône-et-Loire,5,2
+2020-08-31,Yonne,7,1
+2020-08-31,Territoire de Belfort,3,0
+2020-09-01,Côte-d'Or,5,1
+2020-09-01,Doubs,4,1
+2020-09-01,Jura,2,0
+2020-09-01,Nièvre,1,0
+2020-09-01,Haute-Saône,0,0
+2020-09-01,Saône-et-Loire,4,2
+2020-09-01,Yonne,5,1
+2020-09-01,Territoire de Belfort,3,1
+2020-09-02,Côte-d'Or,7,1
+2020-09-02,Doubs,3,1
+2020-09-02,Jura,2,0
+2020-09-02,Nièvre,2,0
+2020-09-02,Haute-Saône,0,0
+2020-09-02,Saône-et-Loire,6,3
+2020-09-02,Yonne,8,1
+2020-09-02,Territoire de Belfort,2,1
+2020-09-03,Côte-d'Or,8,2
+2020-09-03,Doubs,3,1
+2020-09-03,Jura,2,0
+2020-09-03,Nièvre,2,0
+2020-09-03,Haute-Saône,0,0
+2020-09-03,Saône-et-Loire,5,3
+2020-09-03,Yonne,8,1
+2020-09-03,Territoire de Belfort,1,1
+2020-09-04,Côte-d'Or,9,2
+2020-09-04,Doubs,3,1
+2020-09-04,Jura,2,0
+2020-09-04,Nièvre,3,0
+2020-09-04,Haute-Saône,0,0
+2020-09-04,Saône-et-Loire,5,3
+2020-09-04,Yonne,7,1
+2020-09-04,Territoire de Belfort,3,1
+2020-09-05,Côte-d'Or,9,2
+2020-09-05,Doubs,3,1
+2020-09-05,Jura,2,0
+2020-09-05,Nièvre,3,0
+2020-09-05,Haute-Saône,2,0
+2020-09-05,Saône-et-Loire,5,3
+2020-09-05,Yonne,8,1
+2020-09-05,Territoire de Belfort,3,1
+2020-09-06,Côte-d'Or,9,2
+2020-09-06,Doubs,3,1
+2020-09-06,Jura,2,0
+2020-09-06,Nièvre,3,0
+2020-09-06,Haute-Saône,2,0
+2020-09-06,Saône-et-Loire,5,3
+2020-09-06,Yonne,8,1
+2020-09-06,Territoire de Belfort,3,1
+2020-09-07,Côte-d'Or,8,2
+2020-09-07,Doubs,4,2
+2020-09-07,Jura,2,0
+2020-09-07,Nièvre,4,0
+2020-09-07,Haute-Saône,2,0
+2020-09-07,Saône-et-Loire,8,3
+2020-09-07,Yonne,8,1
+2020-09-07,Territoire de Belfort,1,1
+2020-09-08,Côte-d'Or,8,2
+2020-09-08,Doubs,5,2
+2020-09-08,Jura,2,0
+2020-09-08,Nièvre,4,0
+2020-09-08,Haute-Saône,2,0
+2020-09-08,Saône-et-Loire,7,3
+2020-09-08,Yonne,8,1
+2020-09-08,Territoire de Belfort,2,0
+2020-09-09,Côte-d'Or,7,2
+2020-09-09,Doubs,6,2
+2020-09-09,Jura,2,0
+2020-09-09,Nièvre,4,0
+2020-09-09,Haute-Saône,2,0
+2020-09-09,Saône-et-Loire,8,1
+2020-09-09,Yonne,8,1
+2020-09-09,Territoire de Belfort,2,0
+2020-09-10,Côte-d'Or,7,3
+2020-09-10,Doubs,7,2
+2020-09-10,Jura,2,0
+2020-09-10,Nièvre,4,0
+2020-09-10,Haute-Saône,2,0
+2020-09-10,Saône-et-Loire,10,0
+2020-09-10,Yonne,9,1
+2020-09-10,Territoire de Belfort,5,1
+2020-09-11,Côte-d'Or,6,3
+2020-09-11,Doubs,6,2
+2020-09-11,Jura,2,0
+2020-09-11,Nièvre,4,0
+2020-09-11,Haute-Saône,2,0
+2020-09-11,Saône-et-Loire,13,1
+2020-09-11,Yonne,8,1
+2020-09-11,Territoire de Belfort,5,1
+2020-09-12,Côte-d'Or,6,3
+2020-09-12,Doubs,6,2
+2020-09-12,Jura,2,0
+2020-09-12,Nièvre,4,0
+2020-09-12,Haute-Saône,2,0
+2020-09-12,Saône-et-Loire,15,1
+2020-09-12,Yonne,8,1
+2020-09-12,Territoire de Belfort,5,1
+2020-09-13,Côte-d'Or,6,3
+2020-09-13,Doubs,6,2
+2020-09-13,Jura,2,0
+2020-09-13,Nièvre,4,0
+2020-09-13,Haute-Saône,2,0
+2020-09-13,Saône-et-Loire,13,1
+2020-09-13,Yonne,8,1
+2020-09-13,Territoire de Belfort,5,1
+2020-09-14,Côte-d'Or,6,3
+2020-09-14,Doubs,6,1
+2020-09-14,Jura,3,0
+2020-09-14,Nièvre,4,0
+2020-09-14,Haute-Saône,2,0
+2020-09-14,Saône-et-Loire,16,1
+2020-09-14,Yonne,10,1
+2020-09-14,Territoire de Belfort,3,1
+2020-09-15,Côte-d'Or,7,3
+2020-09-15,Doubs,6,1
+2020-09-15,Jura,3,0
+2020-09-15,Nièvre,4,0
+2020-09-15,Haute-Saône,2,0
+2020-09-15,Saône-et-Loire,18,1
+2020-09-15,Yonne,10,1
+2020-09-15,Territoire de Belfort,5,2
+2020-09-16,Côte-d'Or,7,3
+2020-09-16,Doubs,6,1
+2020-09-16,Jura,4,0
+2020-09-16,Nièvre,5,0
+2020-09-16,Haute-Saône,2,0
+2020-09-16,Saône-et-Loire,28,3
+2020-09-16,Yonne,8,1
+2020-09-16,Territoire de Belfort,5,2
+2020-09-17,Côte-d'Or,12,3
+2020-09-17,Doubs,6,0
+2020-09-17,Jura,4,0
+2020-09-17,Nièvre,6,0
+2020-09-17,Haute-Saône,2,0
+2020-09-17,Saône-et-Loire,28,2
+2020-09-17,Yonne,9,1
+2020-09-17,Territoire de Belfort,3,2
+2020-09-18,Côte-d'Or,11,3
+2020-09-18,Doubs,7,0
+2020-09-18,Jura,4,0
+2020-09-18,Nièvre,6,0
+2020-09-18,Haute-Saône,2,0
+2020-09-18,Saône-et-Loire,27,2
+2020-09-18,Yonne,9,1
+2020-09-18,Territoire de Belfort,5,2
+2020-09-19,Côte-d'Or,11,3
+2020-09-19,Doubs,7,0
+2020-09-19,Jura,3,1
+2020-09-19,Nièvre,7,0
+2020-09-19,Haute-Saône,2,0
+2020-09-19,Saône-et-Loire,29,2
+2020-09-19,Yonne,9,1
+2020-09-19,Territoire de Belfort,5,2
+2020-09-20,Côte-d'Or,11,3
+2020-09-20,Doubs,7,0
+2020-09-20,Jura,3,1
+2020-09-20,Nièvre,7,0
+2020-09-20,Haute-Saône,2,0
+2020-09-20,Saône-et-Loire,31,2
+2020-09-20,Yonne,9,1
+2020-09-20,Territoire de Belfort,5,2
+2020-09-21,Côte-d'Or,13,3
+2020-09-21,Doubs,7,0
+2020-09-21,Jura,3,1
+2020-09-21,Nièvre,7,0
+2020-09-21,Haute-Saône,2,0
+2020-09-21,Saône-et-Loire,37,2
+2020-09-21,Yonne,11,1
+2020-09-21,Territoire de Belfort,5,2
+2020-09-22,Côte-d'Or,13,3
+2020-09-22,Doubs,7,1
+2020-09-22,Jura,3,1
+2020-09-22,Nièvre,6,0
+2020-09-22,Haute-Saône,2,0
+2020-09-22,Saône-et-Loire,44,1
+2020-09-22,Yonne,14,3
+2020-09-22,Territoire de Belfort,3,2
+2020-09-23,Côte-d'Or,20,4
+2020-09-23,Doubs,7,1
+2020-09-23,Jura,5,1
+2020-09-23,Nièvre,4,0
+2020-09-23,Haute-Saône,2,0
+2020-09-23,Saône-et-Loire,46,1
+2020-09-23,Yonne,14,3
+2020-09-23,Territoire de Belfort,6,3
+2020-09-24,Côte-d'Or,20,4
+2020-09-24,Doubs,8,2
+2020-09-24,Jura,8,1
+2020-09-24,Nièvre,4,0
+2020-09-24,Haute-Saône,2,0
+2020-09-24,Saône-et-Loire,44,1
+2020-09-24,Yonne,13,3
+2020-09-24,Territoire de Belfort,6,4
+2020-09-25,Côte-d'Or,22,4
+2020-09-25,Doubs,9,2
+2020-09-25,Jura,9,1
+2020-09-25,Nièvre,1,1
+2020-09-25,Haute-Saône,2,0
+2020-09-25,Saône-et-Loire,47,2
+2020-09-25,Yonne,14,3
+2020-09-25,Territoire de Belfort,6,4
+2020-09-26,Côte-d'Or,27,5
+2020-09-26,Doubs,11,4
+2020-09-26,Jura,7,0
+2020-09-26,Nièvre,1,1
+2020-09-26,Haute-Saône,2,0
+2020-09-26,Saône-et-Loire,49,3
+2020-09-26,Yonne,14,2
+2020-09-26,Territoire de Belfort,6,4
+2020-09-27,Côte-d'Or,27,5
+2020-09-27,Doubs,11,4
+2020-09-27,Jura,7,0
+2020-09-27,Nièvre,1,1
+2020-09-27,Haute-Saône,2,0
+2020-09-27,Saône-et-Loire,51,4
+2020-09-27,Yonne,14,2
+2020-09-27,Territoire de Belfort,6,4
+2020-09-28,Côte-d'Or,26,5
+2020-09-28,Doubs,7,4
+2020-09-28,Jura,8,0
+2020-09-28,Nièvre,1,1
+2020-09-28,Haute-Saône,0,0
+2020-09-28,Saône-et-Loire,50,4
+2020-09-28,Yonne,14,3
+2020-09-28,Territoire de Belfort,6,4
+2020-09-29,Côte-d'Or,28,7
+2020-09-29,Doubs,8,4
+2020-09-29,Jura,7,0
+2020-09-29,Nièvre,5,0
+2020-09-29,Haute-Saône,1,0
+2020-09-29,Saône-et-Loire,49,7
+2020-09-29,Yonne,14,3
+2020-09-29,Territoire de Belfort,8,3
+2020-09-30,Côte-d'Or,31,11
+2020-09-30,Doubs,8,4
+2020-09-30,Jura,6,0
+2020-09-30,Nièvre,3,1
+2020-09-30,Haute-Saône,1,0
+2020-09-30,Saône-et-Loire,50,6
+2020-09-30,Yonne,14,4
+2020-09-30,Territoire de Belfort,7,2
+2020-10-01,Côte-d'Or,30,11
+2020-10-01,Doubs,10,5
+2020-10-01,Jura,4,0
+2020-10-01,Nièvre,4,1
+2020-10-01,Haute-Saône,1,0
+2020-10-01,Saône-et-Loire,45,7
+2020-10-01,Yonne,15,4
+2020-10-01,Territoire de Belfort,7,2
+2020-10-02,Côte-d'Or,32,11
+2020-10-02,Doubs,9,5
+2020-10-02,Jura,6,1
+2020-10-02,Nièvre,7,1
+2020-10-02,Haute-Saône,2,0
+2020-10-02,Saône-et-Loire,45,7
+2020-10-02,Yonne,13,2
+2020-10-02,Territoire de Belfort,7,2
+2020-10-03,Côte-d'Or,32,11
+2020-10-03,Doubs,10,5
+2020-10-03,Jura,6,1
+2020-10-03,Nièvre,6,2
+2020-10-03,Haute-Saône,2,0
+2020-10-03,Saône-et-Loire,46,5
+2020-10-03,Yonne,14,2
+2020-10-03,Territoire de Belfort,8,3
+2020-10-04,Côte-d'Or,32,11
+2020-10-04,Doubs,10,5
+2020-10-04,Jura,6,1
+2020-10-04,Nièvre,6,2
+2020-10-04,Haute-Saône,2,0
+2020-10-04,Saône-et-Loire,48,5
+2020-10-04,Yonne,18,3
+2020-10-04,Territoire de Belfort,8,3
+2020-10-05,Côte-d'Or,35,11
+2020-10-05,Doubs,8,5
+2020-10-05,Jura,9,1
+2020-10-05,Nièvre,6,2
+2020-10-05,Haute-Saône,2,0
+2020-10-05,Saône-et-Loire,48,5
+2020-10-05,Yonne,17,3
+2020-10-05,Territoire de Belfort,9,4
+2020-10-06,Côte-d'Or,35,9
+2020-10-06,Doubs,10,5
+2020-10-06,Jura,13,1
+2020-10-06,Nièvre,6,2
+2020-10-06,Haute-Saône,6,0
+2020-10-06,Saône-et-Loire,50,5
+2020-10-06,Yonne,17,3
+2020-10-06,Territoire de Belfort,9,3
+2020-10-07,Côte-d'Or,31,9
+2020-10-07,Doubs,12,6
+2020-10-07,Jura,11,1
+2020-10-07,Nièvre,7,2
+2020-10-07,Haute-Saône,7,0
+2020-10-07,Saône-et-Loire,51,6
+2020-10-07,Yonne,15,3
+2020-10-07,Territoire de Belfort,8,3
+2020-10-08,Côte-d'Or,31,7
+2020-10-08,Doubs,14,6
+2020-10-08,Jura,9,1
+2020-10-08,Nièvre,7,2
+2020-10-08,Haute-Saône,5,0
+2020-10-08,Saône-et-Loire,57,7
+2020-10-08,Yonne,13,3
+2020-10-08,Territoire de Belfort,12,5
+2020-10-09,Côte-d'Or,28,6
+2020-10-09,Doubs,15,7
+2020-10-09,Jura,10,1
+2020-10-09,Nièvre,8,2
+2020-10-09,Haute-Saône,4,1
+2020-10-09,Saône-et-Loire,55,6
+2020-10-09,Yonne,16,5
+2020-10-09,Territoire de Belfort,12,4
+2020-10-10,Côte-d'Or,35,6
+2020-10-10,Doubs,15,6
+2020-10-10,Jura,11,1
+2020-10-10,Nièvre,8,2
+2020-10-10,Haute-Saône,6,1
+2020-10-10,Saône-et-Loire,55,6
+2020-10-10,Yonne,19,4
+2020-10-10,Territoire de Belfort,11,4
+2020-10-11,Côte-d'Or,35,6
+2020-10-11,Doubs,15,6
+2020-10-11,Jura,15,1
+2020-10-11,Nièvre,9,3
+2020-10-11,Haute-Saône,6,1
+2020-10-11,Saône-et-Loire,57,6
+2020-10-11,Yonne,19,3
+2020-10-11,Territoire de Belfort,12,4
+2020-10-12,Côte-d'Or,38,6
+2020-10-12,Doubs,16,6
+2020-10-12,Jura,15,1
+2020-10-12,Nièvre,9,3
+2020-10-12,Haute-Saône,9,1
+2020-10-12,Saône-et-Loire,59,5
+2020-10-12,Yonne,25,4
+2020-10-12,Territoire de Belfort,13,4
+2020-10-13,Côte-d'Or,48,11
+2020-10-13,Doubs,15,6
+2020-10-13,Jura,21,1
+2020-10-13,Nièvre,11,3
+2020-10-13,Haute-Saône,10,1
+2020-10-13,Saône-et-Loire,75,8
+2020-10-13,Yonne,22,5
+2020-10-13,Territoire de Belfort,16,6
+2020-10-14,Côte-d'Or,49,12
+2020-10-14,Doubs,18,5
+2020-10-14,Jura,20,1
+2020-10-14,Nièvre,13,3
+2020-10-14,Haute-Saône,15,1
+2020-10-14,Saône-et-Loire,85,9
+2020-10-14,Yonne,24,4
+2020-10-14,Territoire de Belfort,17,5
+2020-10-15,Côte-d'Or,52,12
+2020-10-15,Doubs,24,6
+2020-10-15,Jura,23,1
+2020-10-15,Nièvre,15,4
+2020-10-15,Haute-Saône,17,1
+2020-10-15,Saône-et-Loire,94,9
+2020-10-15,Yonne,26,6
+2020-10-15,Territoire de Belfort,14,4
+2020-10-16,Côte-d'Or,55,15
+2020-10-16,Doubs,25,7
+2020-10-16,Jura,31,1
+2020-10-16,Nièvre,13,3
+2020-10-16,Haute-Saône,24,1
+2020-10-16,Saône-et-Loire,95,9
+2020-10-16,Yonne,28,6
+2020-10-16,Territoire de Belfort,17,4
+2020-10-17,Côte-d'Or,58,16
+2020-10-17,Doubs,23,7
+2020-10-17,Jura,35,2
+2020-10-17,Nièvre,12,3
+2020-10-17,Haute-Saône,23,1
+2020-10-17,Saône-et-Loire,97,9
+2020-10-17,Yonne,21,6
+2020-10-17,Territoire de Belfort,17,4
+2020-10-18,Côte-d'Or,58,16
+2020-10-18,Doubs,26,9
+2020-10-18,Jura,35,2
+2020-10-18,Nièvre,14,4
+2020-10-18,Haute-Saône,22,1
+2020-10-18,Saône-et-Loire,107,9
+2020-10-18,Yonne,24,6
+2020-10-18,Territoire de Belfort,16,4
+2020-10-19,Côte-d'Or,59,14
+2020-10-19,Doubs,28,9
+2020-10-19,Jura,42,2
+2020-10-19,Nièvre,17,5
+2020-10-19,Haute-Saône,22,2
+2020-10-19,Saône-et-Loire,127,12
+2020-10-19,Yonne,27,6
+2020-10-19,Territoire de Belfort,17,6
+2020-10-20,Côte-d'Or,69,14
+2020-10-20,Doubs,32,9
+2020-10-20,Jura,48,2
+2020-10-20,Nièvre,15,4
+2020-10-20,Haute-Saône,22,1
+2020-10-20,Saône-et-Loire,147,15
+2020-10-20,Yonne,30,7
+2020-10-20,Territoire de Belfort,21,5
+2020-10-21,Côte-d'Or,75,14
+2020-10-21,Doubs,30,9
+2020-10-21,Jura,58,2
+2020-10-21,Nièvre,15,4
+2020-10-21,Haute-Saône,27,0
+2020-10-21,Saône-et-Loire,151,17
+2020-10-21,Yonne,36,7
+2020-10-21,Territoire de Belfort,22,7
+2020-10-22,Côte-d'Or,79,16
+2020-10-22,Doubs,32,9
+2020-10-22,Jura,60,3
+2020-10-22,Nièvre,13,3
+2020-10-22,Haute-Saône,26,0
+2020-10-22,Saône-et-Loire,157,14
+2020-10-22,Yonne,43,8
+2020-10-22,Territoire de Belfort,21,9
+2020-10-23,Côte-d'Or,76,17
+2020-10-23,Doubs,38,9
+2020-10-23,Jura,72,3
+2020-10-23,Nièvre,15,4
+2020-10-23,Haute-Saône,29,2
+2020-10-23,Saône-et-Loire,169,16
+2020-10-23,Yonne,47,8
+2020-10-23,Territoire de Belfort,23,9
+2020-10-24,Côte-d'Or,85,19
+2020-10-24,Doubs,37,9
+2020-10-24,Jura,77,5
+2020-10-24,Nièvre,15,4
+2020-10-24,Haute-Saône,29,3
+2020-10-24,Saône-et-Loire,185,18
+2020-10-24,Yonne,47,9
+2020-10-24,Territoire de Belfort,35,10
+2020-10-25,Côte-d'Or,95,19
+2020-10-25,Doubs,43,13
+2020-10-25,Jura,82,5
+2020-10-25,Nièvre,16,4
+2020-10-25,Haute-Saône,29,3
+2020-10-25,Saône-et-Loire,198,18
+2020-10-25,Yonne,48,9
+2020-10-25,Territoire de Belfort,36,10
+2020-10-26,Côte-d'Or,113,28
+2020-10-26,Doubs,53,15
+2020-10-26,Jura,105,6
+2020-10-26,Nièvre,18,4
+2020-10-26,Haute-Saône,30,3
+2020-10-26,Saône-et-Loire,226,18
+2020-10-26,Yonne,64,9
+2020-10-26,Territoire de Belfort,36,11
+2020-10-27,Côte-d'Or,114,26
+2020-10-27,Doubs,54,14
+2020-10-27,Jura,110,7
+2020-10-27,Nièvre,18,4
+2020-10-27,Haute-Saône,42,5
+2020-10-27,Saône-et-Loire,230,19
+2020-10-27,Yonne,68,9
+2020-10-27,Territoire de Belfort,50,13
+2020-10-28,Côte-d'Or,122,26
+2020-10-28,Doubs,62,15
+2020-10-28,Jura,134,5
+2020-10-28,Nièvre,19,4
+2020-10-28,Haute-Saône,42,5
+2020-10-28,Saône-et-Loire,251,23
+2020-10-28,Yonne,85,10
+2020-10-28,Territoire de Belfort,58,12
+2020-10-29,Côte-d'Or,134,23
+2020-10-29,Doubs,64,17
+2020-10-29,Jura,135,7
+2020-10-29,Nièvre,20,4
+2020-10-29,Haute-Saône,48,4
+2020-10-29,Saône-et-Loire,258,26
+2020-10-29,Yonne,89,11
+2020-10-29,Territoire de Belfort,60,10
+2020-10-30,Côte-d'Or,163,34
+2020-10-30,Doubs,75,16
+2020-10-30,Jura,137,7
+2020-10-30,Nièvre,25,5
+2020-10-30,Haute-Saône,59,6
+2020-10-30,Saône-et-Loire,272,27
+2020-10-30,Yonne,94,13
+2020-10-30,Territoire de Belfort,63,11
+2020-10-31,Côte-d'Or,162,36
+2020-10-31,Doubs,77,15
+2020-10-31,Jura,141,8
+2020-10-31,Nièvre,34,5
+2020-10-31,Haute-Saône,56,4
+2020-10-31,Saône-et-Loire,281,28
+2020-10-31,Yonne,104,13
+2020-10-31,Territoire de Belfort,59,10
+2020-11-01,Côte-d'Or,158,33
+2020-11-01,Doubs,95,22
+2020-11-01,Jura,152,7
+2020-11-01,Nièvre,42,7
+2020-11-01,Haute-Saône,66,5
+2020-11-01,Saône-et-Loire,297,28
+2020-11-01,Yonne,107,14
+2020-11-01,Territoire de Belfort,56,8
+2020-11-02,Côte-d'Or,178,43
+2020-11-02,Doubs,108,23
+2020-11-02,Jura,166,9
+2020-11-02,Nièvre,44,6
+2020-11-02,Haute-Saône,76,5
+2020-11-02,Saône-et-Loire,314,31
+2020-11-02,Yonne,127,16
+2020-11-02,Territoire de Belfort,57,8
+2020-11-03,Côte-d'Or,200,39
+2020-11-03,Doubs,122,23
+2020-11-03,Jura,200,9
+2020-11-03,Nièvre,47,6
+2020-11-03,Haute-Saône,81,5
+2020-11-03,Saône-et-Loire,343,36
+2020-11-03,Yonne,124,13
+2020-11-03,Territoire de Belfort,57,8
+2020-11-04,Côte-d'Or,249,43
+2020-11-04,Doubs,128,23
+2020-11-04,Jura,190,7
+2020-11-04,Nièvre,50,6
+2020-11-04,Haute-Saône,80,9
+2020-11-04,Saône-et-Loire,337,36
+2020-11-04,Yonne,136,15
+2020-11-04,Territoire de Belfort,72,13
+2020-11-05,Côte-d'Or,274,57
+2020-11-05,Doubs,129,24
+2020-11-05,Jura,199,8
+2020-11-05,Nièvre,59,9
+2020-11-05,Haute-Saône,77,10
+2020-11-05,Saône-et-Loire,342,32
+2020-11-05,Yonne,140,15
+2020-11-05,Territoire de Belfort,78,14
+2020-11-06,Côte-d'Or,285,61
+2020-11-06,Doubs,120,30
+2020-11-06,Jura,189,9
+2020-11-06,Nièvre,65,8
+2020-11-06,Haute-Saône,84,11
+2020-11-06,Saône-et-Loire,373,33
+2020-11-06,Yonne,147,15
+2020-11-06,Territoire de Belfort,102,19
+2020-11-07,Côte-d'Or,292,60
+2020-11-07,Doubs,115,29
+2020-11-07,Jura,191,9
+2020-11-07,Nièvre,65,9
+2020-11-07,Haute-Saône,86,12
+2020-11-07,Saône-et-Loire,395,39
+2020-11-07,Yonne,149,16
+2020-11-07,Territoire de Belfort,97,18
+2020-11-08,Côte-d'Or,302,63
+2020-11-08,Doubs,142,42
+2020-11-08,Jura,191,8
+2020-11-08,Nièvre,66,9
+2020-11-08,Haute-Saône,89,12
+2020-11-08,Saône-et-Loire,402,40
+2020-11-08,Yonne,161,18
+2020-11-08,Territoire de Belfort,97,15
+2020-11-09,Côte-d'Or,307,62
+2020-11-09,Doubs,165,51
+2020-11-09,Jura,191,8
+2020-11-09,Nièvre,81,11
+2020-11-09,Haute-Saône,96,14
+2020-11-09,Saône-et-Loire,429,39
+2020-11-09,Yonne,173,19
+2020-11-09,Territoire de Belfort,127,18
+2020-11-10,Côte-d'Or,328,68
+2020-11-10,Doubs,176,50
+2020-11-10,Jura,180,7
+2020-11-10,Nièvre,84,11
+2020-11-10,Haute-Saône,104,15
+2020-11-10,Saône-et-Loire,446,37
+2020-11-10,Yonne,178,18
+2020-11-10,Territoire de Belfort,133,21
+2020-11-11,Côte-d'Or,355,69
+2020-11-11,Doubs,172,46
+2020-11-11,Jura,169,8
+2020-11-11,Nièvre,86,12
+2020-11-11,Haute-Saône,103,16
+2020-11-11,Saône-et-Loire,457,43
+2020-11-11,Yonne,177,20
+2020-11-11,Territoire de Belfort,128,23
+2020-11-12,Côte-d'Or,361,66
+2020-11-12,Doubs,192,54
+2020-11-12,Jura,174,7
+2020-11-12,Nièvre,84,10
+2020-11-12,Haute-Saône,117,15
+2020-11-12,Saône-et-Loire,464,43
+2020-11-12,Yonne,190,20
+2020-11-12,Territoire de Belfort,145,23
+2020-11-13,Côte-d'Or,366,64
+2020-11-13,Doubs,186,50
+2020-11-13,Jura,182,8
+2020-11-13,Nièvre,84,11
+2020-11-13,Haute-Saône,115,16
+2020-11-13,Saône-et-Loire,481,46
+2020-11-13,Yonne,195,18
+2020-11-13,Territoire de Belfort,143,23
+2020-11-14,Côte-d'Or,361,61
+2020-11-14,Doubs,194,48
+2020-11-14,Jura,179,6
+2020-11-14,Nièvre,83,11
+2020-11-14,Haute-Saône,111,16
+2020-11-14,Saône-et-Loire,482,47
+2020-11-14,Yonne,192,16
+2020-11-14,Territoire de Belfort,130,22
+2020-11-15,Côte-d'Or,371,64
+2020-11-15,Doubs,206,54
+2020-11-15,Jura,185,6
+2020-11-15,Nièvre,88,10
+2020-11-15,Haute-Saône,108,14
+2020-11-15,Saône-et-Loire,495,50
+2020-11-15,Yonne,197,16
+2020-11-15,Territoire de Belfort,126,23
+2020-11-16,Côte-d'Or,381,65
+2020-11-16,Doubs,229,57
+2020-11-16,Jura,197,9
+2020-11-16,Nièvre,87,10
+2020-11-16,Haute-Saône,119,17
+2020-11-16,Saône-et-Loire,500,50
+2020-11-16,Yonne,207,18
+2020-11-16,Territoire de Belfort,138,26
+2020-11-17,Côte-d'Or,368,65
+2020-11-17,Doubs,216,55
+2020-11-17,Jura,199,12
+2020-11-17,Nièvre,85,9
+2020-11-17,Haute-Saône,113,17
+2020-11-17,Saône-et-Loire,519,50
+2020-11-17,Yonne,203,18
+2020-11-17,Territoire de Belfort,149,23
+2020-11-18,Côte-d'Or,365,67
+2020-11-18,Doubs,224,55
+2020-11-18,Jura,202,12
+2020-11-18,Nièvre,88,9
+2020-11-18,Haute-Saône,110,15
+2020-11-18,Saône-et-Loire,513,46
+2020-11-18,Yonne,203,17
+2020-11-18,Territoire de Belfort,145,23
+2020-11-19,Côte-d'Or,352,66
+2020-11-19,Doubs,227,55
+2020-11-19,Jura,210,11
+2020-11-19,Nièvre,88,10
+2020-11-19,Haute-Saône,106,15
+2020-11-19,Saône-et-Loire,513,44
+2020-11-19,Yonne,200,14
+2020-11-19,Territoire de Belfort,138,20
+2020-11-20,Côte-d'Or,364,68
+2020-11-20,Doubs,217,51
+2020-11-20,Jura,204,8
+2020-11-20,Nièvre,88,10
+2020-11-20,Haute-Saône,102,14
+2020-11-20,Saône-et-Loire,528,42
+2020-11-20,Yonne,197,14
+2020-11-20,Territoire de Belfort,142,23
+2020-11-21,Côte-d'Or,363,67
+2020-11-21,Doubs,205,48
+2020-11-21,Jura,199,12
+2020-11-21,Nièvre,94,10
+2020-11-21,Haute-Saône,99,15
+2020-11-21,Saône-et-Loire,527,46
+2020-11-21,Yonne,204,16
+2020-11-21,Territoire de Belfort,142,23
+2020-11-22,Côte-d'Or,367,66
+2020-11-22,Doubs,230,54
+2020-11-22,Jura,200,9
+2020-11-22,Nièvre,98,9
+2020-11-22,Haute-Saône,97,15
+2020-11-22,Saône-et-Loire,538,47
+2020-11-22,Yonne,212,16
+2020-11-22,Territoire de Belfort,141,24
+2020-11-23,Côte-d'Or,367,68
+2020-11-23,Doubs,227,58
+2020-11-23,Jura,197,9
+2020-11-23,Nièvre,96,11
+2020-11-23,Haute-Saône,100,17
+2020-11-23,Saône-et-Loire,545,47
+2020-11-23,Yonne,212,19
+2020-11-23,Territoire de Belfort,154,24
+2020-11-24,Côte-d'Or,370,66
+2020-11-24,Doubs,214,52
+2020-11-24,Jura,192,10
+2020-11-24,Nièvre,93,11
+2020-11-24,Haute-Saône,98,17
+2020-11-24,Saône-et-Loire,525,48
+2020-11-24,Yonne,203,18
+2020-11-24,Territoire de Belfort,150,22
+2020-11-25,Côte-d'Or,360,66
+2020-11-25,Doubs,201,55
+2020-11-25,Jura,186,8
+2020-11-25,Nièvre,91,9
+2020-11-25,Haute-Saône,89,15
+2020-11-25,Saône-et-Loire,516,48
+2020-11-25,Yonne,200,17
+2020-11-25,Territoire de Belfort,147,21
+2020-11-26,Côte-d'Or,351,63
+2020-11-26,Doubs,197,54
+2020-11-26,Jura,185,8
+2020-11-26,Nièvre,88,9
+2020-11-26,Haute-Saône,81,17
+2020-11-26,Saône-et-Loire,495,45
+2020-11-26,Yonne,204,18
+2020-11-26,Territoire de Belfort,138,21
+2020-11-27,Côte-d'Or,346,63
+2020-11-27,Doubs,192,51
+2020-11-27,Jura,185,7
+2020-11-27,Nièvre,88,8
+2020-11-27,Haute-Saône,77,17
+2020-11-27,Saône-et-Loire,508,51
+2020-11-27,Yonne,207,17
+2020-11-27,Territoire de Belfort,140,25
+2020-11-28,Côte-d'Or,340,58
+2020-11-28,Doubs,175,47
+2020-11-28,Jura,181,7
+2020-11-28,Nièvre,88,9
+2020-11-28,Haute-Saône,79,16
+2020-11-28,Saône-et-Loire,501,55
+2020-11-28,Yonne,204,17
+2020-11-28,Territoire de Belfort,129,24
+2020-11-29,Côte-d'Or,341,57
+2020-11-29,Doubs,176,50
+2020-11-29,Jura,177,9
+2020-11-29,Nièvre,93,9
+2020-11-29,Haute-Saône,79,15
+2020-11-29,Saône-et-Loire,503,53
+2020-11-29,Yonne,209,17
+2020-11-29,Territoire de Belfort,128,23
+2020-11-30,Côte-d'Or,345,57
+2020-11-30,Doubs,190,49
+2020-11-30,Jura,181,8
+2020-11-30,Nièvre,96,9
+2020-11-30,Haute-Saône,85,14
+2020-11-30,Saône-et-Loire,501,51
+2020-11-30,Yonne,197,18
+2020-11-30,Territoire de Belfort,149,24
+2020-12-01,Côte-d'Or,344,55
+2020-12-01,Doubs,178,59
+2020-12-01,Jura,186,9
+2020-12-01,Nièvre,90,7
+2020-12-01,Haute-Saône,80,15
+2020-12-01,Saône-et-Loire,477,45
+2020-12-01,Yonne,209,20
+2020-12-01,Territoire de Belfort,155,25
+2020-12-02,Côte-d'Or,352,56
+2020-12-02,Doubs,166,57
+2020-12-02,Jura,185,9
+2020-12-02,Nièvre,85,5
+2020-12-02,Haute-Saône,76,14
+2020-12-02,Saône-et-Loire,476,44
+2020-12-02,Yonne,200,18
+2020-12-02,Territoire de Belfort,155,23
+2020-12-03,Côte-d'Or,354,55
+2020-12-03,Doubs,162,53
+2020-12-03,Jura,193,10
+2020-12-03,Nièvre,86,5
+2020-12-03,Haute-Saône,72,12
+2020-12-03,Saône-et-Loire,479,46
+2020-12-03,Yonne,209,17
+2020-12-03,Territoire de Belfort,163,23
+2020-12-04,Côte-d'Or,361,52
+2020-12-04,Doubs,168,55
+2020-12-04,Jura,186,11
+2020-12-04,Nièvre,96,5
+2020-12-04,Haute-Saône,73,14
+2020-12-04,Saône-et-Loire,477,41
+2020-12-04,Yonne,221,16
+2020-12-04,Territoire de Belfort,164,21
+2020-12-05,Côte-d'Or,319,51
+2020-12-05,Doubs,160,52
+2020-12-05,Jura,187,11
+2020-12-05,Nièvre,90,6
+2020-12-05,Haute-Saône,74,10
+2020-12-05,Saône-et-Loire,468,40
+2020-12-05,Yonne,229,17
+2020-12-05,Territoire de Belfort,159,20
+2020-12-06,Côte-d'Or,325,51
+2020-12-06,Doubs,182,56
+2020-12-06,Jura,187,11
+2020-12-06,Nièvre,88,6
+2020-12-06,Haute-Saône,74,9
+2020-12-06,Saône-et-Loire,465,40
+2020-12-06,Yonne,226,17
+2020-12-06,Territoire de Belfort,158,20
+2020-12-07,Côte-d'Or,340,53
+2020-12-07,Doubs,176,53
+2020-12-07,Jura,189,10
+2020-12-07,Nièvre,88,6
+2020-12-07,Haute-Saône,80,12
+2020-12-07,Saône-et-Loire,470,43
+2020-12-07,Yonne,232,19
+2020-12-07,Territoire de Belfort,161,19
+2020-12-08,Côte-d'Or,341,43
+2020-12-08,Doubs,173,51
+2020-12-08,Jura,183,8
+2020-12-08,Nièvre,97,5
+2020-12-08,Haute-Saône,76,10
+2020-12-08,Saône-et-Loire,471,38
+2020-12-08,Yonne,244,21
+2020-12-08,Territoire de Belfort,174,21
+2020-12-09,Côte-d'Or,341,46
+2020-12-09,Doubs,167,50
+2020-12-09,Jura,182,9
+2020-12-09,Nièvre,96,5
+2020-12-09,Haute-Saône,75,9
+2020-12-09,Saône-et-Loire,456,40
+2020-12-09,Yonne,247,25
+2020-12-09,Territoire de Belfort,177,21
+2020-12-10,Côte-d'Or,366,42
+2020-12-10,Doubs,166,49
+2020-12-10,Jura,183,7
+2020-12-10,Nièvre,89,5
+2020-12-10,Haute-Saône,75,7
+2020-12-10,Saône-et-Loire,444,39
+2020-12-10,Yonne,234,23
+2020-12-10,Territoire de Belfort,175,22
+2020-12-11,Côte-d'Or,351,36
+2020-12-11,Doubs,166,48
+2020-12-11,Jura,197,7
+2020-12-11,Nièvre,97,5
+2020-12-11,Haute-Saône,76,7
+2020-12-11,Saône-et-Loire,443,38
+2020-12-11,Yonne,221,21
+2020-12-11,Territoire de Belfort,182,21
+2020-12-12,Côte-d'Or,347,37
+2020-12-12,Doubs,159,45
+2020-12-12,Jura,196,7
+2020-12-12,Nièvre,98,5
+2020-12-12,Haute-Saône,77,7
+2020-12-12,Saône-et-Loire,447,38
+2020-12-12,Yonne,228,22
+2020-12-12,Territoire de Belfort,187,21
+2020-12-13,Côte-d'Or,352,39
+2020-12-13,Doubs,161,45
+2020-12-13,Jura,202,6
+2020-12-13,Nièvre,100,5
+2020-12-13,Haute-Saône,78,7
+2020-12-13,Saône-et-Loire,452,35
+2020-12-13,Yonne,237,22
+2020-12-13,Territoire de Belfort,187,22
+2020-12-14,Côte-d'Or,357,41
+2020-12-14,Doubs,178,46
+2020-12-14,Jura,196,7
+2020-12-14,Nièvre,101,6
+2020-12-14,Haute-Saône,80,8
+2020-12-14,Saône-et-Loire,442,34
+2020-12-14,Yonne,238,22
+2020-12-14,Territoire de Belfort,209,22
+2020-12-15,Côte-d'Or,352,37
+2020-12-15,Doubs,170,44
+2020-12-15,Jura,204,8
+2020-12-15,Nièvre,100,7
+2020-12-15,Haute-Saône,79,8
+2020-12-15,Saône-et-Loire,452,33
+2020-12-15,Yonne,238,23
+2020-12-15,Territoire de Belfort,212,26
+2020-12-16,Côte-d'Or,371,32
+2020-12-16,Doubs,169,48
+2020-12-16,Jura,219,7
+2020-12-16,Nièvre,101,7
+2020-12-16,Haute-Saône,74,7
+2020-12-16,Saône-et-Loire,450,32
+2020-12-16,Yonne,228,18
+2020-12-16,Territoire de Belfort,220,22
+2020-12-17,Côte-d'Or,359,33
+2020-12-17,Doubs,166,49
+2020-12-17,Jura,232,7
+2020-12-17,Nièvre,98,6
+2020-12-17,Haute-Saône,73,7
+2020-12-17,Saône-et-Loire,455,31
+2020-12-17,Yonne,229,20
+2020-12-17,Territoire de Belfort,210,22
+2020-12-18,Côte-d'Or,362,31
+2020-12-18,Doubs,164,45
+2020-12-18,Jura,246,7
+2020-12-18,Nièvre,88,6
+2020-12-18,Haute-Saône,72,7
+2020-12-18,Saône-et-Loire,436,29
+2020-12-18,Yonne,229,20
+2020-12-18,Territoire de Belfort,203,21
+2020-12-19,Côte-d'Or,359,34
+2020-12-19,Doubs,155,41
+2020-12-19,Jura,234,7
+2020-12-19,Nièvre,85,3
+2020-12-19,Haute-Saône,71,6
+2020-12-19,Saône-et-Loire,438,29
+2020-12-19,Yonne,228,18
+2020-12-19,Territoire de Belfort,180,22
+2020-12-20,Côte-d'Or,359,34
+2020-12-20,Doubs,171,47
+2020-12-20,Jura,232,7
+2020-12-20,Nièvre,85,3
+2020-12-20,Haute-Saône,75,6
+2020-12-20,Saône-et-Loire,440,29
+2020-12-20,Yonne,231,17
+2020-12-20,Territoire de Belfort,189,23
+2020-12-21,Côte-d'Or,373,36
+2020-12-21,Doubs,158,45
+2020-12-21,Jura,248,10
+2020-12-21,Nièvre,84,3
+2020-12-21,Haute-Saône,76,6
+2020-12-21,Saône-et-Loire,429,28
+2020-12-21,Yonne,237,17
+2020-12-21,Territoire de Belfort,190,22
+2020-12-22,Côte-d'Or,379,38
+2020-12-22,Doubs,160,44
+2020-12-22,Jura,247,10
+2020-12-22,Nièvre,86,3
+2020-12-22,Haute-Saône,82,8
+2020-12-22,Saône-et-Loire,413,29
+2020-12-22,Yonne,220,14
+2020-12-22,Territoire de Belfort,193,25
+2020-12-23,Côte-d'Or,369,35
+2020-12-23,Doubs,153,45
+2020-12-23,Jura,247,10
+2020-12-23,Nièvre,83,4
+2020-12-23,Haute-Saône,80,8
+2020-12-23,Saône-et-Loire,416,29
+2020-12-23,Yonne,219,18
+2020-12-23,Territoire de Belfort,200,24
+2020-12-24,Côte-d'Or,376,39
+2020-12-24,Doubs,149,46
+2020-12-24,Jura,246,9
+2020-12-24,Nièvre,93,3
+2020-12-24,Haute-Saône,83,6
+2020-12-24,Saône-et-Loire,412,29
+2020-12-24,Yonne,215,18
+2020-12-24,Territoire de Belfort,194,23
+2020-12-25,Côte-d'Or,380,39
+2020-12-25,Doubs,147,41
+2020-12-25,Jura,249,10
+2020-12-25,Nièvre,95,5
+2020-12-25,Haute-Saône,82,6
+2020-12-25,Saône-et-Loire,405,31
+2020-12-25,Yonne,217,17
+2020-12-25,Territoire de Belfort,187,19
+2020-12-26,Côte-d'Or,370,42
+2020-12-26,Doubs,159,43
+2020-12-26,Jura,247,10
+2020-12-26,Nièvre,96,5
+2020-12-26,Haute-Saône,78,7
+2020-12-26,Saône-et-Loire,418,30
+2020-12-26,Yonne,217,18
+2020-12-26,Territoire de Belfort,185,20
+2020-12-27,Côte-d'Or,375,47
+2020-12-27,Doubs,156,43
+2020-12-27,Jura,247,9
+2020-12-27,Nièvre,98,5
+2020-12-27,Haute-Saône,75,7
+2020-12-27,Saône-et-Loire,421,28
+2020-12-27,Yonne,220,18
+2020-12-27,Territoire de Belfort,183,20
+2020-12-28,Côte-d'Or,375,43
+2020-12-28,Doubs,162,47
+2020-12-28,Jura,246,7
+2020-12-28,Nièvre,102,5
+2020-12-28,Haute-Saône,75,8
+2020-12-28,Saône-et-Loire,423,30
+2020-12-28,Yonne,237,19
+2020-12-28,Territoire de Belfort,191,20
+2020-12-29,Côte-d'Or,365,42
+2020-12-29,Doubs,164,41
+2020-12-29,Jura,259,8
+2020-12-29,Nièvre,100,5
+2020-12-29,Haute-Saône,78,9
+2020-12-29,Saône-et-Loire,448,36
+2020-12-29,Yonne,233,20
+2020-12-29,Territoire de Belfort,193,18
+2020-12-30,Côte-d'Or,373,45
+2020-12-30,Doubs,162,43
+2020-12-30,Jura,264,6
+2020-12-30,Nièvre,93,6
+2020-12-30,Haute-Saône,87,10
+2020-12-30,Saône-et-Loire,435,35
+2020-12-30,Yonne,246,19
+2020-12-30,Territoire de Belfort,196,18
+2020-12-31,Côte-d'Or,365,41
+2020-12-31,Doubs,167,39
+2020-12-31,Jura,266,5
+2020-12-31,Nièvre,98,6
+2020-12-31,Haute-Saône,77,9
+2020-12-31,Saône-et-Loire,428,37
+2020-12-31,Yonne,231,19
+2020-12-31,Territoire de Belfort,193,21
+2021-01-01,Côte-d'Or,363,41
+2021-01-01,Doubs,166,43
+2021-01-01,Jura,266,5
+2021-01-01,Nièvre,100,6
+2021-01-01,Haute-Saône,67,10
+2021-01-01,Saône-et-Loire,413,37
+2021-01-01,Yonne,226,19
+2021-01-01,Territoire de Belfort,193,21
+2021-01-02,Côte-d'Or,370,43
+2021-01-02,Doubs,164,42
+2021-01-02,Jura,260,7
+2021-01-02,Nièvre,99,5
+2021-01-02,Haute-Saône,68,10
+2021-01-02,Saône-et-Loire,415,37
+2021-01-02,Yonne,231,19
+2021-01-02,Territoire de Belfort,196,18
+2021-01-03,Côte-d'Or,377,41
+2021-01-03,Doubs,163,44
+2021-01-03,Jura,270,7
+2021-01-03,Nièvre,100,5
+2021-01-03,Haute-Saône,69,9
+2021-01-03,Saône-et-Loire,424,37
+2021-01-03,Yonne,228,19
+2021-01-03,Territoire de Belfort,191,17
+2021-01-04,Côte-d'Or,392,44
+2021-01-04,Doubs,160,41
+2021-01-04,Jura,281,8
+2021-01-04,Nièvre,101,4
+2021-01-04,Haute-Saône,69,8
+2021-01-04,Saône-et-Loire,449,36
+2021-01-04,Yonne,223,20
+2021-01-04,Territoire de Belfort,200,18
+2021-01-05,Côte-d'Or,389,45
+2021-01-05,Doubs,173,43
+2021-01-05,Jura,272,9
+2021-01-05,Nièvre,97,4
+2021-01-05,Haute-Saône,66,7
+2021-01-05,Saône-et-Loire,431,34
+2021-01-05,Yonne,215,21
+2021-01-05,Territoire de Belfort,195,20
+2021-01-06,Côte-d'Or,386,41
+2021-01-06,Doubs,170,43
+2021-01-06,Jura,271,7
+2021-01-06,Nièvre,101,3
+2021-01-06,Haute-Saône,68,9
+2021-01-06,Saône-et-Loire,418,34
+2021-01-06,Yonne,213,21
+2021-01-06,Territoire de Belfort,192,20
+2021-01-07,Côte-d'Or,389,44
+2021-01-07,Doubs,185,48
+2021-01-07,Jura,262,7
+2021-01-07,Nièvre,100,3
+2021-01-07,Haute-Saône,67,8
+2021-01-07,Saône-et-Loire,416,32
+2021-01-07,Yonne,210,18
+2021-01-07,Territoire de Belfort,188,18
+2021-01-08,Côte-d'Or,386,45
+2021-01-08,Doubs,190,47
+2021-01-08,Jura,253,7
+2021-01-08,Nièvre,109,3
+2021-01-08,Haute-Saône,72,8
+2021-01-08,Saône-et-Loire,413,28
+2021-01-08,Yonne,208,19
+2021-01-08,Territoire de Belfort,187,23
+2021-01-09,Côte-d'Or,372,41
+2021-01-09,Doubs,188,46
+2021-01-09,Jura,258,7
+2021-01-09,Nièvre,108,3
+2021-01-09,Haute-Saône,80,6
+2021-01-09,Saône-et-Loire,410,27
+2021-01-09,Yonne,192,18
+2021-01-09,Territoire de Belfort,182,23
+2021-01-10,Côte-d'Or,376,38
+2021-01-10,Doubs,194,48
+2021-01-10,Jura,261,7
+2021-01-10,Nièvre,112,3
+2021-01-10,Haute-Saône,80,6
+2021-01-10,Saône-et-Loire,416,26
+2021-01-10,Yonne,192,17
+2021-01-10,Territoire de Belfort,173,22
+2021-01-11,Côte-d'Or,379,37
+2021-01-11,Doubs,204,49
+2021-01-11,Jura,258,9
+2021-01-11,Nièvre,117,2
+2021-01-11,Haute-Saône,87,7
+2021-01-11,Saône-et-Loire,424,29
+2021-01-11,Yonne,198,18
+2021-01-11,Territoire de Belfort,177,22
+2021-01-12,Côte-d'Or,381,41
+2021-01-12,Doubs,198,48
+2021-01-12,Jura,268,11
+2021-01-12,Nièvre,115,4
+2021-01-12,Haute-Saône,86,7
+2021-01-12,Saône-et-Loire,428,30
+2021-01-12,Yonne,205,17
+2021-01-12,Territoire de Belfort,173,22
+2021-01-13,Côte-d'Or,372,44
+2021-01-13,Doubs,195,47
+2021-01-13,Jura,280,12
+2021-01-13,Nièvre,123,4
+2021-01-13,Haute-Saône,85,9
+2021-01-13,Saône-et-Loire,406,29
+2021-01-13,Yonne,194,17
+2021-01-13,Territoire de Belfort,174,25
+2021-01-14,Côte-d'Or,388,42
+2021-01-14,Doubs,201,44
+2021-01-14,Jura,273,13
+2021-01-14,Nièvre,125,3
+2021-01-14,Haute-Saône,89,9
+2021-01-14,Saône-et-Loire,406,29
+2021-01-14,Yonne,195,17
+2021-01-14,Territoire de Belfort,175,25
+2021-01-15,Côte-d'Or,370,42
+2021-01-15,Doubs,202,46
+2021-01-15,Jura,284,13
+2021-01-15,Nièvre,134,3
+2021-01-15,Haute-Saône,90,7
+2021-01-15,Saône-et-Loire,424,30
+2021-01-15,Yonne,186,18
+2021-01-15,Territoire de Belfort,164,21
+2021-01-16,Côte-d'Or,367,44
+2021-01-16,Doubs,196,46
+2021-01-16,Jura,248,10
+2021-01-16,Nièvre,136,4
+2021-01-16,Haute-Saône,82,7
+2021-01-16,Saône-et-Loire,452,31
+2021-01-16,Yonne,191,15
+2021-01-16,Territoire de Belfort,154,20
+2021-01-17,Côte-d'Or,361,41
+2021-01-17,Doubs,205,46
+2021-01-17,Jura,248,10
+2021-01-17,Nièvre,148,4
+2021-01-17,Haute-Saône,82,6
+2021-01-17,Saône-et-Loire,456,31
+2021-01-17,Yonne,194,16
+2021-01-17,Territoire de Belfort,152,19
+2021-01-18,Côte-d'Or,370,41
+2021-01-18,Doubs,203,48
+2021-01-18,Jura,258,9
+2021-01-18,Nièvre,142,3
+2021-01-18,Haute-Saône,91,7
+2021-01-18,Saône-et-Loire,451,36
+2021-01-18,Yonne,199,17
+2021-01-18,Territoire de Belfort,157,19
+2021-01-19,Côte-d'Or,292,44
+2021-01-19,Doubs,198,48
+2021-01-19,Jura,251,9
+2021-01-19,Nièvre,140,3
+2021-01-19,Haute-Saône,91,6
+2021-01-19,Saône-et-Loire,462,36
+2021-01-19,Yonne,195,15
+2021-01-19,Territoire de Belfort,156,19
+2021-01-20,Côte-d'Or,289,41
+2021-01-20,Doubs,197,49
+2021-01-20,Jura,247,10
+2021-01-20,Nièvre,133,3
+2021-01-20,Haute-Saône,95,8
+2021-01-20,Saône-et-Loire,476,33
+2021-01-20,Yonne,195,16
+2021-01-20,Territoire de Belfort,169,22
+2021-01-21,Côte-d'Or,301,40
+2021-01-21,Doubs,192,48
+2021-01-21,Jura,245,9
+2021-01-21,Nièvre,147,4
+2021-01-21,Haute-Saône,102,8
+2021-01-21,Saône-et-Loire,473,32
+2021-01-21,Yonne,190,16
+2021-01-21,Territoire de Belfort,137,24
+2021-01-22,Côte-d'Or,302,42
+2021-01-22,Doubs,197,50
+2021-01-22,Jura,247,10
+2021-01-22,Nièvre,145,3
+2021-01-22,Haute-Saône,101,8
+2021-01-22,Saône-et-Loire,483,35
+2021-01-22,Yonne,180,17
+2021-01-22,Territoire de Belfort,130,18
+2021-01-23,Côte-d'Or,301,37
+2021-01-23,Doubs,186,48
+2021-01-23,Jura,251,9
+2021-01-23,Nièvre,149,3
+2021-01-23,Haute-Saône,97,10
+2021-01-23,Saône-et-Loire,478,32
+2021-01-23,Yonne,176,17
+2021-01-23,Territoire de Belfort,116,16
+2021-01-24,Côte-d'Or,306,39
+2021-01-24,Doubs,193,50
+2021-01-24,Jura,251,8
+2021-01-24,Nièvre,151,4
+2021-01-24,Haute-Saône,98,9
+2021-01-24,Saône-et-Loire,487,35
+2021-01-24,Yonne,181,15
+2021-01-24,Territoire de Belfort,119,16
+2021-01-25,Côte-d'Or,307,40
+2021-01-25,Doubs,196,48
+2021-01-25,Jura,246,8
+2021-01-25,Nièvre,153,4
+2021-01-25,Haute-Saône,105,8
+2021-01-25,Saône-et-Loire,501,37
+2021-01-25,Yonne,187,13
+2021-01-25,Territoire de Belfort,130,14
+2021-01-26,Côte-d'Or,299,42
+2021-01-26,Doubs,185,46
+2021-01-26,Jura,250,8
+2021-01-26,Nièvre,159,4
+2021-01-26,Haute-Saône,104,10
+2021-01-26,Saône-et-Loire,497,38
+2021-01-26,Yonne,199,14
+2021-01-26,Territoire de Belfort,133,16
+2021-01-27,Côte-d'Or,305,41
+2021-01-27,Doubs,182,48
+2021-01-27,Jura,254,9
+2021-01-27,Nièvre,169,4
+2021-01-27,Haute-Saône,108,9
+2021-01-27,Saône-et-Loire,504,38
+2021-01-27,Yonne,195,13
+2021-01-27,Territoire de Belfort,133,16
+2021-01-28,Côte-d'Or,297,36
+2021-01-28,Doubs,171,51
+2021-01-28,Jura,231,9
+2021-01-28,Nièvre,171,5
+2021-01-28,Haute-Saône,105,9
+2021-01-28,Saône-et-Loire,508,36
+2021-01-28,Yonne,202,14
+2021-01-28,Territoire de Belfort,128,16
+2021-01-29,Côte-d'Or,291,33
+2021-01-29,Doubs,170,50
+2021-01-29,Jura,230,10
+2021-01-29,Nièvre,170,4
+2021-01-29,Haute-Saône,102,8
+2021-01-29,Saône-et-Loire,505,37
+2021-01-29,Yonne,209,14
+2021-01-29,Territoire de Belfort,124,14
+2021-01-30,Côte-d'Or,291,31
+2021-01-30,Doubs,164,43
+2021-01-30,Jura,229,11
+2021-01-30,Nièvre,175,4
+2021-01-30,Haute-Saône,102,8
+2021-01-30,Saône-et-Loire,494,35
+2021-01-30,Yonne,196,14
+2021-01-30,Territoire de Belfort,119,14
+2021-01-31,Côte-d'Or,294,29
+2021-01-31,Doubs,177,45
+2021-01-31,Jura,228,11
+2021-01-31,Nièvre,174,4
+2021-01-31,Haute-Saône,105,10
+2021-01-31,Saône-et-Loire,495,35
+2021-01-31,Yonne,197,14
+2021-01-31,Territoire de Belfort,123,14
