@@ -186,9 +186,13 @@ df["nom_reg"] = df["reg"].map(nom_reg)
 
 incidence_positivite_france = df[["nom_reg","debut_7j","fin_7j","taux_incidence_7j","taux_positivite_7j"]]
 incidence_positivite_france_bfc = pd.concat([incidence_positivite_bfc,incidence_positivite_france])
-depistage_incidence_positivite_bfc_france_historique = incidence_positivite_france_bfc.rename(columns=colonnes_donnees_depistage)
 
-depistage_incidence_positivite_bfc_france_historique.to_csv("donnees/depistage_incidence_positivite_bfc_france_historique.csv",index=False)
+depistage_incidence_bfc_france_historique = incidence_positivite_france_bfc.pivot_table(index=["debut_7j","fin_7j"],columns="nom_reg",values="taux_incidence_7j")
+depistage_incidence_bfc_france_historique.to_csv("donnees/depistage_incidence_bfc_france_historique.csv")
+
+depistage_positivite_bfc_france_historique = incidence_positivite_france_bfc.pivot_table(index=["debut_7j","fin_7j"],columns="nom_reg",values="taux_positivite_7j")
+depistage_positivite_bfc_france_historique.to_csv("donnees/depistage_positivite_bfc_france_historique.csv")
+
 
 incidence_positivite_france_bfc_plus_recent = incidence_positivite_france_bfc[incidence_positivite_france_bfc["fin_7j"] == max(incidence_positivite_france_bfc["fin_7j"])]
 
